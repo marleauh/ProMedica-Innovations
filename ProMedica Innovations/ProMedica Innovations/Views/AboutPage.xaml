@@ -47,7 +47,7 @@
                         TextColor="White" />
                     <Button Margin="0,10,0,0" Text="Submit Idea"
                         Clicked="OnButtonClicked"
-                        BackgroundColor="{StaticResource Primary}"
+                        BackgroundColor="Orange"
                         TextColor="White" />
                 </StackLayout>
             </StackLayout>
