@@ -6,10 +6,10 @@ namespace ProMedica_Innovations.Services
 {
     public interface IDataStore<T>
     {
-        Task<bool> AddItemAsync(T item);
-        Task<bool> UpdateItemAsync(T item);
-        Task<bool> DeleteItemAsync(string id);
-        Task<T> GetItemAsync(string id);
+        Task<bool> AddItemAsync(T Idea);
+        Task<bool> UpdateItemAsync(T Idea);
+        Task<bool> DeleteItemAsync(string Id);
+        Task<T> GetItemAsync(string Id);
         Task<IEnumerable<T>> GetItemsAsync(bool forceRefresh = false);
     }
 }
