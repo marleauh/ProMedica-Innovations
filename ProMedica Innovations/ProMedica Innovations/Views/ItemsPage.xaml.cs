@@ -14,13 +14,13 @@ namespace ProMedica_Innovations.Views
 {
     public partial class ItemsPage : ContentPage
     {
-        ItemsViewModel _viewModel;
+        IdeasViewModel _viewModel;
 
         public ItemsPage()
         {
             InitializeComponent();
 
-            BindingContext = _viewModel = new ItemsViewModel();
+            BindingContext = _viewModel = new IdeasViewModel();
         }
 
         protected override void OnAppearing()
