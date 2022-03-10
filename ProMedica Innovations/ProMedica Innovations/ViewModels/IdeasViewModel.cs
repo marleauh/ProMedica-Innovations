@@ -36,9 +36,9 @@ namespace ProMedica_Innovations.ViewModels
             {
                 Ideas.Clear();
                 var ideas = await DataStore.GetIdeasAsync(true);
-                foreach (var item in ideas)
+                foreach (var idea in ideas)
                 {
-                    Ideas.Add(item);
+                    Ideas.Add(idea);
                 }
             }
             catch (Exception ex)
@@ -54,10 +54,10 @@ namespace ProMedica_Innovations.ViewModels
         public void OnAppearing()
         {
             IsBusy = true;
-            SelectedItem = null;
+            SelectedIdea = null;
         }
 
-        public Idea SelectedItem
+        public Idea SelectedIdea
         {
             get => _selectedIdea;
             set
