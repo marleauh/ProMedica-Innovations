@@ -10,7 +10,7 @@ namespace ProMedica_Innovations.Views
 {
     public partial class NewItemPage : ContentPage
     {
-        public Item Item { get; set; }
+        public Idea Idea { get; set; }
 
         public NewItemPage()
         {

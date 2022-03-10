@@ -49,7 +49,7 @@ namespace ProMedica_Innovations.ViewModels
 
         private async void OnSave()
         {
-            Item newItem = new Item()
+            Idea newItem = new Idea()
             {
                 Id = Guid.NewGuid().ToString(),
                 Text = Text,

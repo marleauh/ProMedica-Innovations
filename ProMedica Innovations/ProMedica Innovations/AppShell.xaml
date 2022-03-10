@@ -55,7 +55,7 @@
             </Style>
 
             <!--
-            Custom Style you can apply to any Flyout Item
+            Custom Style you can apply to any Flyout Idea
             -->
             <Style Class="MenuItemLayoutStyle" TargetType="Layout" ApplyToDerivedTypes="True">
                 <Setter Property="VisualStateManager.VisualStateGroups">

@@ -50,7 +50,7 @@ namespace ProMedica_Innovations.ViewModels
             }
             catch (Exception)
             {
-                Debug.WriteLine("Failed to Load Item");
+                Debug.WriteLine("Failed to Load Idea");
             }
         }
     }
