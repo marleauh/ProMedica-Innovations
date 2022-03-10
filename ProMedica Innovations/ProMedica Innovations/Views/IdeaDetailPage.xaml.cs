@@ -9,7 +9,7 @@ namespace ProMedica_Innovations.Views
         public ItemDetailPage()
         {
             InitializeComponent();
-            BindingContext = new ItemDetailViewModel();
+            BindingContext = new IdeaDetailViewModel();
         }
     }
 }

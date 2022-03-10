@@ -78,7 +78,7 @@ namespace ProMedica_Innovations.ViewModels
                 return;
 
             // This will push the ItemDetailPage onto the navigation stack
-            await Shell.Current.GoToAsync($"{nameof(ItemDetailPage)}?{nameof(ItemDetailViewModel.ItemId)}={idea.Id}");
+            await Shell.Current.GoToAsync($"{nameof(ItemDetailPage)}?{nameof(IdeaDetailViewModel.ItemId)}={idea.Id}");
         }
     }
 }

@@ -7,7 +7,7 @@ using Xamarin.Forms;
 namespace ProMedica_Innovations.ViewModels
 {
     [QueryProperty(nameof(ItemId), nameof(ItemId))]
-    public class ItemDetailViewModel : BaseViewModel
+    public class IdeaDetailViewModel : BaseViewModel
     {
         private string itemId;
         private string text;

@@ -15,7 +15,7 @@ namespace ProMedica_Innovations.Views
         public NewItemPage()
         {
             InitializeComponent();
-            BindingContext = new NewItemViewModel();
+            BindingContext = new NewIdeaViewModel();
         }
     }
 }

@@ -7,12 +7,12 @@ using Xamarin.Forms;
 
 namespace ProMedica_Innovations.ViewModels
 {
-    public class NewItemViewModel : BaseViewModel
+    public class NewIdeaViewModel : BaseViewModel
     {
         private string text;
         private string description;
 
-        public NewItemViewModel()
+        public NewIdeaViewModel()
         {
             SaveCommand = new Command(OnSave, ValidateSave);
             CancelCommand = new Command(OnCancel);
