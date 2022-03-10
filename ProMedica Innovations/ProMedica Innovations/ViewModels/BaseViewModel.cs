@@ -10,7 +10,7 @@ namespace ProMedica_Innovations.ViewModels
 {
     public class BaseViewModel : INotifyPropertyChanged
     {
-        public IDataStore<Item> DataStore => DependencyService.Get<IDataStore<Item>>();
+        public IDataStore<Idea> DataStore => DependencyService.Get<IDataStore<Idea>>();
 
         bool isBusy = false;
         public bool IsBusy
