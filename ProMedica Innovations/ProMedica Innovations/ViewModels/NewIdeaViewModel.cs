@@ -9,8 +9,14 @@ namespace ProMedica_Innovations.ViewModels
 {
     public class NewIdeaViewModel : BaseViewModel
     {
-        private string text;
+        private string firstname;
+        private string lastname;
+        private string email;
+        private string phone;
         private string description;
+        private string availability;
+        private string referral;
+        private bool employee;
 
         public NewIdeaViewModel()
         {
@@ -22,20 +28,55 @@ namespace ProMedica_Innovations.ViewModels
 
         private bool ValidateSave()
         {
-            return !String.IsNullOrWhiteSpace(text)
-                && !String.IsNullOrWhiteSpace(description);
+            return !String.IsNullOrWhiteSpace(firstname)
+                && !String.IsNullOrWhiteSpace(lastname)
+                && !String.IsNullOrWhiteSpace(email)
+                && !String.IsNullOrWhiteSpace(phone)
+                && !String.IsNullOrWhiteSpace(description)
+                && !String.IsNullOrWhiteSpace(availability)
+                && !String.IsNullOrWhiteSpace(referral);
         }
 
-        public string Text
+        public string FirstName
         {
-            get => text;
-            set => SetProperty(ref text, value);
+            get => firstname;
+            set => SetProperty(ref firstname, value);
+        }
+        public string LastName
+        {
+            get => lastname;
+            set => SetProperty(ref lastname, value);
+        }
+        public string Email
+        {
+            get => email;
+            set => SetProperty(ref email, value);
+        }
+        public string Phone
+        {
+            get => phone;
+            set => SetProperty(ref phone, value);
         }
 
         public string Description
         {
             get => description;
             set => SetProperty(ref description, value);
+        }
+        public string Availability
+        {
+            get => availability;
+            set => SetProperty(ref availability, value);
+        }
+        public string Referral
+        {
+            get => referral;
+            set => SetProperty(ref referral, value);
+        }
+        public bool Employee
+        {
+            get => employee;
+            set => SetProperty(ref employee, value);
         }
 
         public Command SaveCommand { get; }
@@ -49,14 +90,20 @@ namespace ProMedica_Innovations.ViewModels
 
         private async void OnSave()
         {
-            Idea newItem = new Idea()
+            Idea newIdea = new Idea()
             {
                 Id = Guid.NewGuid().ToString(),
-                Text = Text,
-                Description = Description
+                FirstName = FirstName,
+                LastName = LastName,
+                Email = Email,
+                Phone = Phone,
+                Description = Description,
+                Availability = Availability,
+                Referral = Referral,
+                Employee = Employee,
             };
 
-            await DataStore.AddItemAsync(newItem);
+            await DataStore.AddIdeaAsync(newIdea);
 
             // This will pop the current page off the navigation stack
             await Shell.Current.GoToAsync("..");

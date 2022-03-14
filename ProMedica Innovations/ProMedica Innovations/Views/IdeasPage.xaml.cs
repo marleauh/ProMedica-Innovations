@@ -12,11 +12,11 @@ using Xamarin.Forms.Xaml;
 
 namespace ProMedica_Innovations.Views
 {
-    public partial class ItemsPage : ContentPage
+    public partial class IdeasPage : ContentPage
     {
         IdeasViewModel _viewModel;
 
-        public ItemsPage()
+        public IdeasPage()
         {
             InitializeComponent();
 

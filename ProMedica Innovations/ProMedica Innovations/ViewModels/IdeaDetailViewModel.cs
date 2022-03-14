@@ -6,47 +6,91 @@ using Xamarin.Forms;
 
 namespace ProMedica_Innovations.ViewModels
 {
-    [QueryProperty(nameof(ItemId), nameof(ItemId))]
+    [QueryProperty(nameof(IdeaId), nameof(IdeaId))]
     public class IdeaDetailViewModel : BaseViewModel
     {
-        private string itemId;
-        private string text;
-        private string description;
+        private string ideaId;
+        private string FirstName;
+        private string LastName;
+        private string Email;
+        private string Phone;
+        private string Description;
+        private string Availability;
+        private string Referral;
+        private bool Employee;
         public string Id { get; set; }
 
-        public string Text
+        public string firstname
         {
-            get => text;
-            set => SetProperty(ref text, value);
+            get => FirstName;
+            set => SetProperty(ref FirstName, value);
         }
 
-        public string Description
+        public string lastname
         {
-            get => description;
-            set => SetProperty(ref description, value);
+            get => LastName;
+            set => SetProperty(ref LastName, value);
         }
 
-        public string ItemId
+        public string email
+        {
+            get => Email;
+            set => SetProperty(ref Email, value);
+        }
+        public string phone
+        {
+            get => Phone;
+            set => SetProperty(ref Phone, value);
+        }
+
+        public string description
+        {
+            get => Description;
+            set => SetProperty(ref Description, value);
+        }
+        public string availability
+        {
+            get => Availability;
+            set => SetProperty(ref Availability, value);
+        }
+        public string referral
+        {
+            get => Referral;
+            set => SetProperty(ref Referral, value);
+        }
+        public bool employee
+        {
+            get => Employee;
+            set => SetProperty(ref Employee, value);
+        }
+
+        public string IdeaId
         {
             get
             {
-                return itemId;
+                return ideaId;
             }
             set
             {
-                itemId = value;
-                LoadItemId(value);
+                ideaId = value;
+                LoadIdeaId(value);
             }
         }
 
-        public async void LoadItemId(string itemId)
+        public async void LoadIdeaId(string ideaId)
         {
             try
             {
-                var item = await DataStore.GetItemAsync(itemId);
-                Id = item.Id;
-                Text = item.Text;
-                Description = item.Description;
+                var idea = await DataStore.GetIdeaAsync(ideaId);
+                Id = idea.Id;
+                FirstName = idea.FirstName;
+                LastName = idea.LastName;
+                Email = idea.Email;
+                Phone = idea.Phone;
+                Description = idea.Description;
+                Availability = idea.Availability;
+                Referral = idea.Referral;
+                Employee = idea.Employee;
             }
             catch (Exception)
             {

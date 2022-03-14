@@ -4,9 +4,9 @@ using Xamarin.Forms;
 
 namespace ProMedica_Innovations.Views
 {
-    public partial class ItemDetailPage : ContentPage
+    public partial class IdeaDetailPage : ContentPage
     {
-        public ItemDetailPage()
+        public IdeaDetailPage()
         {
             InitializeComponent();
             BindingContext = new IdeaDetailViewModel();

@@ -15,7 +15,7 @@ namespace ProMedica_Innovations.ViewModels
         public ObservableCollection<Idea> Ideas { get; }
         public Command LoadIdeasCommand { get; }
         public Command AddIdeasCommand { get; }
-        public Command<Idea> ItemTapped { get; }
+        public Command<Idea> IdeaTapped { get; }
 
         public IdeasViewModel()
         {
@@ -23,9 +23,9 @@ namespace ProMedica_Innovations.ViewModels
             Ideas = new ObservableCollection<Idea>();
             LoadIdeasCommand = new Command(async () => await ExecuteLoadIdeasCommand());
 
-            ItemTapped = new Command<Idea>(OnIdeaSelected);
+            IdeaTapped = new Command<Idea>(OnIdeaSelected);
 
-            AddIdeasCommand = new Command(OnAddItem);
+            AddIdeasCommand = new Command(OnAddIdea);
         }
 
         async Task ExecuteLoadIdeasCommand()
@@ -67,9 +67,9 @@ namespace ProMedica_Innovations.ViewModels
             }
         }
 
-        private async void OnAddItem(object obj)
+        private async void OnAddIdea(object obj)
         {
-            await Shell.Current.GoToAsync(nameof(NewItemPage));
+            await Shell.Current.GoToAsync(nameof(NewIdeaPage));
         }
 
         async void OnIdeaSelected(Idea idea)
@@ -78,7 +78,7 @@ namespace ProMedica_Innovations.ViewModels
                 return;
 
             // This will push the ItemDetailPage onto the navigation stack
-            await Shell.Current.GoToAsync($"{nameof(ItemDetailPage)}?{nameof(IdeaDetailViewModel.ItemId)}={idea.Id}");
+            await Shell.Current.GoToAsync($"{nameof(IdeaDetailPage)}?{nameof(IdeaDetailViewModel.IdeaId)}={idea.Id}");
         }
     }
 }

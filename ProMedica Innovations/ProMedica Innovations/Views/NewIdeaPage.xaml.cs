@@ -8,11 +8,11 @@ using Xamarin.Forms.Xaml;
 
 namespace ProMedica_Innovations.Views
 {
-    public partial class NewItemPage : ContentPage
+    public partial class NewIdeaPage : ContentPage
     {
         public Idea Idea { get; set; }
 
-        public NewItemPage()
+        public NewIdeaPage()
         {
             InitializeComponent();
             BindingContext = new NewIdeaViewModel();
