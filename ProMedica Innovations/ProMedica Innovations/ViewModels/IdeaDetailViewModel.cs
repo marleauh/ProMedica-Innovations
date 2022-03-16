@@ -10,58 +10,58 @@ namespace ProMedica_Innovations.ViewModels
     public class IdeaDetailViewModel : BaseViewModel
     {
         private string ideaId;
-        private string FirstName;
-        private string LastName;
-        private string Email;
-        private string Phone;
-        private string Description;
-        private string Availability;
-        private string Referral;
-        private bool Employee;
+        private string firstname;
+        private string lastname;
+        private string email;
+        private string phone;
+        private string description;
+        private string availability;
+        private string referral;
+        private bool employee;
         public string Id { get; set; }
 
-        public string firstname
+        public string FirstName
         {
-            get => FirstName;
-            set => SetProperty(ref FirstName, value);
+            get => firstname;
+            set => SetProperty(ref firstname, value);
         }
 
-        public string lastname
+        public string LastName
         {
-            get => LastName;
-            set => SetProperty(ref LastName, value);
+            get => lastname;
+            set => SetProperty(ref lastname, value);
         }
 
-        public string email
+        public string Email
         {
-            get => Email;
-            set => SetProperty(ref Email, value);
+            get => email;
+            set => SetProperty(ref email, value);
         }
-        public string phone
+        public string Phone
         {
-            get => Phone;
-            set => SetProperty(ref Phone, value);
+            get => phone;
+            set => SetProperty(ref phone, value);
         }
 
-        public string description
+        public string Description
         {
-            get => Description;
-            set => SetProperty(ref Description, value);
+            get => description;
+            set => SetProperty(ref description, value);
         }
-        public string availability
+        public string Availability
         {
-            get => Availability;
-            set => SetProperty(ref Availability, value);
+            get => availability;
+            set => SetProperty(ref availability, value);
         }
-        public string referral
+        public string Referral
         {
-            get => Referral;
-            set => SetProperty(ref Referral, value);
+            get => referral;
+            set => SetProperty(ref referral, value);
         }
-        public bool employee
+        public bool Employee
         {
-            get => Employee;
-            set => SetProperty(ref Employee, value);
+            get => employee;
+            set => SetProperty(ref employee, value);
         }
 
         public string IdeaId
@@ -82,7 +82,6 @@ namespace ProMedica_Innovations.ViewModels
             try
             {
                 var idea = await DataStore.GetIdeaAsync(ideaId);
-                Id = idea.Id;
                 FirstName = idea.FirstName;
                 LastName = idea.LastName;
                 Email = idea.Email;
