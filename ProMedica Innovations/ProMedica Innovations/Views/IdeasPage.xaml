@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ProMedica_Innovations.Views.IdeasPage"
-             Title="{Binding Title}"
+             Title="Submit Idea"
              xmlns:local="clr-namespace:ProMedica_Innovations.ViewModels"  
              xmlns:model="clr-namespace:ProMedica_Innovations.Models"  
              x:Name="BrowseIdeasPage">
