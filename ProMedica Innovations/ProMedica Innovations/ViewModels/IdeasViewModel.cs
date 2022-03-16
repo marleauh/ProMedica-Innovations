@@ -27,7 +27,7 @@ namespace ProMedica_Innovations.ViewModels
 
             AddIdeasCommand = new Command(OnAddIdea);
         }
-
+        
         async Task ExecuteLoadIdeasCommand()
         {
             IsBusy = true;

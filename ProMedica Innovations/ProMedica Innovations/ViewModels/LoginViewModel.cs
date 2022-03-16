@@ -12,7 +12,7 @@ namespace ProMedica_Innovations.ViewModels
         public Action DisplayInvalidLoginPrompt;
         public event PropertyChangedEventHandler PropertyChanged = delegate { };
         private string email;
-        public string Email
+        public string Email // username used for admin authentication. 
         {
             get { return email; }
             set
@@ -21,7 +21,7 @@ namespace ProMedica_Innovations.ViewModels
                 PropertyChanged(this, new PropertyChangedEventArgs("Email"));
             }
         }
-        private string password;
+        private string password; // password used for admin authentication.
         public string Password
         {
             get { return password; }
@@ -40,9 +40,19 @@ namespace ProMedica_Innovations.ViewModels
 
         private async void OnLoginClicked(object obj)
         {
+            // admin logins
             if (email != "admin" || password != "promedica")
             {
-                DisplayInvalidLoginPrompt();
+                /* ########## In order to add admin logins you must copy/paste ########## */
+                if (email != "admin2" || password != "password")
+                {
+                    DisplayInvalidLoginPrompt();
+                }
+                else
+                {
+                    await Shell.Current.GoToAsync($"//{nameof(IdeasPage)}");
+                }
+                /* ##########                  ALL OF THIS                     ########## */
             }
             else
             {

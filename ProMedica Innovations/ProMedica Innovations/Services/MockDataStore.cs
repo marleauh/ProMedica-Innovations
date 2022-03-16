@@ -15,7 +15,7 @@ namespace ProMedica_Innovations.Services
             ideas = new List<Idea>()
             {
                 new Idea { Id = Guid.NewGuid().ToString(), FirstName = "Hunter", LastName = "Marleau", Email = "marleauh@findlay.edu", Phone = "4196019566", Description = "Test input", Availability = "Now", Referral = "Espyn", Employee = false},
-                //new Idea { Id = Guid.NewGuid().ToString(), FirstName = "Hunter", LastName = "Marleau", Email = "marleauh@findlay.edu", Phone = "4196019566", Description = "Test input", Availability = "Now", Referral = "Espyn", Employee = false},
+                // can put more test data here for better representation of app function. Follow the layout above.
             };
         }
 
