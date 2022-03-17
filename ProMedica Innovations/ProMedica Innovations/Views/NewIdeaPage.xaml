@@ -7,28 +7,30 @@
              xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
              ios:Page.UseSafeArea="true">
     <ContentPage.Content>
-        <StackLayout Spacing="5" Padding="20">
-            <Label Text="First Name" FontSize="Medium" />
-            <Entry Text="{Binding FirstName, Mode=TwoWay}" FontSize="Medium" />
-            <Label Text="Last Name" FontSize="Medium" />
-            <Entry Text="{Binding LastName, Mode=TwoWay}" FontSize="Medium" />
-            <Label Text="Email" FontSize="Medium" />
-            <Entry Text="{Binding Email, Mode=TwoWay}" FontSize="Medium" />
-            <Label Text="Phone" FontSize="Medium" />
-            <Entry Text="{Binding Phone, Mode=TwoWay}" FontSize="Medium" />
-            <Label Text="Description" FontSize="Medium" />
-            <Editor Text="{Binding Description, Mode=TwoWay}" AutoSize="TextChanges" FontSize="Medium" Margin="0" />
-            <Label Text="Availability" FontSize="Medium" />
-            <Entry Text="{Binding Availability, Mode=TwoWay}" FontSize="Medium" />
-            <Label Text="Referral" FontSize="Medium" />
-            <Entry Text="{Binding Referral, Mode=TwoWay}" FontSize="Medium" />
-            <Label Text="Employee" FontSize="Medium" />
-            <Entry Text="{Binding Employee, Mode=TwoWay}" FontSize="Medium" />
-            <StackLayout Orientation="Horizontal">
-                <Button Text="Cancel" Command="{Binding CancelCommand}" HorizontalOptions="FillAndExpand"></Button>
-                <Button Text="Save" Command="{Binding SaveCommand}" HorizontalOptions="FillAndExpand"></Button>
+        <ScrollView>
+            <StackLayout Spacing="5" Padding="20">
+                <Label Text="First Name" FontSize="Medium" />
+                <Entry Text="{Binding FirstName, Mode=TwoWay}" FontSize="Medium" />
+                <Label Text="Last Name" FontSize="Medium" />
+                <Entry Text="{Binding LastName, Mode=TwoWay}" FontSize="Medium" />
+                <Label Text="Email" FontSize="Medium" />
+                <Entry Text="{Binding Email, Mode=TwoWay}" FontSize="Medium" />
+                <Label Text="Phone" FontSize="Medium" />
+                <Entry Text="{Binding Phone, Mode=TwoWay}" FontSize="Medium" />
+                <Label Text="Description" FontSize="Medium" />
+                <Editor Text="{Binding Description, Mode=TwoWay}" AutoSize="TextChanges" FontSize="Medium" Margin="0" />
+                <Label Text="Availability" FontSize="Medium" />
+                <Entry Text="{Binding Availability, Mode=TwoWay}" FontSize="Medium" />
+                <Label Text="Referral" FontSize="Medium" />
+                <Entry Text="{Binding Referral, Mode=TwoWay}" FontSize="Medium" />
+                <Label Text="Employee" FontSize="Medium" />
+                <Entry Text="{Binding Employee, Mode=TwoWay}" FontSize="Medium" />
+                <StackLayout Orientation="Horizontal">
+                    <Button Text="Cancel" Command="{Binding CancelCommand}" HorizontalOptions="FillAndExpand"></Button>
+                    <Button Text="Save" Command="{Binding SaveCommand}" HorizontalOptions="FillAndExpand"></Button>
+                </StackLayout>
             </StackLayout>
-        </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
     
 </ContentPage>
