@@ -7,8 +7,7 @@
              xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
              ios:Page.UseSafeArea="true">
     <ContentPage.Content>
-        <ScrollView VerticalOptions="FillAndExpand">
-            <StackLayout Spacing="5" Padding="20">
+        <StackLayout Spacing="5" Padding="20">
             <Label Text="First Name" FontSize="Medium" />
             <Entry Text="{Binding FirstName, Mode=TwoWay}" FontSize="Medium" />
             <Label Text="Last Name" FontSize="Medium" />
@@ -29,8 +28,7 @@
                 <Button Text="Cancel" Command="{Binding CancelCommand}" HorizontalOptions="FillAndExpand"></Button>
                 <Button Text="Save" Command="{Binding SaveCommand}" HorizontalOptions="FillAndExpand"></Button>
             </StackLayout>
-            </StackLayout>
-        </ScrollView>
+        </StackLayout>
     </ContentPage.Content>
     
 </ContentPage>
