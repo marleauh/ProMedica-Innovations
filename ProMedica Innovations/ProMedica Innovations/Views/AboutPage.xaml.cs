@@ -13,7 +13,7 @@ namespace ProMedica_Innovations.Views
         }
         private async void OnButtonClicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new NewIdeaPage());
+            await Navigation.PushAsync(new TermsOfServicePage());
         }
     }
 }

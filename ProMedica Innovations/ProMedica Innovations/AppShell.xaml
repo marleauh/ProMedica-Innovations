@@ -80,7 +80,17 @@
         FlyoutDisplayOptions="AsMultipleItems" will create a separate flyout item for each child element    
         https://docs.microsoft.com/dotnet/api/xamarin.forms.shellgroupitem.flyoutdisplayoptions?view=xamarin-forms
     -->
-
+    <TabBar>
+        <Tab Title="Login">
+            <ShellContent Route="LoginPage" ContentTemplate="{DataTemplate local:LoginPage}" />
+        </Tab>
+        <Tab Title="About">
+            <ShellContent Route="AboutPage" ContentTemplate="{DataTemplate local:AboutPage}" />
+        </Tab>
+        <Tab Title="Submit Ideas">
+            <ShellContent Route="NewIdeaPage" ContentTemplate="{DataTemplate local:NewIdeaPage}" />
+        </Tab>
+    </TabBar>
     
     
     <FlyoutItem Title="About" Icon="icon_about.png">
@@ -101,17 +111,7 @@
         content you can do so by calling 
         await Shell.Current.GoToAsync("//LoginPage");
     -->
-    <TabBar>
-        <Tab Title="Login">
-            <ShellContent Route="LoginPage" ContentTemplate="{DataTemplate local:LoginPage}" />
-        </Tab>
-        <Tab Title="About">
-            <ShellContent Route="AboutPage" ContentTemplate="{DataTemplate local:AboutPage}" />
-        </Tab>
-        <Tab Title="Submit Ideas">
-            <ShellContent Route="NewIdeaPage" ContentTemplate="{DataTemplate local:NewIdeaPage}" />
-        </Tab>
-    </TabBar>
+
 
     <!-- Optional Templates 
     // These may be provided inline as below or as separate classes.

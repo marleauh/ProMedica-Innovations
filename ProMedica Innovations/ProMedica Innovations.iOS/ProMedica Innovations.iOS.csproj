@@ -142,4 +142,7 @@
       <Name>ProMedica Innovations</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PI_logo.png" />
+  </ItemGroup>
 </Project>

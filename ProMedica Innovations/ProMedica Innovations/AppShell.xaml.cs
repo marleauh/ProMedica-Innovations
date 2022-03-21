@@ -12,6 +12,7 @@ namespace ProMedica_Innovations
         {
             InitializeComponent();
             Routing.RegisterRoute(nameof(IdeaDetailPage), typeof(IdeaDetailPage));
+            Routing.RegisterRoute(nameof(AboutPage), typeof(AboutPage));
             Routing.RegisterRoute(nameof(NewIdeaPage), typeof(NewIdeaPage));
         }
 
