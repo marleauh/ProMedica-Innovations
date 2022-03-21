@@ -25,6 +25,16 @@ namespace ProMedica_Innovations.iOS
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
 
+
+
+            if (UIDevice.CurrentDevice.CheckSystemVersion(13, 0))
+            {
+                UITabBar.Appearance.TintColor = UIColor.FromRGB(red: 0.26f, green: 0.69f, blue: 0.16f);
+                UITabBar.Appearance.BackgroundColor = UIColor.FromRGB(red: 0.26f, green: 0.69f, blue: 0.16f);
+                UINavigationBar.Appearance.BackgroundColor = UIColor.FromRGB(red: 0.26f, green: 0.69f, blue: 0.16f);
+            }
+
+
             return base.FinishedLaunching(app, options);
         }
     }
