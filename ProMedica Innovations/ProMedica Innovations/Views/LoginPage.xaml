@@ -17,11 +17,13 @@
             <Image HorizontalOptions="Center" WidthRequest="300" Source="maco.jpg"/>
             <Frame BackgroundColor="White" HasShadow="True" CornerRadius="10">
                 <StackLayout Orientation="Vertical" Spacing="10">
-                    <Entry x:Name="Email" Text="{Binding Email}" Placeholder="Username"   
+                    <Label Text="Email"/>
+                    <Entry x:Name="Email" Text="{Binding Email}" Placeholder="Enter here"   
                            PlaceholderColor="Gray" HeightRequest="40"   
                            Keyboard="Email"  
                            TextColor="Black"/>
-                    <Entry x:Name="Password" Text="{Binding Password}" Placeholder="Password"   
+                    <Label Text="Password"/>
+                    <Entry x:Name="Password" Text="{Binding Password}" Placeholder="Enter here"   
                            PlaceholderColor="Gray" HeightRequest="40"  
                            IsPassword="True"  
                            TextColor="Black"/>
