@@ -1,9 +1,10 @@
-﻿using System;
+﻿using SQLite;
 
 namespace ProMedica_Innovations.Models
 {
     public class Idea
     {
+        [PrimaryKey, AutoIncrement]
         public string Id { get; set; }                  // primary key
         public string FirstName { get; set; }
         public string LastName { get; set; }
