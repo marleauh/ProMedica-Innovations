@@ -11,9 +11,13 @@ namespace ProMedica_Innovations.Views
         {
             InitializeComponent();
         }
-        private async void OnButtonClicked(object sender, EventArgs e)
+        private async void IdeaButtonClicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new TermsOfServicePage());
+            //Controls what happens when the button "Submit Idea" button is pressed
+
+
+            await Navigation.PushAsync(new TermsOfServicePage()); //Goes immediately to the terms of service page
         }
+
     }
 }

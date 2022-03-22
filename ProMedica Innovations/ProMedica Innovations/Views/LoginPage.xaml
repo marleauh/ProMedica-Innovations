@@ -1,27 +1,34 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
+    
+<!--Login Page Format
+    
+    Use this file to make any design changes
+    
+-->    
+    
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"  
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"  
              x:Class="ProMedica_Innovations.Views.LoginPage"  
-             Title="Log In"
+             Title="Administrator Login"
              BackgroundImage="logo.jpg">
     <ContentPage.Content>
-        <StackLayout Orientation="Vertical" Padding="30" Spacing="40">
-            <BoxView HeightRequest="10"/>
+        <StackLayout Orientation="Vertical" Padding="40" Spacing="40">
+            <BoxView HeightRequest="40"/>
             <Image HorizontalOptions="Center" WidthRequest="300" Source="maco.jpg"/>
-            <Frame BackgroundColor="White" HasShadow="False">
+            <Frame BackgroundColor="White" HasShadow="True" CornerRadius="10">
                 <StackLayout Orientation="Vertical" Spacing="10">
                     <Entry x:Name="Email" Text="{Binding Email}" Placeholder="Username"   
                            PlaceholderColor="Gray" HeightRequest="40"   
                            Keyboard="Email"  
                            TextColor="Black"/>
                     <Entry x:Name="Password" Text="{Binding Password}" Placeholder="Password"   
-                           PlaceholderColor="Gray" HeightRequest="40"   
+                           PlaceholderColor="Gray" HeightRequest="40"  
                            IsPassword="True"  
                            TextColor="Black"/>
                 </StackLayout>
             </Frame>
             <Button Command="{Binding LoginCommand}" Text="Login" TextColor="White"  
-                    FontAttributes="Bold" FontSize="Large" HorizontalOptions="FillAndExpand"  
+                    FontAttributes="Bold" FontSize="Large" HorizontalOptions="FillAndExpand" 
                     BackgroundColor="{StaticResource Primary}" />
         </StackLayout>
     </ContentPage.Content>
