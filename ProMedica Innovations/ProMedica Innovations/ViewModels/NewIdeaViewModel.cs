@@ -92,7 +92,7 @@ namespace ProMedica_Innovations.ViewModels
         {
             Idea newIdea = new Idea()
             {
-                Id = Guid.NewGuid().ToString(),
+                Id = Guid.NewGuid().GetHashCode(),
                 FirstName = FirstName,
                 LastName = LastName,
                 Email = Email,

@@ -8,8 +8,8 @@ namespace ProMedica_Innovations.Services
     {
         Task<bool> AddIdeaAsync(T Idea);
         Task<bool> UpdateIdeaAsync(T Idea);
-        Task<bool> DeleteIdeaAsync(string Id);
-        Task<T> GetIdeaAsync(string Id);
+        Task<bool> DeleteIdeaAsync(int Id);
+        Task<T> GetIdeaAsync(int Id);
         Task<IEnumerable<T>> GetIdeasAsync(bool forceRefresh = false);
     }
 }

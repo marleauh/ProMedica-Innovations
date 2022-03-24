@@ -5,7 +5,7 @@ namespace ProMedica_Innovations.Models
     public class Idea
     {
         [PrimaryKey, AutoIncrement]
-        public string Id { get; set; }                  // primary key
+        public int Id { get; set; }                  // primary key
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Email { get; set; }

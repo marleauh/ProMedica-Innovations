@@ -14,7 +14,7 @@ namespace ProMedica_Innovations.Services
         {
             ideas = new List<Idea>()
             {
-                new Idea { Id = Guid.NewGuid().ToString(), FirstName = "Hunter", LastName = "Marleau", Email = "marleauh@findlay.edu", Phone = "4196019566", Description = "Test input", Availability = "Now", Referral = "Espyn", Employee = false},
+                new Idea { Id = Guid.NewGuid().GetHashCode(), FirstName = "Hunter", LastName = "Marleau", Email = "marleauh@findlay.edu", Phone = "4196019566", Description = "Test input", Availability = "Now", Referral = "Espyn", Employee = false},
                 // can put more test data here for better representation of app function. Follow the layout above.
             };
         }
@@ -35,7 +35,7 @@ namespace ProMedica_Innovations.Services
             return await Task.FromResult(true);
         }
 
-        public async Task<bool> DeleteIdeaAsync(string id)
+        public async Task<bool> DeleteIdeaAsync(int id)
         {
             var oldIdea = ideas.Where((Idea arg) => arg.Id == id).FirstOrDefault();
             ideas.Remove(oldIdea);
@@ -43,7 +43,7 @@ namespace ProMedica_Innovations.Services
             return await Task.FromResult(true);
         }
 
-        public async Task<Idea> GetIdeaAsync(string id)
+        public async Task<Idea> GetIdeaAsync(int id)
         {
             return await Task.FromResult(ideas.FirstOrDefault(s => s.Id == id));
         }

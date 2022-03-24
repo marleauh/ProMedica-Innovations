@@ -9,7 +9,7 @@ namespace ProMedica_Innovations.ViewModels
     [QueryProperty(nameof(IdeaId), nameof(IdeaId))]
     public class IdeaDetailViewModel : BaseViewModel
     {
-        private string ideaId;                          // Id from Idea object used for data context
+        private int ideaId;                          // Id from Idea object used for data context
         private string firstname;
         private string lastname;
         private string email;
@@ -64,7 +64,7 @@ namespace ProMedica_Innovations.ViewModels
             set => SetProperty(ref employee, value);
         }
 
-        public string IdeaId
+        public int IdeaId
         {
             get
             {
@@ -77,7 +77,7 @@ namespace ProMedica_Innovations.ViewModels
             }
         }
         // Loads data from individual record into ViewModel
-        public async void LoadIdeaId(string ideaId)
+        public async void LoadIdeaId(int ideaId)
         {
             try
             {
