@@ -32,8 +32,8 @@
                 <Label Text="Employee" FontSize="Medium" />
                 <Entry Text="{Binding Employee, Mode=TwoWay}" FontSize="Medium" />
                 <StackLayout Orientation="Horizontal">
-                    <Button Text="Cancel" Command="{Binding CancelCommand}" HorizontalOptions="FillAndExpand"></Button>
-                    <Button Text="Save" Command="{Binding SaveCommand}" HorizontalOptions="FillAndExpand"></Button>
+                    <Button Text="Cancel" Clicked="OnDeleteButtonClicked" HorizontalOptions="FillAndExpand"></Button>
+                    <Button Text="Save" Clicked="OnSaveButtonClicked" HorizontalOptions="FillAndExpand"></Button>
                 </StackLayout>
             </StackLayout>
         </ScrollView>
