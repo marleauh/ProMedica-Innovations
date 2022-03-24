@@ -16,7 +16,7 @@ namespace ProMedica_Innovations.Views
             //Controls what happens when the button "Submit Idea" button is pressed
 
 
-            await Navigation.PushAsync(new TermsOfServicePage()); //Goes immediately to the terms of service page
+            await Navigation.PushAsync(new TermsOfServicePage("https://www.promedica.org/innovations/Pages/innovation-submission.aspx", true)); //Goes immediately to the terms of service page
         }
 
     }

@@ -6,7 +6,7 @@
     
 -->
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:ProMedica_Innovations"
              x:Class="ProMedica_Innovations.Views.TermsOfServicePage"
              Title="Terms Of Service">
     <ContentPage.Content>
@@ -15,7 +15,7 @@
                 <Label Text="I agree to the terms of service:" FontSize="Medium" />
                 <CheckBox IsChecked="{Binding Employee, Mode=TwoWay}" Color="{StaticResource Primary}" />
             </StackLayout>
-            <WebView x:Name="webView" WidthRequest="1000" HeightRequest="1000" Source="https://www.promedica.org/innovations/Pages/innovation-submission.aspx"/>
+            <local:CustomWebView Uri="{Binding Uri}" IsPdf="{Binding IsPdf}" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
