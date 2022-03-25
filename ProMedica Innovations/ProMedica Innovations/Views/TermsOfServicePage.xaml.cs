@@ -13,10 +13,17 @@ namespace ProMedica_Innovations.Views
 {
     public partial class TermsOfServicePage : ContentPage, INotifyPropertyChanged
     {
+        public bool IsBtnVisible;
         public TermsOfServicePage(string uri, bool isPdf)
         {
             InitializeComponent();
             this.BindingContext = new TermsOfServiceViewModel(uri, isPdf);
+        }
+
+        async void OnButtonClicked(object sender, EventArgs e)
+        {
+            // Navigate to the NoteEntryPage.
+            await Navigation.PushAsync(new NewIdeaPage());
         }
     }
 }

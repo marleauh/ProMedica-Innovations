@@ -51,7 +51,7 @@ namespace ProMedica_Innovations.Views
             }
 
             // Navigate backwards
-            await Shell.Current.GoToAsync("..");
+            await Shell.Current.GoToAsync("//LoginPage");
         }
 
         async void OnDeleteButtonClicked(object sender, EventArgs e)
@@ -60,7 +60,7 @@ namespace ProMedica_Innovations.Views
             await App.Database.DeleteIdeaAsync(idea);
 
             // Navigate backwards
-            await Shell.Current.GoToAsync("..");
+            await Shell.Current.GoToAsync("//LoginPage");
         }
     }
 }

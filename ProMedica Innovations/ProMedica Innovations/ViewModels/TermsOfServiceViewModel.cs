@@ -17,6 +17,5 @@ namespace ProMedica_Innovations.ViewModels
             IsPdf = isPdf;
         }
 
-        public event PropertyChangedEventHandler PropertyChanged;
     }
 }

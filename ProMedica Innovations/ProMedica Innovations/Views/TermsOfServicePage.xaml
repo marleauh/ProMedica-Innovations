@@ -12,8 +12,15 @@
     <ContentPage.Content>
         <StackLayout>
             <StackLayout Orientation="Horizontal" Padding="15,15,15,2">
-                <Label Text="I agree to the terms of service:" FontSize="Medium" />
-                <CheckBox IsChecked="{Binding Employee, Mode=TwoWay}" Color="{StaticResource Primary}" />
+                <Label Text="I agree to the terms of service:" FontSize="Medium"/>
+                <CheckBox x:Name="ChkBox1" Margin="0,0,5,0" IsChecked="{Binding Employee, Mode=TwoWay}" Color="{StaticResource Primary}"/>
+                <Button Text="Next" Clicked="OnButtonClicked">
+                    <Button.IsVisible>
+                        <Binding Source="{x:Reference ChkBox1}"
+                             Path="IsChecked">
+                        </Binding>
+                    </Button.IsVisible>
+                </Button>
             </StackLayout>
             <local:CustomWebView Uri="{Binding Uri}" IsPdf="{Binding IsPdf}" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
         </StackLayout>
