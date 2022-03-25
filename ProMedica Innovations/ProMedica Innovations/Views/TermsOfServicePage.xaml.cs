@@ -14,6 +14,13 @@ namespace ProMedica_Innovations.Views
     public partial class TermsOfServicePage : ContentPage, INotifyPropertyChanged
     {
         public bool IsBtnVisible;
+
+        public TermsOfServicePage()
+        {
+            InitializeComponent();
+            this.BindingContext = new TermsOfServiceViewModel("https://www.promedica.org/innovations/Pages/innovation-submission.aspx", true);
+        }
+
         public TermsOfServicePage(string uri, bool isPdf)
         {
             InitializeComponent();
