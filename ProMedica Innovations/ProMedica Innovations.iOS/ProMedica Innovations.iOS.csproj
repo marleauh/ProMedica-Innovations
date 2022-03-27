@@ -154,4 +154,7 @@
   <ItemGroup>
     <BundleResource Include="Resources\about.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\house.png" />
+  </ItemGroup>
 </Project>

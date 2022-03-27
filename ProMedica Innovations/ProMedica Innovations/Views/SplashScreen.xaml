@@ -7,12 +7,99 @@
 -->
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="ProMedica_Innovations.Views.SplashScreen">
+             x:Class="ProMedica_Innovations.Views.SplashScreen"
+             Title="Home Page">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label FontSize="30" Padding="10" TextColor="Black" FontAttributes="Bold">Categories</Label>
+            <StackLayout>
+                <Grid HeightRequest="475" BackgroundColor="LightGray">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+
+                <Button CornerRadius="0" Margin="0,0,2.5,0" Grid.Row="1" Grid.Column="1" 
+                           BackgroundColor="White" HorizontalOptions="FillAndExpand" 
+                           VerticalOptions="FillAndExpand"/>
+                    <Rectangle Grid.Row="1" Grid.Column="1"
+                               BackgroundColor="LightGray" HorizontalOptions="Center"
+                               VerticalOptions="End" HeightRequest="60"
+                               WidthRequest="190" Margin="0,0,2,3"/>
+                    <Label Grid.Row="1" Grid.Column="1" TextColor="Black" Text="Inventors"
+                           FontSize="20" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="End"
+                           Margin="0,0,90,30"/>
+
+
+                <Button CornerRadius="0" Margin="-2.5,0,5,0" Grid.Row="1" Grid.Column="2" 
+                           BackgroundColor="White" HorizontalOptions="FillAndExpand" 
+                           VerticalOptions="FillAndExpand"/>
+                    <Rectangle Grid.Row="1" Grid.Column="2"
+                               BackgroundColor="LightGray" HorizontalOptions="Center"
+                               VerticalOptions="End" HeightRequest="60"
+                               WidthRequest="190" Margin="0,0,5,3"/>
+                    <Label Grid.Row="1" Grid.Column="2" TextColor="Black" Text="Technology"
+                           FontSize="20" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="End"
+                           Margin="0,0,72,30"/>
+
+                <Button CornerRadius="0" Margin="0,0,2.5,0" Grid.Row="2" Grid.Column="1" 
+                           BackgroundColor="White" HorizontalOptions="FillAndExpand" 
+                           VerticalOptions="FillAndExpand"/>
+                    <Rectangle Grid.Row="2" Grid.Column="1"
+                               BackgroundColor="LightGray" HorizontalOptions="Center"
+                               VerticalOptions="End" HeightRequest="60"
+                               WidthRequest="190" Margin="0,0,2,3"/>
+                    <Label Grid.Row="2" Grid.Column="1" TextColor="Black" Text="Ventures"
+                           FontSize="20" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="End"
+                           Margin="0,0,95,30"/>
+
+
+                <Button CornerRadius="0" Margin="-2.5,0,5,0" Grid.Row="2" Grid.Column="2" 
+                           BackgroundColor="White" HorizontalOptions="FillAndExpand" 
+                           VerticalOptions="FillAndExpand"/>
+                    <Rectangle Grid.Row="2" Grid.Column="2"
+                               BackgroundColor="LightGray" HorizontalOptions="Center"
+                               VerticalOptions="End" HeightRequest="60"
+                               WidthRequest="190" Margin="0,0,5,3"/>
+                    <Label Grid.Row="2" Grid.Column="2" TextColor="Black" Text="Development"
+                           FontSize="20" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="End"
+                           Margin="0,0,60,30"/>
+
+
+                    <Button Command="{Binding AboutCommand}" CornerRadius="0" Margin="0,0,2.5,5" Grid.Row="3" Grid.Column="1" 
+                           BackgroundColor="White" HorizontalOptions="FillAndExpand" 
+                           VerticalOptions="FillAndExpand"/>
+                    <Rectangle Grid.Row="3" Grid.Column="1"
+                               BackgroundColor="LightGray" HorizontalOptions="Center"
+                               VerticalOptions="End" HeightRequest="60"
+                               WidthRequest="190" Margin="0,0,2,8"/>
+                    <Label Grid.Row="3" Grid.Column="1" TextColor="Black" Text="About Us"
+                           FontSize="20" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="End"
+                           Margin="0,0,95,38">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding AboutCommand}"/>
+                        </Label.GestureRecognizers>
+                    </Label>
+
+
+                    <Button Command="{Binding SubmitCommand}" CornerRadius="0" Margin="-2.5,0,5,5" Grid.Row="3" Grid.Column="2" 
+                           BackgroundColor="White" HorizontalOptions="FillAndExpand" 
+                           VerticalOptions="FillAndExpand"/>
+                    <Rectangle Grid.Row="3" Grid.Column="2"
+                               BackgroundColor="LightGray" HorizontalOptions="Center"
+                               VerticalOptions="End" HeightRequest="60"
+                               WidthRequest="190" Margin="0,0,5,8"/>
+                    <Label Grid.Row="3" Grid.Column="2" TextColor="Black" Text="Submit Ideas"
+                           FontSize="20" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="End"
+                           Margin="0,0,60,38">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding SubmitCommand}"/>
+                        </Label.GestureRecognizers>
+                    </Label>
+                </Grid>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

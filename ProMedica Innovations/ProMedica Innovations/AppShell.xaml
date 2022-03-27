@@ -81,14 +81,17 @@
         https://docs.microsoft.com/dotnet/api/xamarin.forms.shellgroupitem.flyoutdisplayoptions?view=xamarin-forms
     -->
     <TabBar>
-        <Tab Title="Login" Icon="gear.png">
-            <ShellContent Route="LoginPage" ContentTemplate="{DataTemplate local:LoginPage}" />
+        <Tab Title="Home" Icon="house.png">
+            <ShellContent Route="SplashScreen" ContentTemplate="{DataTemplate local:SplashScreen}" />
         </Tab>
         <Tab Title="About" Icon="about.png">
             <ShellContent Route="AboutPage" ContentTemplate="{DataTemplate local:AboutPage}" />
         </Tab>
         <Tab Title="Submit Ideas" Icon="lightbulb.png">
             <ShellContent Route="TermsOfServicePage" ContentTemplate="{DataTemplate local:TermsOfServicePage}" />
+        </Tab>
+        <Tab Title="Login" Icon="gear.png">
+            <ShellContent Route="LoginPage" ContentTemplate="{DataTemplate local:LoginPage}" />
         </Tab>
     </TabBar>
     
