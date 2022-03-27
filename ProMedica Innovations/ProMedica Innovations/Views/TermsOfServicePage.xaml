@@ -24,7 +24,14 @@
                     </Button.IsVisible>
                 </Button>
             </StackLayout>
-            <local:CustomWebView Uri="{Binding Uri}" IsPdf="{Binding IsPdf}" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+            <OnPlatform x:TypeArguments="View">
+                <On Platform="Android">
+                    <local:CustomWebView Uri="{Binding Uri}" IsPdf="{Binding IsPdf}" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+                </On>
+                <On Platform="iOS">
+                    <WebView Source="https://www.promedica.org/innovations/Pages/innovation-submission.aspx" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+                </On>
+            </OnPlatform>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
