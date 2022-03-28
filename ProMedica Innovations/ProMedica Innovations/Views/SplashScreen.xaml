@@ -25,7 +25,8 @@
                     O O  Currently waiting for Inventors Page to be created
                     O O
                     -->
-                <Button CornerRadius="0" Margin="0,0,2.5,0" Grid.Row="1" Grid.Column="1" 
+                    <Button BorderWidth="1.5" BorderColor="Gray"
+                           CornerRadius="0" Margin="0,0,2.5,0" Grid.Row="1" Grid.Column="1" 
                            BackgroundColor="White" HorizontalOptions="FillAndExpand" 
                            VerticalOptions="FillAndExpand"/>
                     <Ellipse Fill="LightGray" Grid.Row="1" Grid.Column="1"
@@ -47,7 +48,8 @@
                     O O  Currently waiting for the Technology Page to be created
                     O O  ##Icon subject to change##
                     -->
-                    <Button CornerRadius="0" Margin="-2.5,0,5,0" Grid.Row="1" Grid.Column="2" 
+                    <Button BorderWidth="1.5" BorderColor="Gray"
+                           CornerRadius="0" Margin="-2.5,0,5,0" Grid.Row="1" Grid.Column="2" 
                            BackgroundColor="White" HorizontalOptions="FillAndExpand" 
                            VerticalOptions="FillAndExpand"/>
                     <Ellipse Fill="LightGray" Grid.Row="1" Grid.Column="2"
@@ -69,7 +71,8 @@
                     X O  Currently waiting for the Ventures Page to be created
                     O O
                     -->
-                    <Button CornerRadius="0" Margin="0,0,2.5,0" Grid.Row="2" Grid.Column="1" 
+                    <Button BorderWidth="1.5" BorderColor="Gray"
+                           CornerRadius="0" Margin="0,0,2.5,0" Grid.Row="2" Grid.Column="1" 
                            BackgroundColor="White" HorizontalOptions="FillAndExpand" 
                            VerticalOptions="FillAndExpand"/>
                     <Ellipse Fill="LightGray" Grid.Row="2" Grid.Column="1"
@@ -91,7 +94,8 @@
                     O X  Currently waiting for the Development Page to be created
                     O O
                     -->
-                <Button CornerRadius="0" Margin="-2.5,0,5,0" Grid.Row="2" Grid.Column="2" 
+                    <Button BorderWidth="1.5" BorderColor="Gray" 
+                           CornerRadius="0" Margin="-2.5,0,5,0" Grid.Row="2" Grid.Column="2" 
                            BackgroundColor="White" HorizontalOptions="FillAndExpand" 
                            VerticalOptions="FillAndExpand"/>
                     <Ellipse Fill="LightGray" Grid.Row="2" Grid.Column="2"
@@ -113,7 +117,8 @@
                     O O  Takes you to the about us page
                     X O  ##Icon subject to change##
                     -->
-                    <Button Command="{Binding AboutCommand}" CornerRadius="0" Margin="0,0,2.5,5" Grid.Row="3" Grid.Column="1" 
+                    <Button BorderWidth="1.5" BorderColor="Gray" Command="{Binding AboutCommand}" 
+                            CornerRadius="0" Margin="0,0,2.5,5" Grid.Row="3" Grid.Column="1" 
                            BackgroundColor="White" HorizontalOptions="FillAndExpand" 
                            VerticalOptions="FillAndExpand"/>
                     <Ellipse Fill="LightGray" Grid.Row="3" Grid.Column="1"
@@ -147,7 +152,8 @@
                     O O  Takes you to the submit ideas page
                     O X  ##Icon subject to change##
                     -->
-                    <Button Command="{Binding SubmitCommand}" CornerRadius="0" Margin="-2.5,0,5,5" Grid.Row="3" Grid.Column="2" 
+                    <Button BorderWidth="1.5" BorderColor="Gray" Command="{Binding SubmitCommand}" 
+                            CornerRadius="0" Margin="-2.5,0,5,5" Grid.Row="3" Grid.Column="2" 
                            BackgroundColor="White" HorizontalOptions="FillAndExpand" 
                            VerticalOptions="FillAndExpand"/>
                     <Ellipse Fill="LightGray" Grid.Row="3" Grid.Column="2"
@@ -157,7 +163,7 @@
                                VerticalOptions="End" HeightRequest="60"
                                WidthRequest="190" Margin="0,0,5,8"/>
                     <Image Source="lightbulb.png" Grid.Row="3" Grid.Column="2" HorizontalOptions="Center"
-                           VerticalOptions="Start" Scale="2.5" TranslationX="-40" TranslationY="25">
+                           VerticalOptions="Start" Scale="2.2" TranslationX="-40" TranslationY="25">
                         <Image.GestureRecognizers>
                             <TapGestureRecognizer Command="{Binding SubmitCommand}"/>
                         </Image.GestureRecognizers>
