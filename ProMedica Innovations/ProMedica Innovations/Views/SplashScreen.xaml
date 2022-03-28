@@ -28,6 +28,8 @@
                                BackgroundColor="LightGray" HorizontalOptions="Center"
                                VerticalOptions="End" HeightRequest="60"
                                WidthRequest="190" Margin="0,0,2,3"/>
+                    <Image Source="stethoscope.png" Grid.Row="1" Grid.Column="1" HorizontalOptions="Center"
+                           VerticalOptions="Start" Scale="0.5" TranslationX="-40" TranslationY="-30"/>
                     <Label Grid.Row="1" Grid.Column="1" TextColor="Black" Text="Inventors"
                            FontSize="20" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="End"
                            Margin="0,0,90,30"/>
@@ -40,6 +42,8 @@
                                BackgroundColor="LightGray" HorizontalOptions="Center"
                                VerticalOptions="End" HeightRequest="60"
                                WidthRequest="190" Margin="0,0,5,3"/>
+                    <Image Source="gear.png" Grid.Row="1" Grid.Column="2" HorizontalOptions="Center"
+                           VerticalOptions="Start" Scale="2.5" TranslationX="-40" TranslationY="30"/>
                     <Label Grid.Row="1" Grid.Column="2" TextColor="Black" Text="Technology"
                            FontSize="20" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="End"
                            Margin="0,0,72,30"/>
@@ -51,6 +55,8 @@
                                BackgroundColor="LightGray" HorizontalOptions="Center"
                                VerticalOptions="End" HeightRequest="60"
                                WidthRequest="190" Margin="0,0,2,3"/>
+                    <Image Source="laptop.png" Grid.Row="2" Grid.Column="1" HorizontalOptions="Center"
+                           VerticalOptions="Start" Scale="0.5" TranslationX="-40" TranslationY="-30"/>
                     <Label Grid.Row="2" Grid.Column="1" TextColor="Black" Text="Ventures"
                            FontSize="20" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="End"
                            Margin="0,0,95,30"/>
@@ -63,6 +69,8 @@
                                BackgroundColor="LightGray" HorizontalOptions="Center"
                                VerticalOptions="End" HeightRequest="60"
                                WidthRequest="190" Margin="0,0,5,3"/>
+                    <Image Source="building.png" Grid.Row="2" Grid.Column="2" HorizontalOptions="Center"
+                           VerticalOptions="Start" Scale="0.5" TranslationX="-40" TranslationY="-30"/>
                     <Label Grid.Row="2" Grid.Column="2" TextColor="Black" Text="Development"
                            FontSize="20" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="End"
                            Margin="0,0,60,30"/>
@@ -75,6 +83,12 @@
                                BackgroundColor="LightGray" HorizontalOptions="Center"
                                VerticalOptions="End" HeightRequest="60"
                                WidthRequest="190" Margin="0,0,2,8"/>
+                    <Image Source="about.png" Grid.Row="3" Grid.Column="1" HorizontalOptions="Center"
+                           VerticalOptions="Start" Scale="2.5" TranslationX="-40" TranslationY="25">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding AboutCommand}"/>
+                        </Image.GestureRecognizers>
+                    </Image>
                     <Label Grid.Row="3" Grid.Column="1" TextColor="Black" Text="About Us"
                            FontSize="20" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="End"
                            Margin="0,0,95,38">
@@ -91,6 +105,12 @@
                                BackgroundColor="LightGray" HorizontalOptions="Center"
                                VerticalOptions="End" HeightRequest="60"
                                WidthRequest="190" Margin="0,0,5,8"/>
+                    <Image Source="lightbulb.png" Grid.Row="3" Grid.Column="2" HorizontalOptions="Center"
+                           VerticalOptions="Start" Scale="2.5" TranslationX="-40" TranslationY="25">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding SubmitCommand}"/>
+                        </Image.GestureRecognizers>
+                    </Image>
                     <Label Grid.Row="3" Grid.Column="2" TextColor="Black" Text="Submit Ideas"
                            FontSize="20" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="End"
                            Margin="0,0,60,38">

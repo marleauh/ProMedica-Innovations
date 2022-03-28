@@ -20,7 +20,7 @@ namespace ProMedica_Innovations.ViewModels
 
         private async void OnAboutButtonClicked(object sender)
         {
-            await Shell.Current.GoToAsync(nameof(AboutPage));
+            await Shell.Current.GoToAsync("//AboutPage");
         }
 
         private async void OnSubmitButtonClicked(object sender)
