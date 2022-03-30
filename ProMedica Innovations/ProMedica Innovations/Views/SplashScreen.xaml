@@ -13,7 +13,7 @@
         <StackLayout>
             <Label FontSize="30" Padding="10" TextColor="Black" FontAttributes="Bold">Categories</Label>
             <StackLayout>
-                <Grid HeightRequest="475" BackgroundColor="LightGray">
+                <Grid VerticalOptions="FillAndExpand" BackgroundColor="LightGray">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto" />
                 </Grid.RowDefinitions>
@@ -24,7 +24,7 @@
                     X O  Inventors Tile
                     O O  Currently waiting for Inventors Page to be created
                     O O
-                    -->
+
                     <Button BorderWidth="1.5" BorderColor="Gray"
                            CornerRadius="0" Margin="0,0,2.5,0" Grid.Row="1" Grid.Column="1" 
                            BackgroundColor="White" HorizontalOptions="FillAndExpand" 
@@ -41,13 +41,13 @@
                            FontSize="20" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="End"
                            Margin="0,0,90,30"/>
                     <Label Grid.Row="1" Grid.Column="1" TextColor="Gray" Text="Great Ideas Start With You"
-                           FontSize="12.1" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="End"
-                           Margin="0,0,35,13"/>
-                    <!--    
+                           FontSize="12.1" FontAttributes="Bold" HorizontalOptions="CenterAndExpand" VerticalOptions="EndAndExpand"
+                           Margin="0,0,35,13" />
+                    
                     O X  Technology Tile
                     O O  Currently waiting for the Technology Page to be created
                     O O  ##Icon subject to change##
-                    -->
+                    
                     <Button BorderWidth="1.5" BorderColor="Gray"
                            CornerRadius="0" Margin="-2.5,0,5,0" Grid.Row="1" Grid.Column="2" 
                            BackgroundColor="White" HorizontalOptions="FillAndExpand" 
@@ -66,11 +66,11 @@
                     <Label Grid.Row="1" Grid.Column="2" TextColor="Gray" Text="What's Next And New?"
                            FontSize="12.1" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="End"
                            Margin="0,0,55,13"/>
-                    <!--    
+                    
                     O O  Ventures Tile
                     X O  Currently waiting for the Ventures Page to be created
                     O O
-                    -->
+                    
                     <Button BorderWidth="1.5" BorderColor="Gray"
                            CornerRadius="0" Margin="0,0,2.5,0" Grid.Row="2" Grid.Column="1" 
                            BackgroundColor="White" HorizontalOptions="FillAndExpand" 
@@ -89,11 +89,11 @@
                     <Label Grid.Row="2" Grid.Column="1" TextColor="Gray" Text="Investing In Innovation"
                            FontSize="12.1" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="End"
                            Margin="0,0,52,13"/>
-                    <!--    
+                    
                     O O  Development Tile
                     O X  Currently waiting for the Development Page to be created
                     O O
-                    -->
+                    
                     <Button BorderWidth="1.5" BorderColor="Gray" 
                            CornerRadius="0" Margin="-2.5,0,5,0" Grid.Row="2" Grid.Column="2" 
                            BackgroundColor="White" HorizontalOptions="FillAndExpand" 
@@ -112,11 +112,11 @@
                     <Label Grid.Row="2" Grid.Column="2" TextColor="Gray" Text="Health Beyond The Hospital"
                            FontSize="12.1" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="End"
                            Margin="0,0,27,13"/>
-                    <!--    
+                    
                     O O  About Us Tile
                     O O  Takes you to the about us page
                     X O  ##Icon subject to change##
-                    -->
+                    
                     <Button BorderWidth="1.5" BorderColor="Gray" Command="{Binding AboutCommand}" 
                             CornerRadius="0" Margin="0,0,2.5,5" Grid.Row="3" Grid.Column="1" 
                            BackgroundColor="White" HorizontalOptions="FillAndExpand" 
@@ -147,11 +147,11 @@
                             <TapGestureRecognizer Command="{Binding AboutCommand}"/>
                         </Label.GestureRecognizers>
                     </Label>
-                    <!--    
+                    
                     O O  Submit Ideas Tile
                     O O  Takes you to the submit ideas page
                     O X  ##Icon subject to change##
-                    -->
+                    
                     <Button BorderWidth="1.5" BorderColor="Gray" Command="{Binding SubmitCommand}" 
                             CornerRadius="0" Margin="-2.5,0,5,5" Grid.Row="3" Grid.Column="2" 
                            BackgroundColor="White" HorizontalOptions="FillAndExpand" 
@@ -182,6 +182,56 @@
                             <TapGestureRecognizer Command="{Binding SubmitCommand}"/>
                         </Label.GestureRecognizers>
                     </Label>
+                    -->
+                    <StackLayout Grid.Row="1" Grid.Column="1">
+                        <Button CornerRadius="0" HeightRequest="155" BackgroundColor="White" />
+                        <Ellipse Fill="LightGray" HeightRequest="20" WidthRequest="20" HorizontalOptions="Center" TranslationY="-140" TranslationX="-65" Scale="3"/>
+                        <Rectangle BackgroundColor="LightGray" HeightRequest="60" WidthRequest="20" TranslationY="-100" Margin="10,0,10,0"/>
+                        <Image Source="stethoscope.png" HeightRequest="75" WidthRequest="75" TranslationY="-245" TranslationX="-45" />
+                        <Label TextColor="Black" Text="Inventors" FontSize="27" FontAttributes="Bold" TranslationY="-250" TranslationX="20"/>
+                        <Label TextColor="Gray" Text="Great Ideas Start With You" FontSize="12.1" FontAttributes="Bold" TranslationY="-255" TranslationX="20"/>
+                    </StackLayout>
+                    <StackLayout Grid.Row="1" Grid.Column="2">
+                        <Button CornerRadius="0" HeightRequest="155" BackgroundColor="White" />
+                        <Ellipse Fill="LightGray" HeightRequest="20" WidthRequest="20" HorizontalOptions="Center" TranslationY="-140" TranslationX="-65" Scale="3"/>
+                        <Rectangle BackgroundColor="LightGray" HeightRequest="60" WidthRequest="20" TranslationY="-100" Margin="10,0,10,0"/>
+                        <Image Source="gear.png" HeightRequest="75" WidthRequest="75" TranslationY="-245" TranslationX="-45" />
+                        <Label TextColor="Black" Text="Technology" FontSize="27" FontAttributes="Bold" TranslationY="-250" TranslationX="20"/>
+                        <Label TextColor="Gray" Text="Great Ideas Start With You" FontSize="12.1" FontAttributes="Bold" TranslationY="-255" TranslationX="20"/>
+                    </StackLayout>
+                    <StackLayout Grid.Row="2" Grid.Column="1">
+                        <Button CornerRadius="0" HeightRequest="155" BackgroundColor="White" />
+                        <Ellipse Fill="LightGray" HeightRequest="20" WidthRequest="20" HorizontalOptions="Center" TranslationY="-140" TranslationX="-65" Scale="3"/>
+                        <Rectangle BackgroundColor="LightGray" HeightRequest="60" WidthRequest="20" TranslationY="-100" Margin="10,0,10,0"/>
+                        <Image Source="laptop.png" HeightRequest="75" WidthRequest="75" TranslationY="-245" TranslationX="-40" />
+                        <Label TextColor="Black" Text="Ventures" FontSize="27" FontAttributes="Bold" TranslationY="-250" TranslationX="20"/>
+                        <Label TextColor="Gray" Text="Great Ideas Start With You" FontSize="12.1" FontAttributes="Bold" TranslationY="-255" TranslationX="20"/>
+                    </StackLayout>
+                    <StackLayout Grid.Row="2" Grid.Column="2">
+                        <Button CornerRadius="0" HeightRequest="155" BackgroundColor="White" />
+                        <Ellipse Fill="LightGray" HeightRequest="20" WidthRequest="20" HorizontalOptions="Center" TranslationY="-140" TranslationX="-65" Scale="3"/>
+                        <Rectangle BackgroundColor="LightGray" HeightRequest="60" WidthRequest="20" TranslationY="-100" Margin="10,0,10,0"/>
+                        <Image Source="building.png" HeightRequest="75" WidthRequest="75" TranslationY="-245" TranslationX="-50" />
+                        <Label TextColor="Black" Text="Development" FontSize="27" FontAttributes="Bold" TranslationY="-250" TranslationX="20"/>
+                        <Label TextColor="Gray" Text="Great Ideas Start With You" FontSize="12.1" FontAttributes="Bold" TranslationY="-255" TranslationX="20"/>
+                    </StackLayout>
+                    <StackLayout Grid.Row="3" Grid.Column="1">
+                        <Button CornerRadius="0" HeightRequest="155" BackgroundColor="White" />
+                        <Ellipse Fill="LightGray" HeightRequest="20" WidthRequest="20" HorizontalOptions="Center" TranslationY="-140" TranslationX="-65" Scale="3"/>
+                        <Rectangle BackgroundColor="LightGray" HeightRequest="60" WidthRequest="20" TranslationY="-100" Margin="10,0,10,0"/>
+                        <Image Source="about.png" HeightRequest="75" WidthRequest="75" TranslationY="-245" TranslationX="-30" />
+                        <Label TextColor="Black" Text="PI Team" FontSize="27" FontAttributes="Bold" TranslationY="-250" TranslationX="20"/>
+                        <Label TextColor="Gray" Text="Great Ideas Start With You" FontSize="12.1" FontAttributes="Bold" TranslationY="-255" TranslationX="20"/>
+                    </StackLayout>
+                    <StackLayout Grid.Row="3" Grid.Column="2">
+                        <Button CornerRadius="0" HeightRequest="155" BackgroundColor="White" />
+                        <Ellipse Fill="LightGray" HeightRequest="20" WidthRequest="20" HorizontalOptions="Center" TranslationY="-140" TranslationX="-65" Scale="3"/>
+                        <Rectangle BackgroundColor="LightGray" HeightRequest="60" WidthRequest="20" TranslationY="-100" Margin="10,0,10,0"/>
+                        <Image Source="lightbulb.png" HeightRequest="75" WidthRequest="75" TranslationY="-245" TranslationX="-50" />
+                        <Label TextColor="Black" Text="Submit Ideas" FontSize="27" FontAttributes="Bold" TranslationY="-250" TranslationX="20"/>
+                        <Label TextColor="Gray" Text="Great Ideas Start With You" FontSize="12.1" FontAttributes="Bold" TranslationY="-255" TranslationX="20"/>
+                    </StackLayout>
+
                 </Grid>
             </StackLayout>
         </StackLayout>
