@@ -50,14 +50,14 @@ namespace ProMedica_Innovations.ViewModels
                 }
                 else
                 {
-                    await Shell.Current.GoToAsync($"//{nameof(IdeasPage)}");
+                    await Shell.Current.GoToAsync($"{nameof(IdeasPage)}");
                 }
                 /* ##########                  ALL OF THIS                     ########## */
             }
             else
             {
                 // Prefixing with `//` switches to a different navigation stack instead of pushing to the active one
-                await Shell.Current.GoToAsync($"//{nameof(IdeasPage)}");
+                await Shell.Current.GoToAsync($"{nameof(IdeasPage)}");
             }
         }
     }
