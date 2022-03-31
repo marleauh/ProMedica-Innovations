@@ -1,12 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="ProMedica_Innovations.Views.DevelopmentPage">
+             x:Class="ProMedica_Innovations.Views.DevelopmentPage"
+             Title="Economic Development">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <Grid RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto">
+            <ScrollView Grid.Row="0">
+                <Image Source="https://www.promedica.org/innovations/_assets/images/econdevelopment-head2.jpg"></Image>
+            </ScrollView>
+
+        </Grid>
     </ContentPage.Content>
 </ContentPage>
