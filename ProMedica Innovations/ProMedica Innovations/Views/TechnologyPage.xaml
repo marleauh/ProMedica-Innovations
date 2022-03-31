@@ -12,7 +12,13 @@
                     <Rectangle BackgroundColor="White" HeightRequest="80" Scale="2" Rotation="-10" TranslationY="-50"/>
                 </StackLayout>
                 <StackLayout Grid.Row="1">
-                    <Label Text="Great things happen when good things come to life." FontAttributes="Bold" />
+                    <Label Text="Great things happen when good things come to life." TextColor="Black" FontAttributes="Bold" FontSize="30" TranslationY="-130" TranslationX="30"/>
+                    <Label Text="Radial Check Device" TextColor="Black" TranslationY="-100" TranslationX="30" FontSize="25"/>
+                    <Image Source="https://www.promedica.org/innovations/_assets/images/radial-tech.jpg" TranslationX="-75" TranslationY="-100" Scale=".8"/>
+                    <Label Text="Conceived by Kasi Ramanathan, M.D., the Radial Check Device helps doctors assess patients' eligibility for radial catheterization procedures quickly, efficiently, and effectively." 
+                           TranslationY="-290" TranslationX="240"/>
+                </StackLayout>
+                <StackLayout Grid.Row="2">
                 </StackLayout>
             </Grid>
         </ScrollView>
