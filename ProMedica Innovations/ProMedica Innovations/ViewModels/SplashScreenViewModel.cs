@@ -11,9 +11,9 @@ namespace ProMedica_Innovations.ViewModels
     {
         public ICommand AboutCommand { private set; get; }
         public ICommand SubmitCommand { private set; get; }
-        public ICommand InventorsCommand { private set; get; }
+        public ICommand InventorCommand { private set; get; }
         public ICommand TechnologyCommand { private set; get; }
-        public ICommand VenturesCommand { private set; get; }
+        public ICommand VentureCommand { private set; get; }
         public ICommand DevelopmentCommand { private set; get; }
         public ICommand PITeamCommand { private set; get; }
 
@@ -21,9 +21,9 @@ namespace ProMedica_Innovations.ViewModels
         {
             AboutCommand = new Command(OnAboutButtonClicked);
             SubmitCommand = new Command(OnSubmitButtonClicked);
-            InventorsCommand = new Command(OnInventorsButtonClicked);
+            InventorCommand = new Command(OnInventorButtonClicked);
             TechnologyCommand = new Command(OnTechnologyButtonClicked);
-            VenturesCommand = new Command(OnVenturesButtonClicked);
+            VentureCommand = new Command(OnVentureButtonClicked);
             DevelopmentCommand = new Command(OnDevelopmentButtonClicked);
             PITeamCommand = new Command(OnPITeamButtonClicked);
         }
@@ -37,17 +37,17 @@ namespace ProMedica_Innovations.ViewModels
         {
             await Shell.Current.GoToAsync("//TermsOfServicePage"); //Goes immediately to the terms of service page
         }
-        private async void OnInventorsButtonClicked(object sender)
+        private async void OnInventorButtonClicked(object sender)
         {
-            await Shell.Current.GoToAsync("InventorsPage");
+            await Shell.Current.GoToAsync("InventorPage");
         }
         private async void OnTechnologyButtonClicked(object sender)
         {
             await Shell.Current.GoToAsync("TechnologyPage");
         }
-        private async void OnVenturesButtonClicked(object sender)
+        private async void OnVentureButtonClicked(object sender)
         {
-            await Shell.Current.GoToAsync("VenturesPage");
+            await Shell.Current.GoToAsync("VenturePage");
         }
         private async void OnDevelopmentButtonClicked(object sender)
         {
