@@ -39,23 +39,23 @@ namespace ProMedica_Innovations.ViewModels
         }
         private async void OnInventorsButtonClicked(object sender)
         {
-            await Shell.Current.GoToAsync("//InventorsPage");
+            await Shell.Current.GoToAsync("InventorsPage");
         }
         private async void OnTechnologyButtonClicked(object sender)
         {
-            await Shell.Current.GoToAsync("//TechnologyPage");
+            await Shell.Current.GoToAsync("TechnologyPage");
         }
         private async void OnVenturesButtonClicked(object sender)
         {
-            await Shell.Current.GoToAsync("//VenturesPage");
+            await Shell.Current.GoToAsync("VenturesPage");
         }
         private async void OnDevelopmentButtonClicked(object sender)
         {
-            await Shell.Current.GoToAsync("//DevelopmentPage");
+            await Shell.Current.GoToAsync("DevelopmentPage");
         }
         private async void OnPITeamButtonClicked(object sender)
         {
-            await Shell.Current.GoToAsync("//DevelopmentPage");
+            await Shell.Current.GoToAsync("PITeamPage");
         }
     }
 }
