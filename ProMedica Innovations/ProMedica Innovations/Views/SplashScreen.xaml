@@ -28,7 +28,7 @@
                         <Label TextColor="Black" Text="Inventors" FontSize="27" FontAttributes="Bold" TranslationY="-250" TranslationX="20"/>
                         <Label TextColor="Gray" Text="Great Ideas Start With You" FontSize="12.1" FontAttributes="Bold" TranslationY="-255" TranslationX="20"/>
                         <StackLayout.GestureRecognizers>
-                            <TapGestureRecognizer Command="{Binding InventorsCommand}"/>
+                            <TapGestureRecognizer Command="{Binding InventorCommand}"/>
                         </StackLayout.GestureRecognizers>
                     </StackLayout>
                     <StackLayout Grid.Row="1" Grid.Column="2">
@@ -50,7 +50,7 @@
                         <Label TextColor="Black" Text="Ventures" FontSize="27" FontAttributes="Bold" TranslationY="-250" TranslationX="20"/>
                         <Label TextColor="Gray" Text="Investing In Innovators" FontSize="12.1" FontAttributes="Bold" TranslationY="-255" TranslationX="20"/>
                         <StackLayout.GestureRecognizers>
-                            <TapGestureRecognizer Command="{Binding VenturesCommand}"/>
+                            <TapGestureRecognizer Command="{Binding VentureCommand}"/>
                         </StackLayout.GestureRecognizers>
                     </StackLayout>
                     <StackLayout Grid.Row="2" Grid.Column="2">

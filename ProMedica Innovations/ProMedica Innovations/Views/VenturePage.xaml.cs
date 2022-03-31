@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace ProMedica_Innovations.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class VenturesPage : ContentPage
+    public partial class VenturePage : ContentPage
     {
-        public VenturesPage()
+        public VenturePage()
         {
             InitializeComponent();
         }
