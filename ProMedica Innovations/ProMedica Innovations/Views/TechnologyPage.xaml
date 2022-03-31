@@ -6,20 +6,52 @@
     <ContentPage.Content>
         <ScrollView>
             <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="2*" />
+                </Grid.RowDefinitions>
                 <StackLayout Grid.Row="0">
                     <Image Source="https://www.promedica.org/innovations/_assets/images/technology-head.jpg" />
                     <Label TextColor="White" Text="How Inspiration Becomes Action" TranslationY="-160" TranslationX="30" FontSize="25"/>
                     <Rectangle BackgroundColor="White" HeightRequest="80" Scale="2" Rotation="-10" TranslationY="-50"/>
+                    <Label Text="Great things happen when good ideas come to life." TextColor="Black" FontAttributes="Bold" FontSize="30" TranslationY="-120" TranslationX="20"/>
+                    <Label Text="Radial Check Device" TextColor="Black" TranslationX="20" TranslationY="-100" FontSize="25"/>
                 </StackLayout>
+                <FlexLayout Grid.Row="1">
+                    <Image Source="https://www.promedica.org/innovations/_assets/images/radial-tech.jpg" TranslationX="45" TranslationY="-140" Scale="1.3"/>
+                    <Label Text="Conceived by Kasi &#10;Ramanathan, M.D., the &#10;Radial Check Device &#10;helps doctors assess &#10;patients' eligibility for &#10;radial catheterization &#10;procedures quickly, &#10;efficiently, and &#10;effectively." 
+                           WidthRequest="400" TranslationX="80" TranslationY="-85" />
+                </FlexLayout>
+                <FlexLayout Grid.Row="1">
+                    <Button TextColor="{StaticResource Primary}" BackgroundColor="White" BorderColor="{StaticResource Primary}" 
+                             CornerRadius="0" BorderWidth="1" HorizontalOptions="Start" HeightRequest="50" WidthRequest="200" TranslationX="18" TranslationY="105" Text="Download PDF"/>
+                    <Label Text="Currently, the device is in the industry outreach phase and a patent application has been filed." TranslationX="25" TranslationY="110" WidthRequest="320" FontSize="11.5"/>
+                </FlexLayout>
                 <StackLayout Grid.Row="1">
-                    <Label Text="Great things happen when good things come to life." TextColor="Black" FontAttributes="Bold" FontSize="30" TranslationY="-130" TranslationX="30"/>
-                    <Label Text="Radial Check Device" TextColor="Black" TranslationY="-100" TranslationX="30" FontSize="25"/>
-                    <Image Source="https://www.promedica.org/innovations/_assets/images/radial-tech.jpg" TranslationX="-75" TranslationY="-100" Scale=".8"/>
-                    <Label Text="Conceived by Kasi Ramanathan, M.D., the Radial Check Device helps doctors assess patients' eligibility for radial catheterization procedures quickly, efficiently, and effectively." 
-                           TranslationY="-290" TranslationX="240"/>
+                    <Label Text="Flex Scoring Catheter" TextColor="Black" TranslationX="20" TranslationY="180" FontSize="25"/>
                 </StackLayout>
+                <FlexLayout Grid.Row="2">
+                    <Image Source="https://www.promedica.org/innovations/_assets/images/flex-tech.jpg" TranslationX="65" TranslationY="-80" Scale="1.7"/>
+                    <Label Text="A successful angioplasty &#10;procedure can depend &#10;upon proper vessel &#10;preparation. The Flex &#10;Scoring Catheter is an &#10;easy-to-use and cost-&#10;effective 'vessel &#10;preparation' device." 
+                           WidthRequest="400" TranslationX="120" TranslationY="-20" />
+                </FlexLayout>
+                <FlexLayout Grid.Row="2">
+                    <Button TextColor="{StaticResource Primary}" BackgroundColor="White" BorderColor="{StaticResource Primary}" 
+                             CornerRadius="0" BorderWidth="1" HorizontalOptions="Start" HeightRequest="50" WidthRequest="200" TranslationX="18" TranslationY="165" Text="Find Out More"/>
+                    <Label Text="This medical device is available for sale in the U.S. and E.U. through the VentureMed Group." TranslationX="25" TranslationY="170" WidthRequest="350" FontSize="11.5"/>
+                </FlexLayout>
                 <StackLayout Grid.Row="2">
+                    <Label Text="LACS (Laboratory Assured Compliance Solutions)" TextColor="Black" TranslationX="20" TranslationY="230" FontSize="25"/>
                 </StackLayout>
+                <FlexLayout Grid.Row="3">
+                    <Image Source="https://www.promedica.org/innovations/_assets/images/lacs-tech.jpg" TranslationX="65" TranslationY="-20" Scale="1.7"/>
+                    <Label Text="Laboratories are required &#10;by accrediting agencies &#10;to obtain, document, &#10;report and track &#10;instrument maintenance. &#10;LACS is a tablet-based &#10;application that replaces &#10;these paper logs." 
+                           WidthRequest="400" TranslationX="120" TranslationY="40" />
+                </FlexLayout>
+                <FlexLayout Grid.Row="3">
+                    <Button TextColor="{StaticResource Primary}" BackgroundColor="White" BorderColor="{StaticResource Primary}" 
+                             CornerRadius="0" BorderWidth="1" HorizontalOptions="Start" HeightRequest="50" WidthRequest="200" TranslationX="18" TranslationY="225" Text="Find Out More"/>
+                    <Label Text="The product is commercially licensed through &#10;Kapios and delpoyed in laboratories nationwide" TranslationX="25" TranslationY="230" WidthRequest="350" FontSize="11.5"/>
+                </FlexLayout>
             </Grid>
         </ScrollView>
     </ContentPage.Content>
