@@ -11,9 +11,10 @@
                 </Grid.RowDefinitions>
                 <StackLayout Grid.Row="0">
                     <Image Source="https://www.promedica.org/innovations/_assets/images/inventors-head.jpg" />
-                    <Label TextColor="White" Text="How Inspiration Becomes Action" TranslationY="-160" TranslationX="30" FontSize="25"/>
-                    <Rectangle BackgroundColor="White" HeightRequest="80" Scale="2" Rotation="-10" TranslationY="-50"/>
-                    <Label Text="Where do great ideas come from?" TextColor="Black" FontAttributes="Bold" FontSize="30" TranslationY="-120" TranslationX="20"/>
+                    <Label TextColor="White" Text="Innovation Everywhere" TranslationY="-160" HorizontalTextAlignment="Center" FontSize="25"/>
+                    <Label TextColor="White" Text="70,000 people, 70,000 minds. A world of possiblities." TranslationY="-160" FontSize="25" HorizontalTextAlignment="Center"/>
+                    <Rectangle BackgroundColor="White" HeightRequest="80" Scale="2" Rotation="-6" TranslationY="-100"/>
+                    <Label Text="Where do great ideas come from?" TextColor="Black" FontAttributes="Bold" FontSize="30" TranslationY="-180" TranslationX="20"/>
                 </StackLayout>
                 <FlexLayout Grid.Row="1" TranslationY="-130">
                     <Image Source="https://www.promedica.org/innovations/_assets/images/inventors-top.jpg" TranslationX="-5" TranslationY="-150" Scale="0.8"/>
