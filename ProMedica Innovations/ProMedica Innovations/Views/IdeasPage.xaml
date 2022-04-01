@@ -30,12 +30,21 @@
             </CollectionView.ItemsLayout>
             <CollectionView.ItemTemplate>
                 <DataTemplate>
-                    <StackLayout Padding="10" x:DataType="model:Idea">
+                    <StackLayout Padding="5" x:DataType="model:Idea" BackgroundColor="LightGray">
+                        <Rectangle WidthRequest="100" HeightRequest="3" BackgroundColor="Black" />
                         <Label Text="{Binding FirstName}" 
                             LineBreakMode="NoWrap" 
                             Style="{DynamicResource ListItemTextStyle}" 
                             FontSize="16" />
                         <Label Text="{Binding LastName}" 
+                            LineBreakMode="NoWrap" 
+                            Style="{DynamicResource ListItemTextStyle}" 
+                            FontSize="16" />
+                        <Label Text="{Binding Gender}" 
+                            LineBreakMode="NoWrap" 
+                            Style="{DynamicResource ListItemTextStyle}" 
+                            FontSize="16" />
+                        <Label Text="{Binding Ethnicity}" 
                             LineBreakMode="NoWrap" 
                             Style="{DynamicResource ListItemTextStyle}" 
                             FontSize="16" />
@@ -48,7 +57,6 @@
                             Style="{DynamicResource ListItemTextStyle}" 
                             FontSize="16" />
                         <Label Text="{Binding Description}" 
-                            LineBreakMode="NoWrap"
                             Style="{DynamicResource ListItemDetailTextStyle}"
                             FontSize="16" />
                         <Label Text="{Binding Availability}" 
@@ -63,6 +71,7 @@
                             LineBreakMode="NoWrap" 
                             Style="{DynamicResource ListItemTextStyle}" 
                             FontSize="16" />
+                        <Rectangle WidthRequest="100" HeightRequest="3" BackgroundColor="Black" />
                         <StackLayout.GestureRecognizers>
                             <TapGestureRecognizer 
                                 NumberOfTapsRequired="1"

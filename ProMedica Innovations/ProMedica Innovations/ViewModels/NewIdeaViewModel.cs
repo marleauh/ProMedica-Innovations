@@ -11,13 +11,14 @@ namespace ProMedica_Innovations.ViewModels
     {
         private string firstname;
         private string lastname;
+        private string gender;
+        private string ethnicity;
         private string email;
         private string phone;
         private string description;
         private string availability;
         private string referral;
         private bool employee;
-
         public NewIdeaViewModel()
         {
             SaveCommand = new Command(OnSave, ValidateSave);
@@ -30,11 +31,12 @@ namespace ProMedica_Innovations.ViewModels
         {
             return !String.IsNullOrWhiteSpace(firstname)
                 && !String.IsNullOrWhiteSpace(lastname)
+                && !String.IsNullOrWhiteSpace(gender)
+                && !String.IsNullOrWhiteSpace(ethnicity)
                 && !String.IsNullOrWhiteSpace(email)
                 && !String.IsNullOrWhiteSpace(phone)
                 && !String.IsNullOrWhiteSpace(description)
-                && !String.IsNullOrWhiteSpace(availability)
-                && !String.IsNullOrWhiteSpace(referral);
+                && !String.IsNullOrWhiteSpace(availability);
         }
 
         public string FirstName
@@ -46,6 +48,16 @@ namespace ProMedica_Innovations.ViewModels
         {
             get => lastname;
             set => SetProperty(ref lastname, value);
+        }
+        public string Gender
+        {
+            get => gender;
+            set => SetProperty(ref gender, value);
+        }
+        public string Ethnicity
+        {
+            get => ethnicity;
+            set => SetProperty(ref ethnicity, value);
         }
         public string Email
         {
@@ -95,6 +107,8 @@ namespace ProMedica_Innovations.ViewModels
                 Id = Guid.NewGuid().GetHashCode(),
                 FirstName = FirstName,
                 LastName = LastName,
+                Gender = Gender,
+                Ethnicity = Ethnicity,
                 Email = Email,
                 Phone = Phone,
                 Description = Description,

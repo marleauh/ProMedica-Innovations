@@ -19,6 +19,10 @@
                 <Entry Text="{Binding FirstName, Mode=TwoWay}" FontSize="Medium" />
                 <Label Text="Last Name: *" FontSize="Medium" />
                 <Entry Text="{Binding LastName, Mode=TwoWay}" FontSize="Medium" />
+                <Label Text="Gender: *" FontSize="Medium" />
+                <Entry Text="{Binding Gender, Mode=TwoWay}" FontSize="Medium" />
+                <Label Text="Ethnicity: *" FontSize="Medium" />
+                <Entry Text="{Binding Ethnicity, Mode=TwoWay}" FontSize="Medium" />
                 <Label Text="Email: *" FontSize="Medium" />
                 <Entry Text="{Binding Email, Mode=TwoWay}" FontSize="Medium" />
                 <Label Text="Phone: *" FontSize="Medium" />

@@ -8,6 +8,8 @@ namespace ProMedica_Innovations.Models
         public int Id { get; set; }                  // primary key
         public string FirstName { get; set; }
         public string LastName { get; set; }
+        public string Gender { get; set; }
+        public string Ethnicity { get; set; }
         public string Email { get; set; }
 
         public string Phone { get; set; }
