@@ -1,12 +1,57 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="ProMedica_Innovations.Views.InventorPage">
+             x:Class="ProMedica_Innovations.Views.InventorPage"
+             Title="Inventors">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <ScrollView>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="2*" />
+                </Grid.RowDefinitions>
+                <StackLayout Grid.Row="0">
+                    <Image Source="https://www.promedica.org/innovations/_assets/images/inventors-head.jpg" />
+                    <Label TextColor="White" Text="How Inspiration Becomes Action" TranslationY="-160" TranslationX="30" FontSize="25"/>
+                    <Rectangle BackgroundColor="White" HeightRequest="80" Scale="2" Rotation="-10" TranslationY="-50"/>
+                    <Label Text="Where do great ideas come from?" TextColor="Black" FontAttributes="Bold" FontSize="30" TranslationY="-120" TranslationX="20"/>
+                </StackLayout>
+                <FlexLayout Grid.Row="1" TranslationY="-130">
+                    <Image Source="https://www.promedica.org/innovations/_assets/images/inventors-top.jpg" TranslationX="-5" TranslationY="-150" Scale="0.8"/>
+                    <Label Text="More than 70,000 people &#10;have contributed to &#10;ProMedica's success. &#10;&#10;That's 70,000 people &#10;who've got what it takes &#10;to innovate. To invent." 
+                            TranslationX="-15" TranslationY="-75" WidthRequest="240" />
+                </FlexLayout>
+                <StackLayout Grid.Row="1">
+                    <Label Text="What we're looking for" TextColor="Black" FontAttributes="Bold" FontSize="30" TranslationY="-30" TranslationX="20"/>
+                    <Label Text="We're looking for viable inventions that can become commercially-viable products within the life sciences, &#10;medical, or health information technology fields."
+                           TranslationY="-20" TranslationX="40"/>
+                </StackLayout>
+                <FlexLayout Grid.Row="1" TranslationY="100">
+                    <StackLayout>
+                        <Label Text="1. BE ORIGINAL" TextColor="Black" FontSize="20" TranslationX="30"/>
+                        <Label Text="Not infringing on an existing patent" TranslationX="30"  TranslationY="-10" FontSize="10"/>
+                    </StackLayout>
+                    <StackLayout>
+                        <Label Text="3. BE PRACTICAL" TextColor="Black" FontSize="20" TranslationX="80"/>
+                        <Label Text="Defined and protected by patent law" TranslationX="80"  TranslationY="-10" FontSize="10"/>
+                    </StackLayout>
+                </FlexLayout>
+                <FlexLayout Grid.Row="1" TranslationY="150">
+                    <StackLayout>
+                        <Label Text="2. BE PATENTABLE" TextColor="Black" FontSize="20" TranslationX="30"/>
+                        <Label Text="Functions in 'the real world' and &#10;meet a clinical need" TranslationX="30"  TranslationY="-10" FontSize="10"/>
+                    </StackLayout>
+                    <StackLayout>
+                        <Label Text="4. BE VIABLE" TextColor="Black" FontSize="20" TranslationX="65"/>
+                        <Label Text="Potential to be commerically &#10;successful" TranslationX="65"  TranslationY="-10" FontSize="10"/>
+                    </StackLayout>
+                </FlexLayout>
+                <StackLayout Grid.Row="2">
+                    <Rectangle BackgroundColor="{StaticResource Primary}" TranslationY="-40" HorizontalOptions="Center" WidthRequest="230" HeightRequest="3"/>
+                </StackLayout>
+                <StackLayout Grid.Row="2">
+                    <
+                </StackLayout>
+            </Grid>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
