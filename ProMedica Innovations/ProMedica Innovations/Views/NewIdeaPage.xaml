@@ -22,8 +22,19 @@
                 <Label Text="Gender: *" FontSize="Medium" />
                 <Entry Text="{Binding Gender, Mode=TwoWay}" FontSize="Medium" />
                 <Label Text="Ethnicity: *" FontSize="Medium" />
-                <Entry Text="{Binding Ethnicity, Mode=TwoWay}" FontSize="Medium" />
-                <Label Text="Email: *" FontSize="Medium" />
+                <Picker x:Name="Ethnicity" Title="Select..." SelectedItem="{Binding Ethnicity, Mode=TwoWay}">
+                    <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}"> <!-- Use the code below to add or remove ethinicity options -->
+                        <x:String>American Indian or Alaska Native</x:String>
+                        <x:String>Asian</x:String>
+                        <x:String>Black or African American</x:String>
+                        <x:String>Native Hawaiian or Other Pacific Islander</x:String>
+                        <x:String>White</x:String>
+                        <x:String>White Non Hispanic</x:String>
+                    </x:Array>
+                  </Picker.ItemsSource>
+                </Picker>
+                    <Label Text="Email: *" FontSize="Medium" />
                 <Entry Text="{Binding Email, Mode=TwoWay}" FontSize="Medium" />
                 <Label Text="Phone: *" FontSize="Medium" />
                 <Entry Text="{Binding Phone, Mode=TwoWay}" FontSize="Medium" />
