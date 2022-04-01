@@ -1,12 +1,142 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="ProMedica_Innovations.Views.PITeamPage">
+             x:Class="ProMedica_Innovations.Views.PITeamPage"
+             Title="Technology">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <ScrollView>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="2*" />
+                </Grid.RowDefinitions>
+                <StackLayout Grid.Row="0">
+                    <Image Source="https://www.promedica.org/innovations/_assets/images/about-head.jpg" />
+                    <Label TextColor="White" Text="What's New -- And What's Next" TranslationY="-120" TranslationX="30" FontSize="25"/>
+                    <Rectangle BackgroundColor="White" HeightRequest="80" Scale="2" Rotation="-10" TranslationY="-50"/>
+                    <Label Text="Healthcare is always changing" TextColor="Black" FontAttributes="Bold" FontSize="27.5" TranslationY="-120" HorizontalOptions="Center"/>
+                    <Label Text="ProMedica Innovations works to change it for the &#10;better, advancing the ideas, technologies, and &#10;inventions that can improve the quality of patient &#10;care and outcomes." 
+                           TextColor="Black" TranslationX="20" TranslationY="-100" FontSize="17.3"/>
+                    <Rectangle BackgroundColor="Orange" TranslationY="-80" HorizontalOptions="Center" WidthRequest="370" HeightRequest="5"/>
+                    <Label Text="Meet Our Team" TextColor="Black" FontAttributes="Bold" FontSize="27.5" TranslationY="-60" HorizontalOptions="Center"/>
+                </StackLayout>
+                <FlexLayout Grid.Row="1">
+                    <Image Source="https://www.promedica.org/innovations/_assets/images/jp_hs.jpg" TranslationX="10" TranslationY="-80" Scale="0.9"/>
+                    <Label Text="Chief Innovations Officer/ &#10;Strategic Business Development &#10;for ProMedica and ProMedica &#10;Innovations, where he works with &#10;thought leaders from across the &#10;health system to turn ideas into &#10;results that generate a &#10;measureable impact in the areas of &#10;life science technologies, patient &#10;outcomes, and new revenue streams." 
+                           WidthRequest="210" TranslationX="10" TranslationY="-47" FontSize="13" />
+                </FlexLayout>
+                <StackLayout Grid.Row="1" HorizontalOptions="Start">
+                    <Rectangle BackgroundColor="Orange" WidthRequest="173" HeightRequest="35" TranslationX="19" TranslationY="100" />
+                    <Label Text="John P. Pigott, MD, FACS" TextColor="White" TranslationX="30" TranslationY="65"/>
+                </StackLayout>
+                <FlexLayout Grid.Row="2">
+                    <Image Source="https://www.promedica.org/innovations/_assets/images/jh_hs.jpg" TranslationX="10" TranslationY="-80" Scale="0.9"/>
+                    <Label Text="AVP of ProMedica Innovations, &#10;manages the daily operation of &#10;the Innovations Center and the Innovations team. Working with &#10;the executive management team, &#10;creating leading-edge solutions &#10;in support of our mission and &#10;goals while providing best-in-class &#10;services to life science entrepreneurs and inventors." 
+                           WidthRequest="210" TranslationX="10" TranslationY="-47" FontSize="13" />
+                </FlexLayout>
+                <StackLayout Grid.Row="2" HorizontalOptions="Start">
+                    <Rectangle BackgroundColor="Orange" WidthRequest="173" HeightRequest="35" TranslationX="19" TranslationY="100" />
+                    <Label Text="Justin Hammerling" TextColor="White" TranslationX="30" TranslationY="65"/>
+                </StackLayout>
+                <FlexLayout Grid.Row="3">
+                    <Image Source="https://www.promedica.org/innovations/_assets/images/jk_hs.jpg" TranslationX="10" TranslationY="-80" Scale="0.9"/>
+                    <Label Text="Executive in Residence at &#10;ProMedica Innovations, assesses &#10;the potential in proposed business &#10;ventures and develops commercialization plans for those selected for funding. Working with entrepreneurs to establish &#10;business plans, develop management organizations, &#10;project revenues, and assists with presentations to funding groups." 
+                           WidthRequest="210" TranslationX="10" TranslationY="-47" FontSize="13" />
+                </FlexLayout>
+                <StackLayout Grid.Row="3" HorizontalOptions="Start">
+                    <Rectangle BackgroundColor="Orange" WidthRequest="173" HeightRequest="35" TranslationX="19" TranslationY="100" />
+                    <Label Text="Jon Klotz" TextColor="White" TranslationX="30" TranslationY="65"/>
+                </StackLayout>
+                <FlexLayout Grid.Row="4">
+                    <Image Source="https://www.promedica.org/innovations/_assets/images/cs_hs.jpg" TranslationX="10" TranslationY="-80" Scale="0.9"/>
+                    <Label Text="Project Manager at ProMedica &#10;Innovations, works with local &#10;inventors and community &#10;members to advnace unique &#10;healthcare-related concepts and &#10;promote economic development &#10;He bases his work on the belief &#10;that innovation and collaboration &#10;are keys to success and that local &#10;leaders know what is best for &#10;their communities." 
+                           WidthRequest="210" TranslationX="10" TranslationY="-47" FontSize="13" />
+                </FlexLayout>
+                <StackLayout Grid.Row="4" HorizontalOptions="Start">
+                    <Rectangle BackgroundColor="Orange" WidthRequest="173" HeightRequest="35" TranslationX="19" TranslationY="100" />
+                    <Label Text="Clint Steigerwalt" TextColor="White" TranslationX="30" TranslationY="65"/>
+                </StackLayout>
+                <FlexLayout Grid.Row="5">
+                    <Image Source="https://www.promedica.org/innovations/_assets/images/jd_hs.jpg" TranslationX="10" TranslationY="-80" Scale="0.9"/>
+                    <Label Text="Finance Manager at ProMedica &#10;Innovations, works closely with &#10;the Finance team, managing &#10;accounting and reporting duties &#10;for several start-up companies. &#10;She assists with the ProMedica &#10;Innovations accounting, and participates in regular audits. She &#10;also handles expense and wage &#10;reporting to the Ohio &#10;Development Services Agency" 
+                           WidthRequest="210" TranslationX="10" TranslationY="-47" FontSize="13" />
+                </FlexLayout>
+                <StackLayout Grid.Row="5" HorizontalOptions="Start">
+                    <Rectangle BackgroundColor="Orange" WidthRequest="173" HeightRequest="35" TranslationX="19" TranslationY="100" />
+                    <Label Text="Judy Damman" TextColor="White" TranslationX="30" TranslationY="65"/>
+                </StackLayout>
+                <FlexLayout Grid.Row="6">
+                    <Image Source="https://www.promedica.org/innovations/_assets/images/dc_hs.jpg" TranslationX="10" TranslationY="-80" Scale="0.9"/>
+                    <Label Text="Project Manager at ProMedica &#10;Innovations, is responsible for the invention disclosure process, &#10;product development and &#10;commercialization outreach. Dan &#10;meets with inventors to discuss &#10;their invention ideas and to &#10;gain an understanding of what the invention is, does, and how the &#10;inventor would like to see their &#10;idea come to fruition" 
+                           WidthRequest="210" TranslationX="10" TranslationY="-47" FontSize="13" />
+                </FlexLayout>
+                <StackLayout Grid.Row="6" HorizontalOptions="Start">
+                    <Rectangle BackgroundColor="Orange" WidthRequest="173" HeightRequest="35" TranslationX="19" TranslationY="100" />
+                    <Label Text="Dan Casavar" TextColor="White" TranslationX="30" TranslationY="65"/>
+                </StackLayout>
+                <FlexLayout Grid.Row="7">
+                    <Image Source="https://www.promedica.org/innovations/_assets/images/hb_hs.jpg" TranslationX="10" TranslationY="-80" Scale="0.9"/>
+                    <Label Text="Sales and Marketing Associate, &#10;works with inventors to take their &#10;Health Information Technology &#10;innovations to market through &#10;strategic development of outside &#10;sales goals and objectives. Hollie &#10;believes that medical technology &#10;innovations will provide better &#10;care for patients, and is passionate &#10;about the work she does for &#10;ProMedica Innovations." 
+                           WidthRequest="210" TranslationX="10" TranslationY="-47" FontSize="13" />
+                </FlexLayout>
+                <StackLayout Grid.Row="7" HorizontalOptions="Start">
+                    <Rectangle BackgroundColor="Orange" WidthRequest="173" HeightRequest="35" TranslationX="19" TranslationY="100" />
+                    <Label Text="Hollie Flanner" TextColor="White" TranslationX="30" TranslationY="65"/>
+                </StackLayout>
+                <FlexLayout Grid.Row="8">
+                    <Image Source="https://www.promedica.org/innovations/_assets/images/eak_hs.jpg" TranslationX="10" TranslationY="-80" Scale="0.9"/>
+                    <Label Text="Innovation Strategist at &#10;ProMedica Innovations engages &#10;with employees and high interest &#10;groups sharing the purpose of PI &#10;and the resources available to life &#10;sciences inventors. Emily helps &#10;connect people who have an &#10;idea for a potential solution with &#10;the tools and resources needed &#10;to determine the commerical &#10;viability of their concept." 
+                           WidthRequest="210" TranslationX="10" TranslationY="-47" FontSize="13" />
+                </FlexLayout>
+                <StackLayout Grid.Row="8" HorizontalOptions="Start">
+                    <Rectangle BackgroundColor="Orange" WidthRequest="173" HeightRequest="35" TranslationX="19" TranslationY="100" />
+                    <Label Text="Emily Kuhn" TextColor="White" TranslationX="30" TranslationY="65"/>
+                </StackLayout>
+                <FlexLayout Grid.Row="9">
+                    <Image Source="https://www.promedica.org/innovations/_assets/images/gary_hs.jpg" TranslationX="10" TranslationY="-80" Scale="0.9"/>
+                    <Label Text="As Founder and President of Life &#10;Sciences Technology Group, Ltd. &#10;Gary has lead five medical &#10;technology start-ups from the &#10;concept phase through market &#10;entry and growth. He developed &#10;significant financial, marketing &#10;and business expertise while &#10;keeping strong relationships with &#10;clinical, technology and &#10;investment leaders worldwide." 
+                           WidthRequest="210" TranslationX="10" TranslationY="-47" FontSize="13" />
+                </FlexLayout>
+                <StackLayout Grid.Row="9" HorizontalOptions="Start">
+                    <Rectangle BackgroundColor="Orange" WidthRequest="173" HeightRequest="35" TranslationX="19" TranslationY="100" />
+                    <Label Text="Gary Smith" TextColor="White" TranslationX="30" TranslationY="65"/>
+                </StackLayout>
+                <FlexLayout Grid.Row="10">
+                    <Image Source="https://www.promedica.org/innovations/_assets/images/zp_hs.jpg" TranslationX="10" TranslationY="-80" Scale="0.9"/>
+                    <Label Text="Investment Associate at &#10;ProMedica Innovations who &#10;works with companies seeking &#10;capital investment and business &#10;assistance from venture funds &#10;managed by ProMedica. He &#10;fosters growth by working closely &#10;with entrepreneurs to help their &#10;companies with business and &#10;financial strategy throughout, the &#10;investment process." 
+                           WidthRequest="210" TranslationX="10" TranslationY="-47" FontSize="13" />
+                </FlexLayout>
+                <StackLayout Grid.Row="10" HorizontalOptions="Start">
+                    <Rectangle BackgroundColor="Orange" WidthRequest="173" HeightRequest="35" TranslationX="19" TranslationY="100" />
+                    <Label Text="Zachary Philipp" TextColor="White" TranslationX="30" TranslationY="65"/>
+                </StackLayout>
+                <FlexLayout Grid.Row="11">
+                    <Image Source="https://www.promedica.org/innovations/_assets/images/ms_hs.jpg" TranslationX="10" TranslationY="-80" Scale="0.9"/>
+                    <Label Text="Innovations Project Manager, &#10;joins the team with a diverse &#10;background and experience in &#10;healthcare administration, &#10;operations management, and &#10;health and safety. Michael reviews &#10;invention submissions, meets &#10;with inventors and collaborates &#10;with Innovations team members &#10;to research consumer needs and &#10;identify potential market viability." 
+                           WidthRequest="210" TranslationX="10" TranslationY="-47" FontSize="13" />
+                </FlexLayout>
+                <StackLayout Grid.Row="11" HorizontalOptions="Start">
+                    <Rectangle BackgroundColor="Orange" WidthRequest="173" HeightRequest="35" TranslationX="19" TranslationY="100" />
+                    <Label Text="Michael Saleh" TextColor="White" TranslationX="30" TranslationY="65"/>
+                </StackLayout>
+                <FlexLayout Grid.Row="12">
+                    <Image Source="https://www.promedica.org/innovations/_assets/images/kc_hs.jpg" TranslationX="10" TranslationY="-80" Scale="0.9"/>
+                    <Label Text="Senior Executive Assistant to the &#10;Chief Innovations Officer and Vice &#10;President of ProMedica &#10;Innovations. Kathy currently has &#10;over 22 years of administrative &#10;experience at ProMedica and &#10;supports several other executives &#10;within ProMedica. Kathy applies &#10;her organizational skills, creativity, &#10;focus, and a strong work ethic to &#10;her work at ProMedica." 
+                           WidthRequest="210" TranslationX="10" TranslationY="-47" FontSize="13" />
+                </FlexLayout>
+                <StackLayout Grid.Row="12" HorizontalOptions="Start">
+                    <Rectangle BackgroundColor="Orange" WidthRequest="173" HeightRequest="35" TranslationX="19" TranslationY="100" />
+                    <Label Text="Kathy Crowell" TextColor="White" TranslationX="30" TranslationY="65"/>
+                </StackLayout>
+                <FlexLayout Grid.Row="13">
+                    <Image Source="https://www.promedica.org/innovations/_assets/images/eb_hs.jpg" TranslationX="10" TranslationY="-80" Scale="0.9"/>
+                    <Label Text="Investment Analyst provides due &#10;diligence for investment &#10;opportunities, supporting &#10;portfolio companies through &#10;enhanced management and &#10;screening company deal flow. &#10;Evan's responsibility as a venture &#10;investor with ProMedica is to &#10;identify, evaluate, and support &#10;investments that provide social or &#10;economic value to the community." 
+                           WidthRequest="210" TranslationX="10" TranslationY="-47" FontSize="13" />
+                </FlexLayout>
+                <StackLayout Grid.Row="13" HorizontalOptions="Start">
+                    <Rectangle BackgroundColor="Orange" WidthRequest="173" HeightRequest="35" TranslationX="19" TranslationY="100" />
+                    <Label Text="Evan Bernath" TextColor="White" TranslationX="30" TranslationY="65"/>
+                </StackLayout>
+            </Grid>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
