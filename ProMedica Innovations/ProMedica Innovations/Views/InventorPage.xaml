@@ -49,7 +49,6 @@
                     <Rectangle BackgroundColor="{StaticResource Primary}" TranslationY="-40" HorizontalOptions="Center" WidthRequest="230" HeightRequest="3"/>
                 </StackLayout>
                 <StackLayout Grid.Row="2">
-                    <
                 </StackLayout>
             </Grid>
         </ScrollView>
