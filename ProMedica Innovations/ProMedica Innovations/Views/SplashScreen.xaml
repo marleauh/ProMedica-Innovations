@@ -22,9 +22,9 @@
                     </Grid.ColumnDefinitions>
                     <StackLayout Grid.Row="1" Grid.Column="1">
                         <Button CornerRadius="0" HeightRequest="155" BackgroundColor="White" />
-                        <Ellipse Fill="LightGray" HeightRequest="20" WidthRequest="20" HorizontalOptions="Center" TranslationY="-140" TranslationX="-65" Scale="3"/>
+                        <Ellipse Opacity=".5" Fill="LightGray" HeightRequest="20" WidthRequest="20" HorizontalOptions="Center" TranslationY="-140" TranslationX="-65" Scale="3"/>
                         <Rectangle BackgroundColor="LightGray" HeightRequest="60" WidthRequest="20" TranslationY="-100" Margin="10,0,10,0"/>
-                        <Image Source="stethoscope.png" HeightRequest="75" WidthRequest="75" TranslationY="-245" TranslationX="-45" />
+                        <Image Source="stethoscope_color.png" HeightRequest="75" WidthRequest="75" TranslationY="-245" TranslationX="-45" />
                         <Label TextColor="Black" Text="Inventors" FontSize="27" FontAttributes="Bold" TranslationY="-250" TranslationX="20"/>
                         <Label TextColor="Gray" Text="Great Ideas Start With You" FontSize="12.1" FontAttributes="Bold" TranslationY="-255" TranslationX="20"/>
                         <StackLayout.GestureRecognizers>
@@ -33,9 +33,9 @@
                     </StackLayout>
                     <StackLayout Grid.Row="1" Grid.Column="2">
                         <Button CornerRadius="0" HeightRequest="155" BackgroundColor="White" />
-                        <Ellipse Fill="LightGray" HeightRequest="20" WidthRequest="20" HorizontalOptions="Center" TranslationY="-140" TranslationX="-65" Scale="3"/>
+                        <Ellipse Opacity=".5" Fill="LightGray" HeightRequest="20" WidthRequest="20" HorizontalOptions="Center" TranslationY="-140" TranslationX="-65" Scale="3"/>
                         <Rectangle BackgroundColor="LightGray" HeightRequest="60" WidthRequest="20" TranslationY="-100" Margin="10,0,10,0"/>
-                        <Image Source="gear.png" HeightRequest="75" WidthRequest="75" TranslationY="-245" TranslationX="-45" />
+                        <Image Source="gear_color.png" HeightRequest="75" WidthRequest="75" TranslationY="-245" TranslationX="-45" />
                         <Label TextColor="Black" Text="Technology" FontSize="27" FontAttributes="Bold" TranslationY="-250" TranslationX="20"/>
                         <Label TextColor="Gray" Text="What's Next And New" FontSize="12.1" FontAttributes="Bold" TranslationY="-255" TranslationX="20"/>
                         <StackLayout.GestureRecognizers>
@@ -44,9 +44,9 @@
                     </StackLayout>
                     <StackLayout Grid.Row="2" Grid.Column="1">
                         <Button CornerRadius="0" HeightRequest="155" BackgroundColor="White" />
-                        <Ellipse Fill="LightGray" HeightRequest="20" WidthRequest="20" HorizontalOptions="Center" TranslationY="-140" TranslationX="-65" Scale="3"/>
+                        <Ellipse Opacity=".5" Fill="LightGray" HeightRequest="20" WidthRequest="20" HorizontalOptions="Center" TranslationY="-140" TranslationX="-65" Scale="3"/>
                         <Rectangle BackgroundColor="LightGray" HeightRequest="60" WidthRequest="20" TranslationY="-100" Margin="10,0,10,0"/>
-                        <Image Source="laptop.png" HeightRequest="75" WidthRequest="75" TranslationY="-245" TranslationX="-40" />
+                        <Image Source="laptop_color.png" HeightRequest="75" WidthRequest="75" TranslationY="-245" TranslationX="-40" />
                         <Label TextColor="Black" Text="Ventures" FontSize="27" FontAttributes="Bold" TranslationY="-250" TranslationX="20"/>
                         <Label TextColor="Gray" Text="Investing In Innovators" FontSize="12.1" FontAttributes="Bold" TranslationY="-255" TranslationX="20"/>
                         <StackLayout.GestureRecognizers>
@@ -55,9 +55,9 @@
                     </StackLayout>
                     <StackLayout Grid.Row="2" Grid.Column="2">
                         <Button CornerRadius="0" HeightRequest="155" BackgroundColor="White" />
-                        <Ellipse Fill="LightGray" HeightRequest="20" WidthRequest="20" HorizontalOptions="Center" TranslationY="-140" TranslationX="-65" Scale="3"/>
+                        <Ellipse Opacity=".5" Fill="LightGray" HeightRequest="20" WidthRequest="20" HorizontalOptions="Center" TranslationY="-140" TranslationX="-65" Scale="3"/>
                         <Rectangle BackgroundColor="LightGray" HeightRequest="60" WidthRequest="20" TranslationY="-100" Margin="10,0,10,0"/>
-                        <Image Source="building.png" HeightRequest="75" WidthRequest="75" TranslationY="-245" TranslationX="-50" />
+                        <Image Source="building_color.png" HeightRequest="75" WidthRequest="75" TranslationY="-245" TranslationX="-50" />
                         <Label TextColor="Black" Text="Development" FontSize="27" FontAttributes="Bold" TranslationY="-250" TranslationX="20"/>
                         <Label TextColor="Gray" Text="Health Beyond The Hospital" FontSize="12.1" FontAttributes="Bold" TranslationY="-255" TranslationX="20"/>
                         <StackLayout.GestureRecognizers>
@@ -66,9 +66,9 @@
                     </StackLayout>
                     <StackLayout Grid.Row="3" Grid.Column="1">
                         <Button CornerRadius="0" HeightRequest="155" BackgroundColor="White" />
-                        <Ellipse Fill="LightGray" HeightRequest="20" WidthRequest="20" HorizontalOptions="Center" TranslationY="-140" TranslationX="-65" Scale="3"/>
+                        <Ellipse Opacity=".5" Fill="LightGray" HeightRequest="20" WidthRequest="20" HorizontalOptions="Center" TranslationY="-140" TranslationX="-65" Scale="3"/>
                         <Rectangle BackgroundColor="LightGray" HeightRequest="60" WidthRequest="20" TranslationY="-100" Margin="10,0,10,0"/>
-                        <Image Source="about.png" HeightRequest="75" WidthRequest="75" TranslationY="-245" TranslationX="-30" />
+                        <Image Source="about_color.png" HeightRequest="75" WidthRequest="75" TranslationY="-245" TranslationX="-30" />
                         <Label TextColor="Black" Text="PI Team" FontSize="27" FontAttributes="Bold" TranslationY="-250" TranslationX="20"/>
                         <Label TextColor="Gray" Text="Meet The Innovators" FontSize="12.1" FontAttributes="Bold" TranslationY="-255" TranslationX="20"/>
                         <StackLayout.GestureRecognizers>
@@ -77,9 +77,9 @@
                     </StackLayout>
                     <StackLayout Grid.Row="3" Grid.Column="2">
                         <Button CornerRadius="0" HeightRequest="155" BackgroundColor="White" />
-                        <Ellipse Fill="LightGray" HeightRequest="20" WidthRequest="20" HorizontalOptions="Center" TranslationY="-140" TranslationX="-65" Scale="3"/>
+                        <Ellipse Opacity=".5" Fill="LightGray" HeightRequest="20" WidthRequest="20" HorizontalOptions="Center" TranslationY="-140" TranslationX="-65" Scale="3"/>
                         <Rectangle BackgroundColor="LightGray" HeightRequest="60" WidthRequest="20" TranslationY="-100" Margin="10,0,10,0"/>
-                        <Image Source="lightbulb.png" HeightRequest="75" WidthRequest="75" TranslationY="-245" TranslationX="-50" />
+                        <Image Source="lightbulb_color.png" HeightRequest="75" WidthRequest="75" TranslationY="-245" TranslationX="-50" />
                         <Label TextColor="Black" Text="Submit Ideas" FontSize="27" FontAttributes="Bold" TranslationY="-250" TranslationX="20"/>
                         <Label TextColor="Gray" Text="Inspiration To Action" FontSize="12.1" FontAttributes="Bold" TranslationY="-255" TranslationX="20"/>
                         <StackLayout.GestureRecognizers>

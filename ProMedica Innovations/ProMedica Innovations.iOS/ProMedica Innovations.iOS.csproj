@@ -166,4 +166,25 @@
   <ItemGroup>
     <BundleResource Include="Resources\stethoscope.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\dollar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\gear_color.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\lightbulb_color.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\stethoscope_color.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\laptop_color.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\about_color.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\building_color.png" />
+  </ItemGroup>
 </Project>
