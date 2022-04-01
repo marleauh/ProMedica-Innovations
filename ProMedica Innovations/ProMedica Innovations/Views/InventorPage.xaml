@@ -49,6 +49,20 @@
                     <Rectangle BackgroundColor="{StaticResource Primary}" TranslationY="-40" HorizontalOptions="Center" WidthRequest="230" HeightRequest="3"/>
                 </StackLayout>
                 <StackLayout Grid.Row="2">
+                    <Image Source="dollar.png" WidthRequest="100" HeightRequest="100" />
+                    <Label Text="What's In It For You..." TextColor="Black" FontAttributes="Bold" FontSize="30" TranslationX="65" TranslationY="10"/>
+                    <FlexLayout TranslationY="20" TranslationX="20">
+                        <Label Text="Inventors will receive " FontSize="18"/>
+                        <Label Text="40%" FontSize="30" FontAttributes="Bold" TranslationY="-12.5"/>
+                        <Label Text=" of the proceeds" FontSize="18"/>
+                    </FlexLayout>
+                    <StackLayout TranslationX="19">
+                        <Label Text="resulting from the licensure of their invention." FontSize="18"/>
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout Grid.Row="3" TranslationY="-30">
+                    <Label Text="Inventors also are able to make bigger &#10;differences in more lives. By partnering with &#10;ProMedica, your invention has the potential &#10;to reach patients throughout the region, &#10;across the country, and around the world."
+                               FontSize="19" HorizontalOptions="Center"/>
                 </StackLayout>
             </Grid>
         </ScrollView>
