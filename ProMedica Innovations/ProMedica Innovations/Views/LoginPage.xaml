@@ -13,11 +13,10 @@
              BackgroundImage="logo.jpg">
     <ContentPage.Content>
         <StackLayout Orientation="Vertical" Padding="40" Spacing="40">
-            <BoxView HeightRequest="40"/>
             <Image HorizontalOptions="Center" WidthRequest="300" Source="maco.jpg"/>
             <Frame BackgroundColor="White" HasShadow="True" CornerRadius="10">
                 <StackLayout Orientation="Vertical" Spacing="10">
-                    <Label Text="Email"/>
+                    <Label Text="Username"/>
                     <Entry x:Name="Email" Text="{Binding Email}" Placeholder="Enter here"   
                            PlaceholderColor="Gray" HeightRequest="40"   
                            Keyboard="Email"  
