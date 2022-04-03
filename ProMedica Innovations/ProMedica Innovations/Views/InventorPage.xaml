@@ -131,7 +131,7 @@
                             </StackLayout>
                             <StackLayout Margin="35,0,0,0">
                                 <Label Text="4. BE VIABLE" TextColor="Black" FontSize="20"/>
-                                <Label Text="Potential to be commercially successful" FontSize="10"/>
+                                <Label Text="Potential to be commercially &#10;successful" FontSize="10"/>
                             </StackLayout>
                         </FlexLayout>
                         <StackLayout Grid.Row="2" Margin="0,50,0,0">

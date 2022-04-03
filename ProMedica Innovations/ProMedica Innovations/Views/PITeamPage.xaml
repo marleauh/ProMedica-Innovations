@@ -4,228 +4,427 @@
              x:Class="ProMedica_Innovations.Views.PITeamPage"
              Title="ProMedica Innovations Team">
     <ContentPage.Content>
-        <ScrollView>
-            <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="Auto" />
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="Auto" />
-                </Grid.ColumnDefinitions>
-                <StackLayout Grid.Row="0" Grid.ColumnSpan="2">
-                    <Image Source="https://www.promedica.org/innovations/_assets/images/about-head.jpg" />
-                    <Rectangle BackgroundColor="White" HeightRequest="30" Scale="2" Rotation="-6" TranslationY="-20"/>
-                </StackLayout>
-                <StackLayout Grid.Row="0" Grid.ColumnSpan="2" HorizontalOptions="Center" Margin="0,40,0,0">
-                    <Label TextColor="White" Text="What's New -- And What's Next" FontSize="25"/>
-                </StackLayout>
-                <StackLayout Grid.Row="1" Grid.ColumnSpan="2" Margin="0,-20,0,0">
-                    <Label Text="Healthcare is always changing" TextColor="Black" FontAttributes="Bold" FontSize="27.5" HorizontalOptions="Center"/>
-                    <Label Text="ProMedica Innovations works to change it for the &#10;better, advancing the ideas, technologies, and &#10;inventions that can improve the quality of patient &#10;care and outcomes." 
+        <OnPlatform x:TypeArguments="View">
+            <On Platform="Android">
+                <ScrollView>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <StackLayout Grid.Row="0" Grid.ColumnSpan="2">
+                            <Image Source="https://www.promedica.org/innovations/_assets/images/about-head.jpg" />
+                            <Rectangle BackgroundColor="White" HeightRequest="30" Scale="2" Rotation="-6" TranslationY="-20"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="0" Grid.ColumnSpan="2" HorizontalOptions="Center" Margin="0,40,0,0">
+                            <Label TextColor="White" Text="What's New -- And What's Next" FontSize="25"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="1" Grid.ColumnSpan="2" Margin="0,-20,0,0">
+                            <Label Text="Healthcare is always changing" TextColor="Black" FontAttributes="Bold" FontSize="27.5" HorizontalOptions="Center"/>
+                            <Label Text="ProMedica Innovations works to change it for the &#10;better, advancing the ideas, technologies, and &#10;inventions that can improve the quality of patient &#10;care and outcomes." 
                            TextColor="Black" HorizontalOptions="Center" FontSize="17"/>
-                    <Label Text="Meet Our Team" TextColor="Black" FontAttributes="Bold" FontSize="27.5" HorizontalOptions="Center" Margin="0,35,0,0"/>
-                </StackLayout>
-                <StackLayout Grid.Row="1" Grid.ColumnSpan="2" HorizontalOptions="Center" VerticalOptions="Center" Margin="0,50,0,0">
-                    <Rectangle WidthRequest="300" HeightRequest="5" BackgroundColor="Orange"/>
-                </StackLayout>
-                
-                <!-- John Pigott -->
-                
-                <StackLayout Grid.Row="2" Grid.Column="0" Margin="10,0,0,0">
-                    <Image Source="https://www.promedica.org/innovations/_assets/images/jp_hs.jpg" VerticalOptions="FillAndExpand"/>
-                </StackLayout>
-                <StackLayout Grid.Row="2" Grid.Column="1" Margin="0,-5,10,0">
-                    <Label Text="Chief Innovations Officer/Strategic Business Development for ProMedica and ProMedica Innovations, where he works with thought leaders from across the health system to turn ideas into results that generate a measureable impact in the areas of life science technologies, patient outcomes, and new revenue streams." 
-                           FontSize="Small" />
-                </StackLayout>
-                <StackLayout Grid.Row="2" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="End" Margin="10,0,0,0">
-                    <Rectangle BackgroundColor="Orange" WidthRequest="191" HeightRequest="35"/>
-                </StackLayout>
-                <StackLayout Grid.Row="2" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="End" Margin="20,0,0,10">
-                    <Label Text="John P. Pigott, MD, FACS" TextColor="White"/>
-                </StackLayout>
+                            <Label Text="Meet Our Team" TextColor="Black" FontAttributes="Bold" FontSize="27.5" HorizontalOptions="Center" Margin="0,35,0,0"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="1" Grid.ColumnSpan="2" HorizontalOptions="Center" VerticalOptions="Center" Margin="0,50,0,0">
+                            <Rectangle WidthRequest="300" HeightRequest="5" BackgroundColor="Orange"/>
+                        </StackLayout>
 
-                <!-- Justin Hammerling -->
-
-                <StackLayout Grid.Row="3" Grid.Column="0" Margin="10,0,0,0">
-                    <Image Source="https://www.promedica.org/innovations/_assets/images/jh_hs.jpg" VerticalOptions="FillAndExpand"/>
-                </StackLayout>
-                <StackLayout Grid.Row="3" Grid.Column="1" Margin="0,-5,10,0">
-                    <Label Text="AVP of ProMedica Innovations, manages the daily operation of the Innovations Center and the Innovations team. Working with the executive management team, creating leading-edge solutions in support of our mission and goals while providing best-in-class services to life science entrepreneurs and inventors." 
+                        <StackLayout Grid.Row="2" Grid.Column="0" Margin="10,0,0,0">
+                            <Image Source="https://www.promedica.org/innovations/_assets/images/jp_hs.jpg" VerticalOptions="FillAndExpand"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="2" Grid.Column="1" Margin="0,-5,10,0">
+                            <Label Text="Chief Innovations Officer/Strategic Business Development for ProMedica and ProMedica Innovations, where he works with thought leaders from across the health system to turn ideas into results that generate a measureable impact in the areas of life science technologies, patient outcomes, and new revenue streams." 
                            FontSize="Small" />
-                </StackLayout>
-                <StackLayout Grid.Row="3" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="End" Margin="10,0,0,0">
-                    <Rectangle BackgroundColor="Orange" WidthRequest="191" HeightRequest="35"/>
-                </StackLayout>
-                <StackLayout Grid.Row="3" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="End" Margin="20,0,0,10">
-                    <Label Text="Justin Hammerling" TextColor="White"/>
-                </StackLayout>
+                        </StackLayout>
+                        <StackLayout Grid.Row="2" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="End" Margin="10,0,0,0">
+                            <Rectangle BackgroundColor="Orange" WidthRequest="191" HeightRequest="35"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="2" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="End" Margin="20,0,0,10">
+                            <Label Text="John P. Pigott, MD, FACS" TextColor="White"/>
+                        </StackLayout>
 
-                <!-- Jon Klotz -->
-                <StackLayout Grid.Row="4" Grid.Column="0" Margin="10,0,0,0">
-                    <Image Source="https://www.promedica.org/innovations/_assets/images/jk_hs.jpg" VerticalOptions="FillAndExpand"/>
-                </StackLayout>
-                <StackLayout Grid.Row="4" Grid.Column="1" Margin="0,-5,10,0">
-                    <Label Text="Executive in Residence at ProMedica Innovations, assesses the potential in proposed business ventures and develops commercialization plans for those selected for funding. Working with entrepreneurs to establish business plans, develop management organizations, project revenues, and assists with presentations to funding groups." 
+                        <StackLayout Grid.Row="3" Grid.Column="0" Margin="10,0,0,0">
+                            <Image Source="https://www.promedica.org/innovations/_assets/images/jh_hs.jpg" VerticalOptions="FillAndExpand"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="3" Grid.Column="1" Margin="0,-5,10,0">
+                            <Label Text="AVP of ProMedica Innovations, manages the daily operation of the Innovations Center and the Innovations team. Working with the executive management team, creating leading-edge solutions in support of our mission and goals while providing best-in-class services to life science entrepreneurs and inventors." 
                            FontSize="Small" />
-                </StackLayout>
-                <StackLayout Grid.Row="4" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="End" Margin="10,0,0,0">
-                    <Rectangle BackgroundColor="Orange" WidthRequest="191" HeightRequest="35"/>
-                </StackLayout>
-                <StackLayout Grid.Row="4" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="End" Margin="20,0,0,10">
-                    <Label Text="Jon Klotz" TextColor="White"/>
-                </StackLayout>
+                        </StackLayout>
+                        <StackLayout Grid.Row="3" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="End" Margin="10,0,0,0">
+                            <Rectangle BackgroundColor="Orange" WidthRequest="191" HeightRequest="35"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="3" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="End" Margin="20,0,0,10">
+                            <Label Text="Justin Hammerling" TextColor="White"/>
+                        </StackLayout>
 
-                <!-- Clint Steigerwalt -->
-                <StackLayout Grid.Row="5" Grid.Column="0" Margin="10,0,0,0">
-                    <Image Source="https://www.promedica.org/innovations/_assets/images/cs_hs.jpg" VerticalOptions="FillAndExpand"/>
-                </StackLayout>
-                <StackLayout Grid.Row="5" Grid.Column="1" Margin="0,-5,10,0">
-                    <Label Text="Project Manager at ProMedica Innovations, works with local inventors and community members to advnace unique healthcare-related concepts and promote economic development He bases his work on the belief that innovation and collaboration are keys to success and that local leaders know what is best for their communities." 
+                        <StackLayout Grid.Row="4" Grid.Column="0" Margin="10,0,0,0">
+                            <Image Source="https://www.promedica.org/innovations/_assets/images/jk_hs.jpg" VerticalOptions="FillAndExpand"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="4" Grid.Column="1" Margin="0,-5,10,0">
+                            <Label Text="Executive in Residence at ProMedica Innovations, assesses the potential in proposed business ventures and develops commercialization plans for those selected for funding. Working with entrepreneurs to establish business plans, develop management organizations, project revenues, and assists with presentations to funding groups." 
                            FontSize="Small" />
-                </StackLayout>
-                <StackLayout Grid.Row="5" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="End" Margin="10,0,0,0">
-                    <Rectangle BackgroundColor="Orange" WidthRequest="191" HeightRequest="35"/>
-                </StackLayout>
-                <StackLayout Grid.Row="5" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="End" Margin="20,0,0,10">
-                    <Label Text="Clint Steigerwalt" TextColor="White"/>
-                </StackLayout>
+                        </StackLayout>
+                        <StackLayout Grid.Row="4" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="End" Margin="10,0,0,0">
+                            <Rectangle BackgroundColor="Orange" WidthRequest="191" HeightRequest="35"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="4" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="End" Margin="20,0,0,10">
+                            <Label Text="Jon Klotz" TextColor="White"/>
+                        </StackLayout>
 
-                <!-- Judy Damman -->
-                <StackLayout Grid.Row="6" Grid.Column="0" Margin="10,0,0,0">
-                    <Image Source="https://www.promedica.org/innovations/_assets/images/jd_hs.jpg" VerticalOptions="FillAndExpand"/>
-                </StackLayout>
-                <StackLayout Grid.Row="6" Grid.Column="1" Margin="0,-5,10,0">
-                    <Label Text="Finance Manager at ProMedica Innovations, works closely with the Finance team, managing accounting and reporting duties for several start-up companies. She assists with the ProMedica Innovations accounting, and participates in regular audits. She also handles expense and wage reporting to the Ohio Development Services Agency" 
+                        <StackLayout Grid.Row="5" Grid.Column="0" Margin="10,0,0,0">
+                            <Image Source="https://www.promedica.org/innovations/_assets/images/cs_hs.jpg" VerticalOptions="FillAndExpand"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="5" Grid.Column="1" Margin="0,-5,10,0">
+                            <Label Text="Project Manager at ProMedica Innovations, works with local inventors and community members to advnace unique healthcare-related concepts and promote economic development He bases his work on the belief that innovation and collaboration are keys to success and that local leaders know what is best for their communities." 
                            FontSize="Small" />
-                </StackLayout>
-                <StackLayout Grid.Row="6" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="End" Margin="10,10,0,0">
-                    <Rectangle BackgroundColor="Orange" WidthRequest="191" HeightRequest="35"/>
-                </StackLayout>
-                <StackLayout Grid.Row="6" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="End" Margin="20,0,0,10">
-                    <Label Text="Judy Damman" TextColor="White"/>
-                </StackLayout>
+                        </StackLayout>
+                        <StackLayout Grid.Row="5" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="End" Margin="10,0,0,0">
+                            <Rectangle BackgroundColor="Orange" WidthRequest="191" HeightRequest="35"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="5" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="End" Margin="20,0,0,10">
+                            <Label Text="Clint Steigerwalt" TextColor="White"/>
+                        </StackLayout>
 
-                <!-- Dan Casavar -->
-                <StackLayout Grid.Row="7" Grid.Column="0" Margin="10,0,0,0">
-                    <Image Source="https://www.promedica.org/innovations/_assets/images/dc_hs.jpg" VerticalOptions="FillAndExpand"/>
-                </StackLayout>
-                <StackLayout Grid.Row="7" Grid.Column="1" Margin="0,-5,10,0">
-                    <Label Text="Project Manager at ProMedica Innovations, is responsible for the invention disclosure process, product development and commercialization outreach. Dan meets with inventors to discuss their invention ideas and to gain an understanding of what the invention is, does, and how the inventor would like to see their idea come to fruition" 
+                        <StackLayout Grid.Row="6" Grid.Column="0" Margin="10,0,0,0">
+                            <Image Source="https://www.promedica.org/innovations/_assets/images/jd_hs.jpg" VerticalOptions="FillAndExpand"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="6" Grid.Column="1" Margin="0,-5,10,0">
+                            <Label Text="Finance Manager at ProMedica Innovations, works closely with the Finance team, managing accounting and reporting duties for several start-up companies. She assists with the ProMedica Innovations accounting, and participates in regular audits. She also handles expense and wage reporting to the Ohio Development Services Agency" 
                            FontSize="Small" />
-                </StackLayout>
-                <StackLayout Grid.Row="7" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="End" Margin="10,10,0,0">
-                    <Rectangle BackgroundColor="Orange" WidthRequest="191" HeightRequest="35"/>
-                </StackLayout>
-                <StackLayout Grid.Row="7" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="End" Margin="20,0,0,10">
-                    <Label Text="Dan Casavar" TextColor="White"/>
-                </StackLayout>
+                        </StackLayout>
+                        <StackLayout Grid.Row="6" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="End" Margin="10,10,0,0">
+                            <Rectangle BackgroundColor="Orange" WidthRequest="191" HeightRequest="35"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="6" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="End" Margin="20,0,0,10">
+                            <Label Text="Judy Damman" TextColor="White"/>
+                        </StackLayout>
 
-                <!-- Hollie Flanner -->
-                <StackLayout Grid.Row="8" Grid.Column="0" Margin="10,0,0,0">
-                    <Image Source="https://www.promedica.org/innovations/_assets/images/hb_hs.jpg" VerticalOptions="FillAndExpand"/>
-                </StackLayout>
-                <StackLayout Grid.Row="8" Grid.Column="1" Margin="0,-5,10,0">
-                    <Label Text="Sales and Marketing Associate, works with inventors to take their Health Information Technology innovations to market through strategic development of outside sales goals and objectives. Hollie believes that medical technology innovations will provide better care for patients, and is passionate about the work she does for ProMedica Innovations." 
+                        <StackLayout Grid.Row="7" Grid.Column="0" Margin="10,0,0,0">
+                            <Image Source="https://www.promedica.org/innovations/_assets/images/dc_hs.jpg" VerticalOptions="FillAndExpand"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="7" Grid.Column="1" Margin="0,-5,10,0">
+                            <Label Text="Project Manager at ProMedica Innovations, is responsible for the invention disclosure process, product development and commercialization outreach. Dan meets with inventors to discuss their invention ideas and to gain an understanding of what the invention is, does, and how the inventor would like to see their idea come to fruition" 
                            FontSize="Small" />
-                </StackLayout>
-                <StackLayout Grid.Row="8" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="End" Margin="10,10,0,0">
-                    <Rectangle BackgroundColor="Orange" WidthRequest="191" HeightRequest="35"/>
-                </StackLayout>
-                <StackLayout Grid.Row="8" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="End" Margin="20,0,0,10">
-                    <Label Text="Hollie Flanner" TextColor="White"/>
-                </StackLayout>
+                        </StackLayout>
+                        <StackLayout Grid.Row="7" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="End" Margin="10,10,0,0">
+                            <Rectangle BackgroundColor="Orange" WidthRequest="191" HeightRequest="35"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="7" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="End" Margin="20,0,0,10">
+                            <Label Text="Dan Casavar" TextColor="White"/>
+                        </StackLayout>
 
-                <!-- Emily Kuhn -->
-                <StackLayout Grid.Row="9" Grid.Column="0" Margin="10,0,0,0">
-                    <Image Source="https://www.promedica.org/innovations/_assets/images/eak_hs.jpg" VerticalOptions="FillAndExpand"/>
-                </StackLayout>
-                <StackLayout Grid.Row="9" Grid.Column="1" Margin="0,-5,10,0">
-                    <Label Text="Innovation Strategist at ProMedica Innovations engages with employees and high interest groups sharing the purpose of PI and the resources available to life sciences inventors. Emily helps connect people who have an idea for a potential solution with the tools and resources needed to determine the commerical viability of their concept." 
+                        <StackLayout Grid.Row="8" Grid.Column="0" Margin="10,0,0,0">
+                            <Image Source="https://www.promedica.org/innovations/_assets/images/hb_hs.jpg" VerticalOptions="FillAndExpand"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="8" Grid.Column="1" Margin="0,-5,10,0">
+                            <Label Text="Sales and Marketing Associate, works with inventors to take their Health Information Technology innovations to market through strategic development of outside sales goals and objectives. Hollie believes that medical technology innovations will provide better care for patients, and is passionate about the work she does for ProMedica Innovations." 
                            FontSize="Small" />
-                </StackLayout>
-                <StackLayout Grid.Row="9" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="End" Margin="10,10,0,0">
-                    <Rectangle BackgroundColor="Orange" WidthRequest="191" HeightRequest="35"/>
-                </StackLayout>
-                <StackLayout Grid.Row="9" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="End" Margin="20,0,0,10">
-                    <Label Text="Emily Kuhn" TextColor="White"/>
-                </StackLayout>
+                        </StackLayout>
+                        <StackLayout Grid.Row="8" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="End" Margin="10,10,0,0">
+                            <Rectangle BackgroundColor="Orange" WidthRequest="191" HeightRequest="35"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="8" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="End" Margin="20,0,0,10">
+                            <Label Text="Hollie Flanner" TextColor="White"/>
+                        </StackLayout>
 
-                <!-- Gary Smith -->
-                <StackLayout Grid.Row="10" Grid.Column="0" Margin="10,0,0,0">
-                    <Image Source="https://www.promedica.org/innovations/_assets/images/gary_hs.jpg" VerticalOptions="FillAndExpand"/>
-                </StackLayout>
-                <StackLayout Grid.Row="10" Grid.Column="1" Margin="0,-5,10,0">
-                    <Label Text="As Founder and President of Life Sciences Technology Group, Ltd. Gary has lead five medical technology start-ups from the concept phase through market entry and growth. He developed significant financial, marketing and business expertise while keeping strong relationships with clinical, technology and investment leaders worldwide." 
+                        <StackLayout Grid.Row="9" Grid.Column="0" Margin="10,0,0,0">
+                            <Image Source="https://www.promedica.org/innovations/_assets/images/eak_hs.jpg" VerticalOptions="FillAndExpand"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="9" Grid.Column="1" Margin="0,-5,10,0">
+                            <Label Text="Innovation Strategist at ProMedica Innovations engages with employees and high interest groups sharing the purpose of PI and the resources available to life sciences inventors. Emily helps connect people who have an idea for a potential solution with the tools and resources needed to determine the commerical viability of their concept." 
                            FontSize="Small" />
-                </StackLayout>
-                <StackLayout Grid.Row="10" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="End" Margin="10,10,0,0">
-                    <Rectangle BackgroundColor="Orange" WidthRequest="191" HeightRequest="35"/>
-                </StackLayout>
-                <StackLayout Grid.Row="10" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="End" Margin="20,0,0,10">
-                    <Label Text="Gary Smith" TextColor="White"/>
-                </StackLayout>
+                        </StackLayout>
+                        <StackLayout Grid.Row="9" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="End" Margin="10,10,0,0">
+                            <Rectangle BackgroundColor="Orange" WidthRequest="191" HeightRequest="35"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="9" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="End" Margin="20,0,0,10">
+                            <Label Text="Emily Kuhn" TextColor="White"/>
+                        </StackLayout>
 
-                <!-- Zachary Philipp -->
-                <StackLayout Grid.Row="11" Grid.Column="0" Margin="10,0,0,0">
-                    <Image Source="https://www.promedica.org/innovations/_assets/images/zp_hs.jpg" VerticalOptions="FillAndExpand"/>
-                </StackLayout>
-                <StackLayout Grid.Row="11" Grid.Column="1" Margin="0,-5,10,0">
-                    <Label Text="Investment Associate at ProMedica Innovations who works with companies seeking capital investment and business assistance from venture funds managed by ProMedica. He fosters growth by working closely with entrepreneurs to help their companies with business and financial strategy throughout, the investment process." 
+                        <StackLayout Grid.Row="10" Grid.Column="0" Margin="10,0,0,0">
+                            <Image Source="https://www.promedica.org/innovations/_assets/images/gary_hs.jpg" VerticalOptions="FillAndExpand"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="10" Grid.Column="1" Margin="0,-5,10,0">
+                            <Label Text="As Founder and President of Life Sciences Technology Group, Ltd. Gary has lead five medical technology start-ups from the concept phase through market entry and growth. He developed significant financial, marketing and business expertise while keeping strong relationships with clinical, technology and investment leaders worldwide." 
                            FontSize="Small" />
-                </StackLayout>
-                <StackLayout Grid.Row="11" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="End" Margin="10,10,0,0">
-                    <Rectangle BackgroundColor="Orange" WidthRequest="191" HeightRequest="35"/>
-                </StackLayout>
-                <StackLayout Grid.Row="11" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="End" Margin="20,0,0,10">
-                    <Label Text="Zachary Philipp" TextColor="White"/>
-                </StackLayout>
+                        </StackLayout>
+                        <StackLayout Grid.Row="10" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="End" Margin="10,10,0,0">
+                            <Rectangle BackgroundColor="Orange" WidthRequest="191" HeightRequest="35"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="10" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="End" Margin="20,0,0,10">
+                            <Label Text="Gary Smith" TextColor="White"/>
+                        </StackLayout>
 
-                <!-- Michael Saleh -->
-                <StackLayout Grid.Row="12" Grid.Column="0" Margin="10,0,0,0">
-                    <Image Source="https://www.promedica.org/innovations/_assets/images/ms_hs.jpg" VerticalOptions="FillAndExpand"/>
-                </StackLayout>
-                <StackLayout Grid.Row="12" Grid.Column="1" Margin="0,-5,10,0">
-                    <Label Text="Innovations Project Manager, joins the team with a diverse background and experience in healthcare administration, operations management, and health and safety. Michael reviews invention submissions, meets with inventors and collaborates with Innovations team members to research consumer needs and identify potential market viability." 
+                        <StackLayout Grid.Row="11" Grid.Column="0" Margin="10,0,0,0">
+                            <Image Source="https://www.promedica.org/innovations/_assets/images/zp_hs.jpg" VerticalOptions="FillAndExpand"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="11" Grid.Column="1" Margin="0,-5,10,0">
+                            <Label Text="Investment Associate at ProMedica Innovations who works with companies seeking capital investment and business assistance from venture funds managed by ProMedica. He fosters growth by working closely with entrepreneurs to help their companies with business and financial strategy throughout, the investment process." 
                            FontSize="Small" />
-                </StackLayout>
-                <StackLayout Grid.Row="12" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="End" Margin="10,10,0,0">
-                    <Rectangle BackgroundColor="Orange" WidthRequest="191" HeightRequest="35"/>
-                </StackLayout>
-                <StackLayout Grid.Row="12" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="End" Margin="20,0,0,10">
-                    <Label Text="Michael Saleh" TextColor="White"/>
-                </StackLayout>
+                        </StackLayout>
+                        <StackLayout Grid.Row="11" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="End" Margin="10,10,0,0">
+                            <Rectangle BackgroundColor="Orange" WidthRequest="191" HeightRequest="35"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="11" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="End" Margin="20,0,0,10">
+                            <Label Text="Zachary Philipp" TextColor="White"/>
+                        </StackLayout>
 
-                <!-- Kathy Crowell -->
-                <StackLayout Grid.Row="13" Grid.Column="0" Margin="10,0,0,0">
-                    <Image Source="https://www.promedica.org/innovations/_assets/images/kc_hs.jpg" VerticalOptions="FillAndExpand"/>
-                </StackLayout>
-                <StackLayout Grid.Row="13" Grid.Column="1" Margin="0,-5,10,0">
-                    <Label Text="Senior Executive Assistant to the Chief Innovations Officer and Vice President of ProMedica Innovations. Kathy currently has over 22 years of administrative experience at ProMedica and supports several other executives within ProMedica. Kathy applies her organizational skills, creativity, focus, and a strong work ethic to her work at ProMedica." 
+                        <StackLayout Grid.Row="12" Grid.Column="0" Margin="10,0,0,0">
+                            <Image Source="https://www.promedica.org/innovations/_assets/images/ms_hs.jpg" VerticalOptions="FillAndExpand"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="12" Grid.Column="1" Margin="0,-5,10,0">
+                            <Label Text="Innovations Project Manager, joins the team with a diverse background and experience in healthcare administration, operations management, and health and safety. Michael reviews invention submissions, meets with inventors and collaborates with Innovations team members to research consumer needs and identify potential market viability." 
                            FontSize="Small" />
-                </StackLayout>
-                <StackLayout Grid.Row="13" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="End" Margin="10,10,0,0">
-                    <Rectangle BackgroundColor="Orange" WidthRequest="191" HeightRequest="35"/>
-                </StackLayout>
-                <StackLayout Grid.Row="13" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="End" Margin="20,0,0,10">
-                    <Label Text="Kathy Crowell" TextColor="White"/>
-                </StackLayout>
+                        </StackLayout>
+                        <StackLayout Grid.Row="12" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="End" Margin="10,10,0,0">
+                            <Rectangle BackgroundColor="Orange" WidthRequest="191" HeightRequest="35"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="12" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="End" Margin="20,0,0,10">
+                            <Label Text="Michael Saleh" TextColor="White"/>
+                        </StackLayout>
 
-                <!-- Evan Bernath -->
-                <StackLayout Grid.Row="14" Grid.Column="0" Margin="10,0,0,0">
-                    <Image Source="https://www.promedica.org/innovations/_assets/images/eb_hs.jpg" VerticalOptions="FillAndExpand"/>
-                </StackLayout>
-                <StackLayout Grid.Row="14" Grid.Column="1" Margin="0,-5,10,0">
-                    <Label Text="Investment Analyst provides due diligence for investment opportunities, supporting portfolio companies through enhanced management and screening company deal flow. Evan's responsibility as a venture investor with ProMedica is to identify, evaluate, and support investments that provide social or economic value to the community." 
+                        <StackLayout Grid.Row="13" Grid.Column="0" Margin="10,0,0,0">
+                            <Image Source="https://www.promedica.org/innovations/_assets/images/kc_hs.jpg" VerticalOptions="FillAndExpand"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="13" Grid.Column="1" Margin="0,-5,10,0">
+                            <Label Text="Senior Executive Assistant to the Chief Innovations Officer and Vice President of ProMedica Innovations. Kathy currently has over 22 years of administrative experience at ProMedica and supports several other executives within ProMedica. Kathy applies her organizational skills, creativity, focus, and a strong work ethic to her work at ProMedica." 
                            FontSize="Small" />
-                </StackLayout>
-                <StackLayout Grid.Row="14" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="End" Margin="10,10,0,0">
-                    <Rectangle BackgroundColor="Orange" WidthRequest="191" HeightRequest="35"/>
-                </StackLayout>
-                <StackLayout Grid.Row="14" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="End" Margin="20,0,0,10">
-                    <Label Text="Evan Bernath" TextColor="White"/>
-                </StackLayout>
-            </Grid>
-        </ScrollView>
+                        </StackLayout>
+                        <StackLayout Grid.Row="13" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="End" Margin="10,10,0,0">
+                            <Rectangle BackgroundColor="Orange" WidthRequest="191" HeightRequest="35"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="13" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="End" Margin="20,0,0,10">
+                            <Label Text="Kathy Crowell" TextColor="White"/>
+                        </StackLayout>
+
+                        <StackLayout Grid.Row="14" Grid.Column="0" Margin="10,0,0,0">
+                            <Image Source="https://www.promedica.org/innovations/_assets/images/eb_hs.jpg" VerticalOptions="FillAndExpand"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="14" Grid.Column="1" Margin="0,-5,10,0">
+                            <Label Text="Investment Analyst provides due diligence for investment opportunities, supporting portfolio companies through enhanced management and screening company deal flow. Evan's responsibility as a venture investor with ProMedica is to identify, evaluate, and support investments that provide social or economic value to the community." 
+                           FontSize="Small" />
+                        </StackLayout>
+                        <StackLayout Grid.Row="14" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="End" Margin="10,10,0,0">
+                            <Rectangle BackgroundColor="Orange" WidthRequest="191" HeightRequest="35"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="14" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="End" Margin="20,0,0,10">
+                            <Label Text="Evan Bernath" TextColor="White"/>
+                        </StackLayout>
+                    </Grid>
+                </ScrollView>
+            </On>
+            <On Platform="iOS">
+                <ScrollView>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <StackLayout Grid.Row="0" Grid.ColumnSpan="2">
+                            <Image Source="https://www.promedica.org/innovations/_assets/images/about-head.jpg" />
+                            <Rectangle BackgroundColor="White" HeightRequest="30" Scale="2" Rotation="-6" TranslationY="-15"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="0" Grid.ColumnSpan="2" HorizontalOptions="Center" VerticalOptions="Center" Margin="0,-20,0,0">
+                            <Label TextColor="White" Text="What's New -- And What's Next" FontSize="25"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="1" Grid.ColumnSpan="2" VerticalOptions="Center">
+                            <Label Text="Healthcare is always changing" TextColor="Black" FontAttributes="Bold" FontSize="27.5" HorizontalOptions="Center"/>
+                            <Label Text="ProMedica Innovations works to change it for the &#10;better, advancing the ideas, technologies, and &#10;inventions that can improve the quality of patient &#10;care and outcomes." 
+                           TextColor="Black" HorizontalOptions="Center" FontSize="17"/>
+                            <Label Text="Meet Our Team" TextColor="Black" FontAttributes="Bold" FontSize="27.5" HorizontalOptions="Center" VerticalOptions="End" Margin="0,30,0,0"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="1" Grid.ColumnSpan="2" HorizontalOptions="Center" VerticalOptions="End" Margin="0,100,0,0">
+                            <Rectangle WidthRequest="300" HeightRequest="5" BackgroundColor="Orange"/>
+                        </StackLayout>
+
+                        <StackLayout Grid.Row="2" Grid.Column="0" Margin="10,0,0,20">
+                            <Image Source="https://www.promedica.org/innovations/_assets/images/jp_hs.jpg" VerticalOptions="FillAndExpand"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="2" Grid.Column="1" Margin="0,0,10,0">
+                            <Label Text="Chief Innovations Officer/Strategic Business Development for ProMedica and ProMedica Innovations, where he works with thought leaders from across the health system to turn ideas into results that generate a measureable impact in the areas of life science technologies, patient outcomes, and new revenue streams." 
+                           FontSize="12" />
+                        </StackLayout>
+                        <StackLayout Grid.Row="2" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="End" Margin="10,0,0,0">
+                            <Rectangle BackgroundColor="Orange" WidthRequest="200" HeightRequest="35"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="2" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="End" Margin="15,0,0,10">
+                            <Label Text="John P. Pigott, MD, FACS" TextColor="White" FontSize="Medium"/>
+                        </StackLayout>
+
+                        <StackLayout Grid.Row="3" Grid.Column="0" Margin="10,0,0,20">
+                            <Image Source="https://www.promedica.org/innovations/_assets/images/jh_hs.jpg" VerticalOptions="FillAndExpand"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="3" Grid.Column="1" Margin="0,0,10,0">
+                            <Label Text="AVP of ProMedica Innovations, manages the daily operation of the Innovations Center and the Innovations team. Working with the executive management team, creating leading-edge solutions in support of our mission and goals while providing best-in-class services to life science entrepreneurs and inventors." 
+                           FontSize="12" />
+                        </StackLayout>
+                        <StackLayout Grid.Row="3" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="End" Margin="10,0,0,0">
+                            <Rectangle BackgroundColor="Orange" WidthRequest="200" HeightRequest="35"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="3" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="End" Margin="15,0,0,10">
+                            <Label Text="Justin Hammerling" TextColor="White" FontSize="Medium"/>
+                        </StackLayout>
+
+                        <StackLayout Grid.Row="4" Grid.Column="0" Margin="10,0,0,20">
+                            <Image Source="https://www.promedica.org/innovations/_assets/images/jk_hs.jpg" VerticalOptions="FillAndExpand"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="4" Grid.Column="1" Margin="0,0,10,0">
+                            <Label Text="Executive in Residence at ProMedica Innovations, assesses the potential in proposed business ventures and develops commercialization plans for those selected for funding. Working with entrepreneurs to establish business plans, develop management organizations, project revenues, and assists with presentations to funding groups." 
+                           FontSize="12" />
+                        </StackLayout>
+                        <StackLayout Grid.Row="4" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="End" Margin="10,0,0,0">
+                            <Rectangle BackgroundColor="Orange" WidthRequest="200" HeightRequest="35"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="4" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="End" Margin="15,0,0,10">
+                            <Label Text="Jon Klotz" TextColor="White" FontSize="Medium"/>
+                        </StackLayout>
+
+                        <StackLayout Grid.Row="5" Grid.Column="0" Margin="10,0,0,20">
+                            <Image Source="https://www.promedica.org/innovations/_assets/images/cs_hs.jpg" VerticalOptions="FillAndExpand"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="5" Grid.Column="1" Margin="0,0,10,0">
+                            <Label Text="Project Manager at ProMedica Innovations, works with local inventors and community members to advnace unique healthcare-related concepts and promote economic development He bases his work on the belief that innovation and collaboration are keys to success and that local leaders know what is best for their communities." 
+                           FontSize="12" />
+                        </StackLayout>
+                        <StackLayout Grid.Row="5" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="End" Margin="10,0,0,0">
+                            <Rectangle BackgroundColor="Orange" WidthRequest="200" HeightRequest="35"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="5" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="End" Margin="15,0,0,10">
+                            <Label Text="Clint Steigerwalt" TextColor="White" FontSize="Medium"/>
+                        </StackLayout>
+
+                        <StackLayout Grid.Row="6" Grid.Column="0" Margin="10,0,0,20">
+                            <Image Source="https://www.promedica.org/innovations/_assets/images/jd_hs.jpg" VerticalOptions="FillAndExpand"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="6" Grid.Column="1" Margin="0,0,10,0">
+                            <Label Text="Finance Manager at ProMedica Innovations, works closely with the Finance team, managing accounting and reporting duties for several start-up companies. She assists with the ProMedica Innovations accounting, and participates in regular audits. She also handles expense and wage reporting to the Ohio Development Services Agency" 
+                           FontSize="12" />
+                        </StackLayout>
+                        <StackLayout Grid.Row="6" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="End" Margin="10,10,0,0">
+                            <Rectangle BackgroundColor="Orange" WidthRequest="200" HeightRequest="35"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="6" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="End" Margin="15,0,0,10">
+                            <Label Text="Judy Damman" TextColor="White" FontSize="Medium"/>
+                        </StackLayout>
+
+                        <StackLayout Grid.Row="7" Grid.Column="0" Margin="10,0,0,20">
+                            <Image Source="https://www.promedica.org/innovations/_assets/images/dc_hs.jpg" VerticalOptions="FillAndExpand"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="7" Grid.Column="1" Margin="0,0,10,0">
+                            <Label Text="Project Manager at ProMedica Innovations, is responsible for the invention disclosure process, product development and commercialization outreach. Dan meets with inventors to discuss their invention ideas and to gain an understanding of what the invention is, does, and how the inventor would like to see their idea come to fruition" 
+                           FontSize="12" />
+                        </StackLayout>
+                        <StackLayout Grid.Row="7" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="End" Margin="10,10,0,0">
+                            <Rectangle BackgroundColor="Orange" WidthRequest="200" HeightRequest="35"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="7" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="End" Margin="15,0,0,10">
+                            <Label Text="Dan Casavar" TextColor="White" FontSize="Medium"/>
+                        </StackLayout>
+
+                        <StackLayout Grid.Row="8" Grid.Column="0" Margin="10,0,0,20">
+                            <Image Source="https://www.promedica.org/innovations/_assets/images/hb_hs.jpg" VerticalOptions="FillAndExpand"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="8" Grid.Column="1" Margin="0,0,10,0">
+                            <Label Text="Sales and Marketing Associate, works with inventors to take their Health Information Technology innovations to market through strategic development of outside sales goals and objectives. Hollie believes that medical technology innovations will provide better care for patients, and is passionate about the work she does for ProMedica Innovations." 
+                           FontSize="12" />
+                        </StackLayout>
+                        <StackLayout Grid.Row="8" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="End" Margin="10,10,0,0">
+                            <Rectangle BackgroundColor="Orange" WidthRequest="200" HeightRequest="35"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="8" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="End" Margin="15,0,0,10">
+                            <Label Text="Hollie Flanner" TextColor="White" FontSize="Medium"/>
+                        </StackLayout>
+
+                        <StackLayout Grid.Row="9" Grid.Column="0" Margin="10,0,0,20">
+                            <Image Source="https://www.promedica.org/innovations/_assets/images/eak_hs.jpg" VerticalOptions="FillAndExpand"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="9" Grid.Column="1" Margin="0,0,10,0">
+                            <Label Text="Innovation Strategist at ProMedica Innovations engages with employees and high interest groups sharing the purpose of PI and the resources available to life sciences inventors. Emily helps connect people who have an idea for a potential solution with the tools and resources needed to determine the commerical viability of their concept." 
+                           FontSize="12" />
+                        </StackLayout>
+                        <StackLayout Grid.Row="9" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="End" Margin="10,10,0,0">
+                            <Rectangle BackgroundColor="Orange" WidthRequest="200" HeightRequest="35"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="9" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="End" Margin="15,0,0,10">
+                            <Label Text="Emily Kuhn" TextColor="White" FontSize="Medium"/>
+                        </StackLayout>
+
+                        <StackLayout Grid.Row="10" Grid.Column="0" Margin="10,0,0,20">
+                            <Image Source="https://www.promedica.org/innovations/_assets/images/gary_hs.jpg" VerticalOptions="FillAndExpand"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="10" Grid.Column="1" Margin="0,0,10,0">
+                            <Label Text="As Founder and President of Life Sciences Technology Group, Ltd. Gary has lead five medical technology start-ups from the concept phase through market entry and growth. He developed significant financial, marketing and business expertise while keeping strong relationships with clinical, technology and investment leaders worldwide." 
+                           FontSize="12" />
+                        </StackLayout>
+                        <StackLayout Grid.Row="10" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="End" Margin="10,10,0,0">
+                            <Rectangle BackgroundColor="Orange" WidthRequest="200" HeightRequest="35"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="10" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="End" Margin="15,0,0,10">
+                            <Label Text="Gary Smith" TextColor="White" FontSize="Medium"/>
+                        </StackLayout>
+
+                        <StackLayout Grid.Row="11" Grid.Column="0" Margin="10,0,0,20">
+                            <Image Source="https://www.promedica.org/innovations/_assets/images/zp_hs.jpg" VerticalOptions="FillAndExpand"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="11" Grid.Column="1" Margin="0,0,10,0">
+                            <Label Text="Investment Associate at ProMedica Innovations who works with companies seeking capital investment and business assistance from venture funds managed by ProMedica. He fosters growth by working closely with entrepreneurs to help their companies with business and financial strategy throughout, the investment process." 
+                           FontSize="12" />
+                        </StackLayout>
+                        <StackLayout Grid.Row="11" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="End" Margin="10,10,0,0">
+                            <Rectangle BackgroundColor="Orange" WidthRequest="200" HeightRequest="35"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="11" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="End" Margin="15,0,0,10">
+                            <Label Text="Zachary Philipp" TextColor="White" FontSize="Medium"/>
+                        </StackLayout>
+
+                        <StackLayout Grid.Row="12" Grid.Column="0" Margin="10,0,0,20">
+                            <Image Source="https://www.promedica.org/innovations/_assets/images/ms_hs.jpg" VerticalOptions="FillAndExpand"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="12" Grid.Column="1" Margin="0,0,10,0">
+                            <Label Text="Innovations Project Manager, joins the team with a diverse background and experience in healthcare administration, operations management, and health and safety. Michael reviews invention submissions, meets with inventors and collaborates with Innovations team members to research consumer needs and identify potential market viability." 
+                           FontSize="12" />
+                        </StackLayout>
+                        <StackLayout Grid.Row="12" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="End" Margin="10,10,0,0">
+                            <Rectangle BackgroundColor="Orange" WidthRequest="200" HeightRequest="35"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="12" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="End" Margin="15,0,0,10">
+                            <Label Text="Michael Saleh" TextColor="White" FontSize="Medium"/>
+                        </StackLayout>
+
+                        <StackLayout Grid.Row="13" Grid.Column="0" Margin="10,0,0,20">
+                            <Image Source="https://www.promedica.org/innovations/_assets/images/kc_hs.jpg" VerticalOptions="FillAndExpand"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="13" Grid.Column="1" Margin="0,0,10,0">
+                            <Label Text="Senior Executive Assistant to the Chief Innovations Officer and Vice President of ProMedica Innovations. Kathy currently has over 22 years of administrative experience at ProMedica and supports several other executives within ProMedica. Kathy applies her organizational skills, creativity, focus, and a strong work ethic to her work at ProMedica." 
+                           FontSize="12" />
+                        </StackLayout>
+                        <StackLayout Grid.Row="13" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="End" Margin="10,10,0,0">
+                            <Rectangle BackgroundColor="Orange" WidthRequest="200" HeightRequest="35"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="13" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="End" Margin="15,0,0,10">
+                            <Label Text="Kathy Crowell" TextColor="White" FontSize="Medium"/>
+                        </StackLayout>
+
+                        <StackLayout Grid.Row="14" Grid.Column="0" Margin="10,0,0,20">
+                            <Image Source="https://www.promedica.org/innovations/_assets/images/eb_hs.jpg" VerticalOptions="FillAndExpand"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="14" Grid.Column="1" Margin="0,0,10,0">
+                            <Label Text="Investment Analyst provides due diligence for investment opportunities, supporting portfolio companies through enhanced management and screening company deal flow. Evan's responsibility as a venture investor with ProMedica is to identify, evaluate, and support investments that provide social or economic value to the community." 
+                           FontSize="12" />
+                        </StackLayout>
+                        <StackLayout Grid.Row="14" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="End" Margin="10,10,0,0">
+                            <Rectangle BackgroundColor="Orange" WidthRequest="200" HeightRequest="35"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="14" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="End" Margin="15,0,0,10">
+                            <Label Text="Evan Bernath" TextColor="White" FontSize="Medium"/>
+                        </StackLayout>
+                    </Grid>
+                </ScrollView>
+            </On>
+            </OnPlatform>
     </ContentPage.Content>
 </ContentPage>
