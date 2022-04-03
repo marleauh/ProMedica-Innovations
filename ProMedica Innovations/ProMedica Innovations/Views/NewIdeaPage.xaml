@@ -20,9 +20,20 @@
                 <Label Text="Last Name: *" FontSize="Medium" />
                 <Entry Text="{Binding LastName, Mode=TwoWay}" FontSize="Medium" />
                 <Label Text="Gender: *" FontSize="Medium" />
-                <Entry Text="{Binding Gender, Mode=TwoWay}" FontSize="Medium" />
+                <Picker x:Name="Gender" Title="Select your gender" SelectedItem="{Binding Gender, Mode=TwoWay}">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <!-- Use the code below to add or remove gender options -->
+                            <x:String>Man</x:String>
+                            <x:String>Woman</x:String>
+                            <x:String>Transgender</x:String>
+                            <x:String>Non-Binary</x:String>
+                            <x:String>Other</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
                 <Label Text="Ethnicity: *" FontSize="Medium" />
-                <Picker x:Name="Ethnicity" Title="Select..." SelectedItem="{Binding Ethnicity, Mode=TwoWay}">
+                <Picker x:Name="Ethnicity" Title="Select your ethnicity" SelectedItem="{Binding Ethnicity, Mode=TwoWay}">
                     <Picker.ItemsSource>
                     <x:Array Type="{x:Type x:String}"> <!-- Use the code below to add or remove ethinicity options -->
                         <x:String>American Indian or Alaska Native</x:String>
