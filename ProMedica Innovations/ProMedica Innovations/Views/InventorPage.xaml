@@ -15,7 +15,7 @@
                             <ColumnDefinition Width="Auto" />
                         </Grid.ColumnDefinitions>
                         <StackLayout Grid.Row="0">
-                            <Image Source="https://www.promedica.org/innovations/_assets/images/inventors-head.jpg" />
+                            <Image Source="inventors_head.png" />
                             <Label TextColor="White" Text="Innovation Everywhere" TranslationY="-160" HorizontalTextAlignment="Center" FontSize="25"/>
                             <Label TextColor="White" Text="70,000 people, 70,000 minds. A world of possiblities." TranslationY="-160" FontSize="25" HorizontalTextAlignment="Center"/>
                             <Rectangle BackgroundColor="White" HeightRequest="80" Scale="2" Rotation="-6" TranslationY="-100"/>
@@ -23,7 +23,7 @@
                         </StackLayout>
                         <FlexLayout Grid.Row="1" TranslationY="-160">
                             <StackLayout>
-                                <Image Source="https://www.promedica.org/innovations/_assets/images/inventors-top.jpg"
+                                <Image Source="inventors_top.png"
                                Margin="20,0,20,0" />
                             </StackLayout>
                             <StackLayout>
