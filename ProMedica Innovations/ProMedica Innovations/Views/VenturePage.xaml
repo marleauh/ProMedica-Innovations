@@ -4,36 +4,73 @@
              x:Class="ProMedica_Innovations.Views.VenturePage"
              Title="Ventures">
     <ContentPage.Content>
-        <ScrollView>
-            <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="2*" />
-                </Grid.RowDefinitions>
-                <StackLayout Grid.Row="0">
-                    <Image Source="https://www.promedica.org/innovations/_assets/images/ventures-head.jpg" />
-                    <Label TextColor="White" Text="Investing In Innovation" TranslationY="-160" TranslationX="80" FontSize="25"/>
-                    <Rectangle BackgroundColor="White" HeightRequest="80" Scale="2" Rotation="-10" TranslationY="-50"/>
-                    <Label Text="Funding for a Greater Good" TextColor="Black" FontAttributes="Bold" FontSize="30" TranslationY="-120" TranslationX="20"/>
-                </StackLayout>
-                <StackLayout Grid.Row="1">
-                    <Label Text="Working alongside ProMedica Innovations, ProMedica Ventures works to foster cooperation with innovators from inside and outside ProMedica, expanding the company's access to the most promising emerging technologies and the people who develop them." 
+        <OnPlatform x:TypeArguments="View">
+            <On Platform="Android">
+                <ScrollView>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="2*" />
+                        </Grid.RowDefinitions>
+                        <StackLayout Grid.Row="0">
+                            <Image Source="https://www.promedica.org/innovations/_assets/images/ventures-head.jpg" />
+                            <Label TextColor="White" Text="Investing In Innovation" TranslationY="-160" TranslationX="80" FontSize="25"/>
+                            <Rectangle BackgroundColor="White" HeightRequest="80" Scale="2" Rotation="-10" TranslationY="-50"/>
+                            <Label Text="Funding for a Greater Good" TextColor="Black" FontAttributes="Bold" FontSize="30" TranslationY="-120" TranslationX="20"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="1">
+                            <Label Text="Working alongside ProMedica Innovations, ProMedica Ventures works to foster cooperation with innovators from inside and outside ProMedica, expanding the company's access to the most promising emerging technologies and the people who develop them." 
                            WidthRequest="370" HeightRequest="200" HorizontalOptions="Center" TranslationY="-100" FontSize="Medium"/>
-                </StackLayout>
-                <StackLayout Grid.Row="2">
-                    <Label Text="ProMedica Ventures considers the potential impact on the communities we serve, actively seeking to support technologies likely to make a positive contribution to local economies" 
+                        </StackLayout>
+                        <StackLayout Grid.Row="2">
+                            <Label Text="ProMedica Ventures considers the potential impact on the communities we serve, actively seeking to support technologies likely to make a positive contribution to local economies" 
                            WidthRequest="370" HeightRequest="200" HorizontalOptions="Center" TranslationY="-160" FontSize="Medium"/>
-                </StackLayout>
-                <StackLayout Grid.Row="2">
-                    <Label Text="ProMedica Ventures Manages the ProMedica Venture Fund and the Northwest Ohio Tech Fund II." 
+                        </StackLayout>
+                        <StackLayout Grid.Row="2">
+                            <Label Text="ProMedica Ventures Manages the ProMedica Venture Fund and the Northwest Ohio Tech Fund II." 
                            WidthRequest="370" HeightRequest="200" HorizontalOptions="Center" TranslationY="-55" FontSize="Medium"/>
-                </StackLayout>
-                <FlexLayout Grid.Row="2">
-                    <Button TextColor="{StaticResource Primary}" BackgroundColor="White" BorderColor="{StaticResource Primary}" 
+                        </StackLayout>
+                        <FlexLayout Grid.Row="2">
+                            <Button TextColor="{StaticResource Primary}" BackgroundColor="White" BorderColor="{StaticResource Primary}" 
                              CornerRadius="0" BorderWidth="1" WidthRequest="150" HeightRequest="50" TranslationY="40" TranslationX="20" Text="ProMedica Venture Fund"/>
-                    <Button TextColor="{StaticResource Primary}" BackgroundColor="White" BorderColor="{StaticResource Primary}" 
+                            <Button TextColor="{StaticResource Primary}" BackgroundColor="White" BorderColor="{StaticResource Primary}" 
                              CornerRadius="0" BorderWidth="1" WidthRequest="150" HeightRequest="50" TranslationY="40" TranslationX="90" Text="Northwest Ohio Tech Fund II"/>
-                </FlexLayout>
-            </Grid>
-        </ScrollView>
+                        </FlexLayout>
+                    </Grid>
+                </ScrollView>
+            </On>
+            <On Platform="iOS">
+                <ScrollView>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="2*" />
+                        </Grid.RowDefinitions>
+                        <StackLayout Grid.Row="0">
+                            <Image Source="ventures-head.jpg" />
+                            <Label TextColor="White" Text="Investing In Innovation" TranslationY="-160" TranslationX="80" FontSize="25"/>
+                            <Rectangle BackgroundColor="White" HeightRequest="80" Scale="2" Rotation="-10" TranslationY="-50"/>
+                            <Label Text="Funding for a Greater Good" TextColor="Black" FontAttributes="Bold" FontSize="30" TranslationY="-120" TranslationX="10"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="1">
+                            <Label Text="Working alongside ProMedica Innovations, ProMedica Ventures works to foster cooperation with innovators from inside and outside ProMedica, expanding the company's access to the most promising emerging technologies and the people who develop them." 
+                           WidthRequest="370" HeightRequest="200" HorizontalOptions="Center" TranslationY="-100" FontSize="Medium"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="2">
+                            <Label Text="ProMedica Ventures considers the potential impact on the communities we serve, actively seeking to support technologies likely to make a positive contribution to local economies" 
+                           WidthRequest="370" HeightRequest="200" HorizontalOptions="Center" TranslationY="-160" FontSize="Medium"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="2">
+                            <Label Text="ProMedica Ventures Manages the ProMedica Venture Fund and the Northwest Ohio Tech Fund II." 
+                           WidthRequest="370" HeightRequest="200" HorizontalOptions="Center" TranslationY="-55" FontSize="Medium"/>
+                        </StackLayout>
+                        <FlexLayout Grid.Row="2">
+                            <Button TextColor="{StaticResource Primary}" BackgroundColor="White" BorderColor="{StaticResource Primary}" 
+                             CornerRadius="0" BorderWidth="1" FontSize="10" WidthRequest="200" HeightRequest="50" TranslationY="40" Margin="10,0,10,0" Text="ProMedica Venture Fund"/>
+                            <Button TextColor="{StaticResource Primary}" BackgroundColor="White" BorderColor="{StaticResource Primary}" 
+                             CornerRadius="0" BorderWidth="1" FontSize="10" WidthRequest="200" HeightRequest="50" TranslationY="40" Margin="10,0,10,0" Text="Northwest Ohio Tech Fund II"/>
+                        </FlexLayout>
+                    </Grid>
+                </ScrollView>
+            </On>
+        </OnPlatform>
     </ContentPage.Content>
 </ContentPage>

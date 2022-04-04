@@ -187,4 +187,47 @@
   <ItemGroup>
     <BundleResource Include="Resources\building_color.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\lightbulb_color_orange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\team.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\econ_back.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\econdevelopment_head.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\esp.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\inventors_head.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\inventors_top.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\cs_hs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\dc_hs.jpg" />
+    <BundleResource Include="Resources\eak_hs.jpg" />
+    <BundleResource Include="Resources\eb_hs.jpg" />
+    <BundleResource Include="Resources\gary_hs.jpg" />
+    <BundleResource Include="Resources\hb_hs.jpg" />
+    <BundleResource Include="Resources\jd_hs.jpg" />
+    <BundleResource Include="Resources\jh_hs.jpg" />
+    <BundleResource Include="Resources\jk_hs.jpg" />
+    <BundleResource Include="Resources\jp_hs.jpg" />
+    <BundleResource Include="Resources\kc_hs.jpg" />
+    <BundleResource Include="Resources\ms_hs.jpg" />
+    <BundleResource Include="Resources\zp_hs.jpg" />
+    <BundleResource Include="Resources\flex-tech.jpg" />
+    <BundleResource Include="Resources\lacs-tech.jpg" />
+    <BundleResource Include="Resources\radial-tech.jpg" />
+    <BundleResource Include="Resources\technology-head.jpg" />
+    <BundleResource Include="Resources\ventures-head.jpg" />
+  </ItemGroup>
 </Project>

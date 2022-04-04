@@ -148,13 +148,44 @@
     <AndroidResource Include="Resources\drawable\inventors_top.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\econdevelopment_head2.jpg" />
+    <AndroidResource Include="Resources\drawable\econdevelopment_head.jpg" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\econ_back.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\esp2.jpg" />
+    <AndroidResource Include="Resources\drawable\esp.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\lightbulb_about.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\lightbulb_color_orange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\team.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\cs_hs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\drawable\dc_hs.jpg" />
+    <AndroidResource Include="Resources\drawable\eak_hs.jpg" />
+    <AndroidResource Include="Resources\drawable\eb_hs.jpg" />
+    <AndroidResource Include="Resources\drawable\gary_hs.jpg" />
+    <AndroidResource Include="Resources\drawable\hb_hs.jpg" />
+    <AndroidResource Include="Resources\drawable\jd_hs.jpg" />
+    <AndroidResource Include="Resources\drawable\jh_hs.jpg" />
+    <AndroidResource Include="Resources\drawable\jk_hs.jpg" />
+    <AndroidResource Include="Resources\drawable\jp_hs.jpg" />
+    <AndroidResource Include="Resources\drawable\kc_hs.jpg" />
+    <AndroidResource Include="Resources\drawable\ms_hs.jpg" />
+    <AndroidResource Include="Resources\drawable\zp_hs.jpg" />
+    <AndroidResource Include="Resources\drawable\flex-tech.jpg" />
+    <AndroidResource Include="Resources\drawable\lacs-tech.jpg" />
+    <AndroidResource Include="Resources\drawable\radial-tech.jpg" />
+    <AndroidResource Include="Resources\drawable\technology-head.jpg" />
+    <AndroidResource Include="Resources\drawable\ventures-head.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

@@ -24,11 +24,12 @@
                     <Picker.ItemsSource>
                         <x:Array Type="{x:Type x:String}">
                             <!-- Use the code below to add or remove gender options -->
+                            <x:String>Non-Binary</x:String>
                             <x:String>Man</x:String>
                             <x:String>Woman</x:String>
                             <x:String>Transgender</x:String>
-                            <x:String>Non-Binary</x:String>
                             <x:String>Other</x:String>
+                            <x:String>I would prefer not to respond</x:String>
                         </x:Array>
                     </Picker.ItemsSource>
                 </Picker>
@@ -39,9 +40,12 @@
                         <x:String>American Indian or Alaska Native</x:String>
                         <x:String>Asian</x:String>
                         <x:String>Black or African American</x:String>
+                        <x:String>Hispanic</x:String>
+                        <x:String>Multiracial</x:String>
                         <x:String>Native Hawaiian or Other Pacific Islander</x:String>
                         <x:String>White</x:String>
-                        <x:String>White Non Hispanic</x:String>
+                        <x:String>Other</x:String>
+                        <x:String>I would prefer not to respond</x:String>
                     </x:Array>
                   </Picker.ItemsSource>
                 </Picker>
@@ -57,7 +61,7 @@
                 <Entry Text="{Binding Referral, Mode=TwoWay}" FontSize="Medium" />
                 <StackLayout Orientation="Horizontal">
                     <Label Text="Employee:" FontSize="Medium" />
-                    <CheckBox IsChecked="{Binding Employee, Mode=TwoWay}" Color="{StaticResource Primary}" />
+                    <CheckBox IsChecked="{Binding Employee, Mode=TwoWay}" Color="{StaticResource Primary}" Margin="0,-8,0,0" />
                 </StackLayout>
                 <StackLayout Orientation="Horizontal">
                     <Button Text="Cancel" Clicked="OnDeleteButtonClicked" HorizontalOptions="FillAndExpand"></Button>

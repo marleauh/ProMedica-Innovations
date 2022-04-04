@@ -242,7 +242,7 @@
                         </StackLayout>
 
                         <StackLayout Grid.Row="2" Grid.Column="0" Margin="10,0,0,20">
-                            <Image Source="https://www.promedica.org/innovations/_assets/images/jp_hs.jpg" VerticalOptions="FillAndExpand"/>
+                            <Image Source="jp_hs.jpg" HeightRequest="200" WidthRequest="200"/>
                         </StackLayout>
                         <StackLayout Grid.Row="2" Grid.Column="1" Margin="0,0,10,0">
                             <Label Text="Chief Innovations Officer/Strategic Business Development for ProMedica and ProMedica Innovations, where he works with thought leaders from across the health system to turn ideas into results that generate a measureable impact in the areas of life science technologies, patient outcomes, and new revenue streams." 
@@ -256,7 +256,7 @@
                         </StackLayout>
 
                         <StackLayout Grid.Row="3" Grid.Column="0" Margin="10,0,0,20">
-                            <Image Source="https://www.promedica.org/innovations/_assets/images/jh_hs.jpg" VerticalOptions="FillAndExpand"/>
+                            <Image Source="jh_hs.jpg" HeightRequest="200" WidthRequest="200"/>
                         </StackLayout>
                         <StackLayout Grid.Row="3" Grid.Column="1" Margin="0,0,10,0">
                             <Label Text="AVP of ProMedica Innovations, manages the daily operation of the Innovations Center and the Innovations team. Working with the executive management team, creating leading-edge solutions in support of our mission and goals while providing best-in-class services to life science entrepreneurs and inventors." 
@@ -270,7 +270,7 @@
                         </StackLayout>
 
                         <StackLayout Grid.Row="4" Grid.Column="0" Margin="10,0,0,20">
-                            <Image Source="https://www.promedica.org/innovations/_assets/images/jk_hs.jpg" VerticalOptions="FillAndExpand"/>
+                            <Image Source="jk_hs.jpg" HeightRequest="200" WidthRequest="200"/>
                         </StackLayout>
                         <StackLayout Grid.Row="4" Grid.Column="1" Margin="0,0,10,0">
                             <Label Text="Executive in Residence at ProMedica Innovations, assesses the potential in proposed business ventures and develops commercialization plans for those selected for funding. Working with entrepreneurs to establish business plans, develop management organizations, project revenues, and assists with presentations to funding groups." 
@@ -284,7 +284,7 @@
                         </StackLayout>
 
                         <StackLayout Grid.Row="5" Grid.Column="0" Margin="10,0,0,20">
-                            <Image Source="https://www.promedica.org/innovations/_assets/images/cs_hs.jpg" VerticalOptions="FillAndExpand"/>
+                            <Image Source="cs_hs.jpg" HeightRequest="200" WidthRequest="200"/>
                         </StackLayout>
                         <StackLayout Grid.Row="5" Grid.Column="1" Margin="0,0,10,0">
                             <Label Text="Project Manager at ProMedica Innovations, works with local inventors and community members to advnace unique healthcare-related concepts and promote economic development He bases his work on the belief that innovation and collaboration are keys to success and that local leaders know what is best for their communities." 
@@ -298,7 +298,7 @@
                         </StackLayout>
 
                         <StackLayout Grid.Row="6" Grid.Column="0" Margin="10,0,0,20">
-                            <Image Source="https://www.promedica.org/innovations/_assets/images/jd_hs.jpg" VerticalOptions="FillAndExpand"/>
+                            <Image Source="jd_hs.jpg" HeightRequest="200" WidthRequest="200"/>
                         </StackLayout>
                         <StackLayout Grid.Row="6" Grid.Column="1" Margin="0,0,10,0">
                             <Label Text="Finance Manager at ProMedica Innovations, works closely with the Finance team, managing accounting and reporting duties for several start-up companies. She assists with the ProMedica Innovations accounting, and participates in regular audits. She also handles expense and wage reporting to the Ohio Development Services Agency" 
@@ -312,7 +312,7 @@
                         </StackLayout>
 
                         <StackLayout Grid.Row="7" Grid.Column="0" Margin="10,0,0,20">
-                            <Image Source="https://www.promedica.org/innovations/_assets/images/dc_hs.jpg" VerticalOptions="FillAndExpand"/>
+                            <Image Source="dc_hs.jpg" HeightRequest="200" WidthRequest="200"/>
                         </StackLayout>
                         <StackLayout Grid.Row="7" Grid.Column="1" Margin="0,0,10,0">
                             <Label Text="Project Manager at ProMedica Innovations, is responsible for the invention disclosure process, product development and commercialization outreach. Dan meets with inventors to discuss their invention ideas and to gain an understanding of what the invention is, does, and how the inventor would like to see their idea come to fruition" 
@@ -326,7 +326,7 @@
                         </StackLayout>
 
                         <StackLayout Grid.Row="8" Grid.Column="0" Margin="10,0,0,20">
-                            <Image Source="https://www.promedica.org/innovations/_assets/images/hb_hs.jpg" VerticalOptions="FillAndExpand"/>
+                            <Image Source="hb_hs.jpg" HeightRequest="200" WidthRequest="200"/>
                         </StackLayout>
                         <StackLayout Grid.Row="8" Grid.Column="1" Margin="0,0,10,0">
                             <Label Text="Sales and Marketing Associate, works with inventors to take their Health Information Technology innovations to market through strategic development of outside sales goals and objectives. Hollie believes that medical technology innovations will provide better care for patients, and is passionate about the work she does for ProMedica Innovations." 
@@ -340,7 +340,7 @@
                         </StackLayout>
 
                         <StackLayout Grid.Row="9" Grid.Column="0" Margin="10,0,0,20">
-                            <Image Source="https://www.promedica.org/innovations/_assets/images/eak_hs.jpg" VerticalOptions="FillAndExpand"/>
+                            <Image Source="eak_hs.jpg" HeightRequest="200" WidthRequest="200"/>
                         </StackLayout>
                         <StackLayout Grid.Row="9" Grid.Column="1" Margin="0,0,10,0">
                             <Label Text="Innovation Strategist at ProMedica Innovations engages with employees and high interest groups sharing the purpose of PI and the resources available to life sciences inventors. Emily helps connect people who have an idea for a potential solution with the tools and resources needed to determine the commerical viability of their concept." 
@@ -354,7 +354,7 @@
                         </StackLayout>
 
                         <StackLayout Grid.Row="10" Grid.Column="0" Margin="10,0,0,20">
-                            <Image Source="https://www.promedica.org/innovations/_assets/images/gary_hs.jpg" VerticalOptions="FillAndExpand"/>
+                            <Image Source="gary_hs.jpg" HeightRequest="200" WidthRequest="200"/>
                         </StackLayout>
                         <StackLayout Grid.Row="10" Grid.Column="1" Margin="0,0,10,0">
                             <Label Text="As Founder and President of Life Sciences Technology Group, Ltd. Gary has lead five medical technology start-ups from the concept phase through market entry and growth. He developed significant financial, marketing and business expertise while keeping strong relationships with clinical, technology and investment leaders worldwide." 
@@ -368,7 +368,7 @@
                         </StackLayout>
 
                         <StackLayout Grid.Row="11" Grid.Column="0" Margin="10,0,0,20">
-                            <Image Source="https://www.promedica.org/innovations/_assets/images/zp_hs.jpg" VerticalOptions="FillAndExpand"/>
+                            <Image Source="zp_hs.jpg" HeightRequest="200" WidthRequest="200"/>
                         </StackLayout>
                         <StackLayout Grid.Row="11" Grid.Column="1" Margin="0,0,10,0">
                             <Label Text="Investment Associate at ProMedica Innovations who works with companies seeking capital investment and business assistance from venture funds managed by ProMedica. He fosters growth by working closely with entrepreneurs to help their companies with business and financial strategy throughout, the investment process." 
@@ -382,7 +382,7 @@
                         </StackLayout>
 
                         <StackLayout Grid.Row="12" Grid.Column="0" Margin="10,0,0,20">
-                            <Image Source="https://www.promedica.org/innovations/_assets/images/ms_hs.jpg" VerticalOptions="FillAndExpand"/>
+                            <Image Source="ms_hs.jpg" HeightRequest="200" WidthRequest="200"/>
                         </StackLayout>
                         <StackLayout Grid.Row="12" Grid.Column="1" Margin="0,0,10,0">
                             <Label Text="Innovations Project Manager, joins the team with a diverse background and experience in healthcare administration, operations management, and health and safety. Michael reviews invention submissions, meets with inventors and collaborates with Innovations team members to research consumer needs and identify potential market viability." 
@@ -396,7 +396,7 @@
                         </StackLayout>
 
                         <StackLayout Grid.Row="13" Grid.Column="0" Margin="10,0,0,20">
-                            <Image Source="https://www.promedica.org/innovations/_assets/images/kc_hs.jpg" VerticalOptions="FillAndExpand"/>
+                            <Image Source="kc_hs.jpg" HeightRequest="200" WidthRequest="200"/>
                         </StackLayout>
                         <StackLayout Grid.Row="13" Grid.Column="1" Margin="0,0,10,0">
                             <Label Text="Senior Executive Assistant to the Chief Innovations Officer and Vice President of ProMedica Innovations. Kathy currently has over 22 years of administrative experience at ProMedica and supports several other executives within ProMedica. Kathy applies her organizational skills, creativity, focus, and a strong work ethic to her work at ProMedica." 
@@ -410,7 +410,7 @@
                         </StackLayout>
 
                         <StackLayout Grid.Row="14" Grid.Column="0" Margin="10,0,0,20">
-                            <Image Source="https://www.promedica.org/innovations/_assets/images/eb_hs.jpg" VerticalOptions="FillAndExpand"/>
+                            <Image Source="eb_hs.jpg" HeightRequest="200" WidthRequest="200"/>
                         </StackLayout>
                         <StackLayout Grid.Row="14" Grid.Column="1" Margin="0,0,10,0">
                             <Label Text="Investment Analyst provides due diligence for investment opportunities, supporting portfolio companies through enhanced management and screening company deal flow. Evan's responsibility as a venture investor with ProMedica is to identify, evaluate, and support investments that provide social or economic value to the community." 
