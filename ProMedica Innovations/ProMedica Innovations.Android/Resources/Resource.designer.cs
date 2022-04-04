@@ -14,7 +14,7 @@ namespace ProMedica_Innovations.Droid
 {
 	
 	
-	[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Android.Build.Tasks", "1.0.0.0")]
+	[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Android.Build.Tasks", "12.2.0.155")]
 	public partial class Resource
 	{
 		
@@ -16712,28 +16712,31 @@ namespace ProMedica_Innovations.Droid
 			public const int notify_panel_notification_icon_bg = 2131165343;
 			
 			// aapt resource value: 0x7F0700A0
-			public const int preference_list_divider_material = 2131165344;
+			public const int pispace = 2131165344;
 			
 			// aapt resource value: 0x7F0700A1
-			public const int promedica_innovations_logo = 2131165345;
+			public const int preference_list_divider_material = 2131165345;
 			
 			// aapt resource value: 0x7F0700A2
-			public const int stethoscope = 2131165346;
+			public const int promedica_innovations_logo = 2131165346;
 			
 			// aapt resource value: 0x7F0700A3
-			public const int stethoscope_color = 2131165347;
+			public const int stethoscope = 2131165347;
 			
 			// aapt resource value: 0x7F0700A4
-			public const int test_custom_background = 2131165348;
+			public const int stethoscope_color = 2131165348;
 			
 			// aapt resource value: 0x7F0700A5
-			public const int tooltip_frame_dark = 2131165349;
+			public const int test_custom_background = 2131165349;
 			
 			// aapt resource value: 0x7F0700A6
-			public const int tooltip_frame_light = 2131165350;
+			public const int tooltip_frame_dark = 2131165350;
 			
 			// aapt resource value: 0x7F0700A7
-			public const int xamarin_logo = 2131165351;
+			public const int tooltip_frame_light = 2131165351;
+			
+			// aapt resource value: 0x7F0700A8
+			public const int xamarin_logo = 2131165352;
 			
 			static Drawable()
 			{
