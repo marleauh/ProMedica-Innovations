@@ -229,5 +229,6 @@
     <BundleResource Include="Resources\radial-tech.jpg" />
     <BundleResource Include="Resources\technology-head.jpg" />
     <BundleResource Include="Resources\ventures-head.jpg" />
+    <BundleResource Include="Resources\pispace.jpg" />
   </ItemGroup>
 </Project>
