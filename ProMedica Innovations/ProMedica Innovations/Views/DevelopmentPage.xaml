@@ -57,19 +57,19 @@
                             <Label Text="By providing office space, equipment, material support, access to support staff, and access to the resources of a leading medical center and research facility, ProMedica Innovations helps these companies to accelerate development of their products and services while incurring lower operating costs."
                                    VerticalOptions="End"/>
                         </StackLayout>
-                        <StackLayout Grid.Row="5" Grid.ColumnSpan="2" VerticalOptions="End">
+                        <StackLayout Grid.Row="5" Grid.ColumnSpan="2">
                             <Rectangle BackgroundColor="{StaticResource Primary}" Margin="50,0,50,0" ScaleY="2"/>
                             <Label Text="Companies Our Innovations Center Supports" FontSize="20" Margin="50,0,50,0"/>
                         </StackLayout>
-                        <StackLayout Grid.Row="6" Grid.Column="0" Margin="50,0,15,0">
-                            <Button Command="{Binding OpenVenture}" Text="VentureMed Group" BackgroundColor="White" TextColor="{StaticResource Primary}" CornerRadius="0" BorderColor="{StaticResource Primary}"/>
-                            <Button Command="{Binding OpenWellopp}" Text="Wellopp" BackgroundColor="White" TextColor="{StaticResource Primary}" CornerRadius="0" BorderColor="{StaticResource Primary}"/>
-                            <Button Command="{Binding OpenIchor}" Text="ICHOR" BackgroundColor="White" TextColor="{StaticResource Primary}" CornerRadius="0" BorderColor="{StaticResource Primary}"/>
+                        <StackLayout Grid.Row="6" Grid.Column="0" Margin="50,0,15,0" VerticalOptions="End">
+                            <Button Command="{Binding OpenVenture}" Text="VentureMed Group" BackgroundColor="White" TextColor="{StaticResource Primary}" CornerRadius="5" BorderColor="{StaticResource Primary}" BorderWidth="1"/>
+                            <Button Command="{Binding OpenWellopp}" Text="Wellopp" BackgroundColor="White" TextColor="{StaticResource Primary}" CornerRadius="5" BorderColor="{StaticResource Primary}" BorderWidth="1"/>
+                            <Button Command="{Binding OpenIchor}" Text="ICHOR" BackgroundColor="White" TextColor="{StaticResource Primary}" CornerRadius="5" BorderColor="{StaticResource Primary}" BorderWidth="1"/>
                         </StackLayout>
-                        <StackLayout Grid.Row="6" Grid.Column="1" Margin="15,0,50,0">
-                            <Button Command="{Binding OpenKapios}" Text="Kapios" BackgroundColor="White" TextColor="{StaticResource Primary}" CornerRadius="0" BorderColor="{StaticResource Primary}"/>
-                            <Button Command="{Binding OpenInfinity}" Text="Infinity" BackgroundColor="White" TextColor="{StaticResource Primary}" CornerRadius="0" BorderColor="{StaticResource Primary}"/>
-                            <Button Command="{Binding OpenMedview}" Text="MedView AR" BackgroundColor="White" TextColor="{StaticResource Primary}" CornerRadius="0" BorderColor="{StaticResource Primary}"/>
+                        <StackLayout Grid.Row="6" Grid.Column="1" Margin="15,0,50,0" VerticalOptions="End">
+                            <Button Command="{Binding OpenKapios}" Text="Kapios" BackgroundColor="White" TextColor="{StaticResource Primary}" CornerRadius="5" BorderColor="{StaticResource Primary}" BorderWidth="1"/>
+                            <Button Command="{Binding OpenInfinity}" Text="Infinity" BackgroundColor="White" TextColor="{StaticResource Primary}" CornerRadius="5" BorderColor="{StaticResource Primary}" BorderWidth="1"/>
+                            <Button Command="{Binding OpenMedview}" Text="MedView AR" BackgroundColor="White" TextColor="{StaticResource Primary}" CornerRadius="5" BorderColor="{StaticResource Primary}" BorderWidth="1"/>
                         </StackLayout>
                     </Grid>
                 </ScrollView>

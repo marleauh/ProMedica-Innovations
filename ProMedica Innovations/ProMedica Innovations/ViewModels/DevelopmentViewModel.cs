@@ -20,7 +20,7 @@ namespace ProMedica_Innovations.ViewModels
 
         public DevelopmentViewModel()
         {
-            OpenNextTech = new Command(async () => await Browser.OpenAsync("https://www.google.com"));
+            OpenNextTech = new Command(async () => await Browser.OpenAsync("https://www.jumpstartinc.org/startups/"));
             OpenVenture = new Command(async () => await Browser.OpenAsync("https://www.venturemedgroup.com/"));
             OpenKapios = new Command(async () => await Browser.OpenAsync("https://www.kapioshealth.com/"));
             OpenWellopp = new Command(async () => await Browser.OpenAsync("https://wellopp.com/"));

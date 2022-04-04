@@ -181,11 +181,11 @@
     <AndroidResource Include="Resources\drawable\kc_hs.jpg" />
     <AndroidResource Include="Resources\drawable\ms_hs.jpg" />
     <AndroidResource Include="Resources\drawable\zp_hs.jpg" />
-    <AndroidResource Include="Resources\drawable\flex-tech.jpg" />
-    <AndroidResource Include="Resources\drawable\lacs-tech.jpg" />
-    <AndroidResource Include="Resources\drawable\radial-tech.jpg" />
-    <AndroidResource Include="Resources\drawable\technology-head.jpg" />
-    <AndroidResource Include="Resources\drawable\ventures-head.jpg" />
+    <AndroidResource Include="Resources\drawable\flex_tech.jpg" />
+    <AndroidResource Include="Resources\drawable\lacs_tech.jpg" />
+    <AndroidResource Include="Resources\drawable\radial_tech.jpg" />
+    <AndroidResource Include="Resources\drawable\technology_head.jpg" />
+    <AndroidResource Include="Resources\drawable\ventures_head.jpg" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\pispace.jpg" />
