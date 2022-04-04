@@ -226,6 +226,10 @@
     <BundleResource Include="Resources\zp_hs.jpg" />
     <BundleResource Include="Resources\flex_tech.jpg" />
     <BundleResource Include="Resources\lacs-tech.jpg" />
+    <BundleResource Include="Resources\radial-tech.jpg" />
+    <BundleResource Include="Resources\technology-head.jpg" />
+    <BundleResource Include="Resources\ventures-head.jpg" />
+    <BundleResource Include="Resources\pispace.jpg" />
     <BundleResource Include="Resources\radial_tech.jpg" />
     <BundleResource Include="Resources\technology_head.jpg" />
     <BundleResource Include="Resources\ventures_head.jpg" />

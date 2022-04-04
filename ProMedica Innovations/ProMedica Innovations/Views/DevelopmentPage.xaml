@@ -88,55 +88,61 @@
                             <Rectangle  BackgroundColor="White" HeightRequest="80" Scale="2" Rotation="-6" TranslationY="-5"/>
                             <Label  Text="Strengthening Our Communities"
                                     FontSize="25"
-                                    Margin="50,0,50,0"
-                                    HorizontalTextAlignment="Center"/>
+                                    HorizontalTextAlignment="Center"
+                                    Margin="0,-50,0,0"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="1" Grid.ColumnSpan="2">
                             <Label  Text="Promedica Innovations believes that the health of individuals,families, and the community is best established and maintained outside of our walls."
                                     Margin="50,0,50,0"/>
                             <Label  Text="That's why our Economix Development team works in cooperation with companies and local government authorities to generate sustainable development, economic activity, and good jobs in the communities we serve."
                                     Margin="50,0,50,50"/>
                             <Image  Source="econ_back.jpg"
                                     ScaleX="1.25"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="2" Grid.ColumnSpan="2">
                             <Label  Text="Entrepreneurial Signature Program"
                                     FontSize="25"
-                                    Margin="50,25,50,15"
+                                    Margin="0,70,0,0"
                                     HorizontalTextAlignment="Center"/>
                         </StackLayout>
-                        <StackLayout Grid.Row="1" Grid.Column="0">
+                        <StackLayout Grid.Row="2" Grid.Column="0"
+                                    Margin="0,120,0,0">
                             <Image Source="esp.jpg" Scale=".8"/>
                             <Button Command="{Binding OpenNextTech}" Text="Learn More About NextTech" BackgroundColor="White" TextColor="{StaticResource Primary}" BorderColor="{StaticResource Primary}" CornerRadius="0" BorderWidth="1" Scale="0.75"/>
                         </StackLayout>
-                        <StackLayout Grid.Row="1" Grid.Column="1">
+                        <StackLayout Grid.Row="2" Grid.Column="1"
+                                    Margin="0,120,0,0">
                             <Label Margin="0,20,20,0" Text="Designed to foster entrepreneurship and the growth of entrepreneurially-based businesses, NextTech is one of six parallel programs operating throughout Ohio."/>
                             <Label Margin="0,20,20,0" Text="NextTech, its most visible initiative, is designed to establish high-technology startup firms primarily in Northwest Ohio as a means of fostering economic growth."/>
                         </StackLayout>
-                        <StackLayout Grid.Row="2" Grid.ColumnSpan="2">
+                        <StackLayout Grid.Row="3" Grid.ColumnSpan="2" Margin="0,20,0,0">
                             <Label Text="Innovation Center" FontSize="25"  HorizontalTextAlignment="Center"/>
                         </StackLayout>
-                        <StackLayout Grid.Row="3" Grid.Column="0">
-                            <Image Source="pispace.jpg" Margin="20,0,10,0"/>
+                        <StackLayout Grid.Row="3" Grid.Column="0" Margin="0,60,0,0">
+                            <Image Source="pispace.jpg" Scale=".8"/>
                         </StackLayout>
-                        <StackLayout Grid.Row="3" Grid.Column="1">
+                        <StackLayout Grid.Row="3" Grid.Column="1" Margin="0,60,0,0">
                             <Label 
                                 Text="Our innovation center is a business incubator focused on providing support for pioneering early-stage life sciences–oriented businesses seeking to establish themselves in Northwest Ohio."
                                 Margin="0,0,20,0"/>
                         </StackLayout>
-                        <StackLayout Grid.Row="4" Grid.ColumnSpan="2">
+                        <StackLayout Grid.Row="3" Grid.ColumnSpan="2" Margin="10,280,0,-140">
                             <Label Text="By providing office space, equipment, material support, access to support staff, and access to the resources of a leading medical center and research facility, ProMedica Innovations helps these companies to accelerate development of their products and services while incurring lower operating costs."
                                    VerticalOptions="End"/>
                         </StackLayout>
-                        <StackLayout Grid.Row="5" Grid.ColumnSpan="2" VerticalOptions="End">
+                        <StackLayout Grid.Row="3" Grid.ColumnSpan="2" VerticalOptions="End">
                             <Rectangle BackgroundColor="{StaticResource Primary}" Margin="50,0,50,0" ScaleY="2"/>
                             <Label Text="Companies Our Innovations Center Supports" FontSize="20" Margin="50,0,50,0"/>
                         </StackLayout>
-                        <StackLayout Grid.Row="6" Grid.Column="0" Margin="50,0,15,0">
-                            <Button Command="{Binding OpenVenture}" Text="VentureMed Group" BackgroundColor="White" TextColor="{StaticResource Primary}" CornerRadius="0" BorderColor="{StaticResource Primary}"/>
-                            <Button Command="{Binding OpenWellopp}" Text="Wellopp" BackgroundColor="White" TextColor="{StaticResource Primary}" CornerRadius="0" BorderColor="{StaticResource Primary}"/>
-                            <Button Command="{Binding OpenIchor}" Text="ICHOR" BackgroundColor="White" TextColor="{StaticResource Primary}" CornerRadius="0" BorderColor="{StaticResource Primary}"/>
+                        <StackLayout Grid.Row="4" Grid.Column="0" Margin="50,0,15,0">
+                            <Button Command="{Binding OpenVenture}" BorderWidth="3" Text="VentureMed Group" BackgroundColor="White" TextColor="{StaticResource Primary}" CornerRadius="0" BorderColor="{StaticResource Primary}"/>
+                            <Button Command="{Binding OpenWellopp}" BorderWidth="3" Text="Wellopp" BackgroundColor="White" TextColor="{StaticResource Primary}" CornerRadius="0" BorderColor="{StaticResource Primary}"/>
+                            <Button Command="{Binding OpenIchor}" BorderWidth="3" Text="ICHOR" BackgroundColor="White" TextColor="{StaticResource Primary}" CornerRadius="0" BorderColor="{StaticResource Primary}"/>
                         </StackLayout>
-                        <StackLayout Grid.Row="6" Grid.Column="1" Margin="15,0,50,0">
-                            <Button Command="{Binding OpenKapios}" Text="Kapios" BackgroundColor="White" TextColor="{StaticResource Primary}" CornerRadius="0" BorderColor="{StaticResource Primary}"/>
-                            <Button Command="{Binding OpenInfinity}" Text="Infinity" BackgroundColor="White" TextColor="{StaticResource Primary}" CornerRadius="0" BorderColor="{StaticResource Primary}"/>
-                            <Button Command="{Binding OpenMedview}" Text="MedView AR" BackgroundColor="White" TextColor="{StaticResource Primary}" CornerRadius="0" BorderColor="{StaticResource Primary}"/>
+                        <StackLayout Grid.Row="4" Grid.Column="1" Margin="15,0,50,0">
+                            <Button Command="{Binding OpenKapios}" BorderWidth="3" Text="Kapios" BackgroundColor="White" TextColor="{StaticResource Primary}" CornerRadius="0" BorderColor="{StaticResource Primary}"/>
+                            <Button Command="{Binding OpenInfinity}" BorderWidth="3" Text="Infinity" BackgroundColor="White" TextColor="{StaticResource Primary}" CornerRadius="0" BorderColor="{StaticResource Primary}"/>
+                            <Button Command="{Binding OpenMedview}" BorderWidth="3" Text="MedView AR" BackgroundColor="White" TextColor="{StaticResource Primary}" CornerRadius="0" BorderColor="{StaticResource Primary}"/>
                         </StackLayout>
                     </Grid>
                 </ScrollView>
