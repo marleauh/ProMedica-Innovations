@@ -81,7 +81,7 @@
                                 <Button CornerRadius="0" HeightRequest="155" BackgroundColor="White" />
                                 <Ellipse Opacity=".5" Fill="LightGray" HeightRequest="20" WidthRequest="20" HorizontalOptions="Center" TranslationY="-140" TranslationX="-65" Scale="3"/>
                                 <Rectangle BackgroundColor="LightGray" HeightRequest="60" WidthRequest="20" TranslationY="-100" Margin="10,0,10,0"/>
-                                <Image Source="lightbulb_color.png" HeightRequest="75" WidthRequest="75" TranslationY="-245" TranslationX="-50" />
+                                <Image Source="lightbulb_color_orange.png" HeightRequest="75" WidthRequest="75" TranslationY="-245" TranslationX="-50" />
                                 <Label TextColor="Black" Text="Submit Ideas" FontSize="27" FontAttributes="Bold" TranslationY="-250" TranslationX="20"/>
                                 <Label TextColor="Gray" Text="Inspiration To Action" FontSize="12.1" FontAttributes="Bold" TranslationY="-255" TranslationX="20"/>
                                 <StackLayout.GestureRecognizers>
