@@ -1,6 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:viewmodels="clr-namespace:ProMedica_Innovations.ViewModels" 
+             x:DataType="viewmodels:TechnologyViewModel"
              x:Class="ProMedica_Innovations.Views.TechnologyPage"
              Title="Technology">
     <ContentPage.Content>
@@ -29,7 +31,7 @@
                     </StackLayout>
                     <StackLayout Grid.Row="1" Grid.Column="0" VerticalOptions="End" Margin="20,0,0,45">
                         <Button TextColor="{StaticResource Primary}" BackgroundColor="White" BorderColor="{StaticResource Primary}" 
-                             CornerRadius="0" BorderWidth="1" Text="Download PDF"/>
+                             CornerRadius="0" BorderWidth="1" Text="Download PDF" Command="{Binding OpenPdf}"/>
                     </StackLayout>
                     <StackLayout Grid.Row="1" Grid.Column="1">
                         <Label Text="Conceived by Kasi Ramanathan, M.D., the Radial Check Device helps doctors assess patients' eligibility for radial catheterization procedures quickly, efficiently, and effectively."
@@ -47,7 +49,7 @@
                     </StackLayout>
                     <StackLayout Grid.Row="2" Grid.Column="0" VerticalOptions="End" Margin="20,0,0,45">
                         <Button TextColor="{StaticResource Primary}" BackgroundColor="White" BorderColor="{StaticResource Primary}" 
-                             CornerRadius="0" BorderWidth="1" Text="Find Out More"/>
+                             CornerRadius="0" BorderWidth="1" Text="Find Out More" Command="{Binding OpenFlexScore}"/>
                     </StackLayout>
                     <StackLayout Grid.Row="2" Grid.Column="1">
                         <Label Text="A successful angioplasty procedure can depend upon proper vessel preparation. The Flex Scoring Catheter is an easy-to-use and cost-effective 'vessel preparation' device."
@@ -65,7 +67,7 @@
                     </StackLayout>
                     <StackLayout Grid.Row="3" Grid.Column="0" VerticalOptions="End" Margin="20,0,0,30">
                         <Button TextColor="{StaticResource Primary}" BackgroundColor="White" BorderColor="{StaticResource Primary}" 
-                             CornerRadius="0" BorderWidth="1" Text="Find Out More"/>
+                             CornerRadius="0" BorderWidth="1" Text="Find Out More" Command="{Binding OpenLacs}"/>
                     </StackLayout>
                     <StackLayout Grid.Row="3" Grid.Column="1">
                         <Label Text="Laboratories are required by accrediting agencies to obtain, document, report and track instrument maintenance. LACS is a tablet-based application that replaces these paper logs."
@@ -101,7 +103,7 @@
                         </StackLayout>
                         <StackLayout Grid.Row="1" Grid.Column="0" VerticalOptions="End" Margin="10,0,0,45">
                             <Button TextColor="{StaticResource Primary}" BackgroundColor="White" BorderColor="{StaticResource Primary}" 
-                             CornerRadius="0" BorderWidth="1" Text="Download PDF"/>
+                             CornerRadius="0" BorderWidth="1" Text="Download PDF" Command="{Binding OpenPdf}"/>
                         </StackLayout>
                         <StackLayout Grid.Row="1" Grid.Column="1">
                             <Label Text="Conceived by Kasi Ramanathan, M.D., the Radial Check Device helps doctors assess patients' eligibility for radial catheterization procedures quickly, efficiently, and effectively."
@@ -119,7 +121,7 @@
                         </StackLayout>
                         <StackLayout Grid.Row="2" Grid.Column="0" VerticalOptions="End" Margin="10,0,0,45">
                             <Button TextColor="{StaticResource Primary}" BackgroundColor="White" BorderColor="{StaticResource Primary}" 
-                             CornerRadius="0" BorderWidth="1" Text="Find Out More"/>
+                             CornerRadius="0" BorderWidth="1" Text="Find Out More" Command="{Binding OpenFlexScore}"/>
                         </StackLayout>
                         <StackLayout Grid.Row="2" Grid.Column="1">
                             <Label Text="A successful angioplasty procedure can depend upon proper vessel preparation. The Flex Scoring Catheter is an easy-to-use and cost-effective 'vessel preparation' device."
@@ -137,7 +139,7 @@
                         </StackLayout>
                         <StackLayout Grid.Row="3" Grid.Column="0" VerticalOptions="End" Margin="10,0,0,30">
                             <Button TextColor="{StaticResource Primary}" BackgroundColor="White" BorderColor="{StaticResource Primary}" 
-                             CornerRadius="0" BorderWidth="1" Text="Find Out More"/>
+                             CornerRadius="0" BorderWidth="1" Text="Find Out More" Command="{Binding OpenLacs}"/>
                         </StackLayout>
                         <StackLayout Grid.Row="3" Grid.Column="1">
                             <Label Text="Laboratories are required by accrediting agencies to obtain, document, report and track instrument maintenance. LACS is a tablet-based application that replaces these paper logs."

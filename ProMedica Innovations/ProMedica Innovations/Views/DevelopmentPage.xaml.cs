@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProMedica_Innovations.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,7 @@ namespace ProMedica_Innovations.Views
         public DevelopmentPage()
         {
             InitializeComponent();
+            BindingContext = new DevelopmentViewModel();
         }
     }
 }
