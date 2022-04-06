@@ -169,6 +169,7 @@
     <AndroidResource Include="Resources\drawable\cs_hs.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <AndroidResource Include="Resources\drawable\about_head.jpg" />
     <Content Include="Resources\drawable\dc_hs.jpg" />
     <AndroidResource Include="Resources\drawable\eak_hs.jpg" />
     <AndroidResource Include="Resources\drawable\eb_hs.jpg" />

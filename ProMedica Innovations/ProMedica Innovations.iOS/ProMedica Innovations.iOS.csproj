@@ -212,6 +212,7 @@
     <BundleResource Include="Resources\cs_hs.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <BundleResource Include="Resources\about_head.jpg" />
     <Content Include="Resources\dc_hs.jpg" />
     <BundleResource Include="Resources\eak_hs.jpg" />
     <BundleResource Include="Resources\eb_hs.jpg" />
@@ -226,9 +227,6 @@
     <BundleResource Include="Resources\zp_hs.jpg" />
     <BundleResource Include="Resources\flex_tech.jpg" />
     <BundleResource Include="Resources\lacs-tech.jpg" />
-    <BundleResource Include="Resources\radial-tech.jpg" />
-    <BundleResource Include="Resources\technology-head.jpg" />
-    <BundleResource Include="Resources\ventures-head.jpg" />
     <BundleResource Include="Resources\pispace.jpg" />
     <BundleResource Include="Resources\radial_tech.jpg" />
     <BundleResource Include="Resources\technology_head.jpg" />
