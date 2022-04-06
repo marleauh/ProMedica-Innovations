@@ -139,7 +139,7 @@
     <AndroidResource Include="Resources\drawable\about_color.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\building_color.png" />
+    <BundleResource Include="Resources\drawable\building_color.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\inventors_head.png" />

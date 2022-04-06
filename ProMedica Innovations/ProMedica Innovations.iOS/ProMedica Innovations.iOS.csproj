@@ -185,9 +185,6 @@
     <BundleResource Include="Resources\about_color.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\building_color.png" />
-  </ItemGroup>
-  <ItemGroup>
     <BundleResource Include="Resources\lightbulb_color_orange.png" />
   </ItemGroup>
   <ItemGroup>
@@ -213,6 +210,7 @@
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\about_head.jpg" />
+    <BundleResource Include="Resources\building_color.png" />
     <Content Include="Resources\dc_hs.jpg" />
     <BundleResource Include="Resources\eak_hs.jpg" />
     <BundleResource Include="Resources\eb_hs.jpg" />
