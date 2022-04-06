@@ -1,10 +1,7 @@
 ﻿using ProMedica_Innovations.Data;
-using ProMedica_Innovations.Services;
-using ProMedica_Innovations.Views;
 using System;
 using System.IO;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 
 namespace ProMedica_Innovations
 {

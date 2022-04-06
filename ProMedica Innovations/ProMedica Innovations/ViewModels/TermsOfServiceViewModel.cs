@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Text;
-
-namespace ProMedica_Innovations.ViewModels
+﻿namespace ProMedica_Innovations.ViewModels
 {
     public class TermsOfServiceViewModel
     {

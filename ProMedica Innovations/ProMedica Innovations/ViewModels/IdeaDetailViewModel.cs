@@ -1,7 +1,5 @@
-﻿using ProMedica_Innovations.Models;
-using System;
+﻿using System;
 using System.Diagnostics;
-using System.Threading.Tasks;
 using Xamarin.Forms;
 
 namespace ProMedica_Innovations.ViewModels
