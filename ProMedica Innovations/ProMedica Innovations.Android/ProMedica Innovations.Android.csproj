@@ -139,9 +139,6 @@
     <AndroidResource Include="Resources\drawable\about_color.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\drawable\building_color.png" />
-  </ItemGroup>
-  <ItemGroup>
     <AndroidResource Include="Resources\drawable\inventors_head.png" />
   </ItemGroup>
   <ItemGroup>
@@ -170,7 +167,7 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\about_head.jpg" />
-    <Content Include="Resources\drawable\dc_hs.jpg" />
+    <AndroidResource Include="Resources\drawable\building_color.png" />
     <AndroidResource Include="Resources\drawable\eak_hs.jpg" />
     <AndroidResource Include="Resources\drawable\eb_hs.jpg" />
     <AndroidResource Include="Resources\drawable\gary_hs.jpg" />
@@ -190,6 +187,9 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\pispace.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\drawable\dc_hs.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>
