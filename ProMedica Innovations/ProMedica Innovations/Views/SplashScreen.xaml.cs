@@ -10,9 +10,8 @@ namespace ProMedica_Innovations.Views
     {
         public SplashScreen()
         {
-            var vm = new SplashScreenViewModel();
-            this.BindingContext = vm;
             InitializeComponent();
+            BindingContext = new SplashScreenViewModel();
         }
     }
 }

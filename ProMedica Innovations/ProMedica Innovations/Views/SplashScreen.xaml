@@ -6,7 +6,9 @@
     
 -->
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:viewmodels="clr-namespace:ProMedica_Innovations.ViewModels" 
+             x:DataType="viewmodels:SplashScreenViewModel"
              x:Class="ProMedica_Innovations.Views.SplashScreen"
              Title="Home Page">
     <ContentPage.Content>
