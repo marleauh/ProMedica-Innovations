@@ -58,7 +58,7 @@
                                 Text="Our innovation center is a business incubator focused on providing support for pioneering early-stage life sciences–oriented businesses seeking to establish themselves in Northwest Ohio."
                                 Margin="0,0,20,0"/>
                         </StackLayout>
-                        <StackLayout Grid.Row="3" Grid.ColumnSpan="2" Margin="10,130,0,-140">
+                        <StackLayout Grid.Row="3" Grid.ColumnSpan="2" Margin="30,130,30,-140">
                             <Label Text="By providing office space, equipment, material support, access to support staff, and access to the resources of a leading medical center and research facility, ProMedica Innovations helps these companies to accelerate development of their products and services while incurring lower operating costs."
                                    VerticalOptions="End"/>
                         </StackLayout>

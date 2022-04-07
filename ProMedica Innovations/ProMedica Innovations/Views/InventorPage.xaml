@@ -19,12 +19,12 @@
                             <Label TextColor="White" Text="Innovation Everywhere" TranslationY="-160" HorizontalTextAlignment="Center" FontSize="25"/>
                             <Label TextColor="White" Text="70,000 people, 70,000 minds. A world of possiblities." TranslationY="-160" FontSize="25" HorizontalTextAlignment="Center"/>
                             <Rectangle BackgroundColor="White" HeightRequest="80" Scale="2" Rotation="-6" TranslationY="-100"/>
-                            <Label Text="Where do great ideas come from?" TextColor="Black" FontAttributes="Bold" FontSize="30" TranslationY="-180" TranslationX="20"/>
+                            <Label Text="Where do great ideas come from?" TextColor="Black" FontAttributes="Bold" FontSize="30" TranslationY="-180" Margin="30,0,30,0"/>
                         </StackLayout>
                         <FlexLayout Grid.Row="1" TranslationY="-160">
                             <StackLayout>
                                 <Image Source="inventors_top.png"
-                               Margin="20,0,20,0" />
+                               Margin="30,0,30,0" />
                             </StackLayout>
                             <StackLayout>
                                 <Label Text="More than 70,000 people &#10;have contributed to &#10;ProMedica's success."
@@ -34,27 +34,27 @@
                             </StackLayout>
                         </FlexLayout>
                         <StackLayout Grid.Row="1">
-                            <Label Text="What we're looking for" TextColor="Black" FontAttributes="Bold" FontSize="30" Margin="20,0,0,0"/>
+                            <Label Text="What we're looking for" TextColor="Black" FontAttributes="Bold" FontSize="30" Margin="30,20,0,30"/>
                             <Label Text="We're looking for viable inventions that can become commercially-viable products within the life sciences, &#10;medical, or health information technology fields."
-                           Margin="20,0,0,0"/>
+                           Margin="30,-20,0,0"/>
                         </StackLayout>
-                        <FlexLayout Grid.Row="2" Margin="20,-120,0,0">
+                        <FlexLayout Grid.Row="2" Margin="30,-140,30,0">
                             <StackLayout>
                                     <Label Text="1. BE ORIGINAL" TextColor="Black" FontSize="20"/>
                                     <Label Text="Not infringing on an existing patent" FontSize="10"/>
                                 </StackLayout>
-                                <StackLayout Margin="35,0,0,0">
+                                <StackLayout Margin="15,0,0,0">
                                     <Label Text="3. BE PATENTABLE" TextColor="Black" FontSize="20"/>
                                     <Label Text="Defined and protected by patent law" FontSize="10"/>
                                 </StackLayout>
                             </FlexLayout>
-                            <FlexLayout Grid.Row="2" Margin="20,-70,0,0">
+                            <FlexLayout Grid.Row="2" Margin="30,-70,30,0">
                                 <StackLayout>
                                     <Label Text="2. BE PRACTICAL" TextColor="Black" FontSize="20"/>
                                     <Label Text="Functions in 'the real world' and" FontSize="10"/>
                                     <Label Text="meet a clinical need." FontSize="10"/>
                                 </StackLayout>
-                                <StackLayout Margin="35,0,0,0">
+                                <StackLayout Margin="15,0,0,0">
                                     <Label Text="4. BE VIABLE" TextColor="Black" FontSize="20"/>
                                     <Label Text="Potential to be commercially successful" FontSize="10"/>
                                 </StackLayout>
@@ -74,8 +74,8 @@
                                 <Label HorizontalOptions="Center" Text="resulting from the licensure of their invention." FontSize="18"/>
                             </StackLayout>
                         </StackLayout>
-                        <StackLayout Grid.Row="3" Margin="0,40,0,0">
-                            <Label Text="Inventors also are able to make bigger &#10;differences in more lives. By partnering with &#10;ProMedica, your invention has the potential &#10;to reach patients throughout the region, &#10;across the country, and around the world."
+                        <StackLayout Grid.Row="3" Margin="30,30,30,0">
+                            <Label Text="Inventors also are able to make bigger differences in more lives. By partnering with ProMedica, your invention has the potential to reach patients throughout the region, across the country, and around the world."
                                FontSize="19" HorizontalOptions="Center"/>
                         </StackLayout>
                     </Grid>

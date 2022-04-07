@@ -9,31 +9,31 @@
                 <ScrollView>
                     <Grid>
                         <Grid.RowDefinitions>
-                            <RowDefinition Height="2*" />
+                            <RowDefinition Height="Auto" />
                         </Grid.RowDefinitions>
                         <StackLayout Grid.Row="0">
                             <Image Source="ventures_head.jpg" />
                             <Label TextColor="White" Text="Investing In Innovation" TranslationY="-160" TranslationX="80" FontSize="25"/>
                             <Rectangle BackgroundColor="White" HeightRequest="80" Scale="2" Rotation="-10" TranslationY="-50"/>
-                            <Label Text="Funding for a Greater Good" TextColor="Black" FontAttributes="Bold" FontSize="30" TranslationY="-120" TranslationX="20"/>
+                            <Label Text="Funding for a Greater Good" TextColor="Black" FontAttributes="Bold" FontSize="28" TranslationY="-120" Margin="30,0,30,0"/>
                         </StackLayout>
-                        <StackLayout Grid.Row="1">
+                        <StackLayout Grid.Row="1" Margin="30,-120,30,0">
                             <Label Text="Working alongside ProMedica Innovations, ProMedica Ventures works to foster cooperation with innovators from inside and outside ProMedica, expanding the company's access to the most promising emerging technologies and the people who develop them." 
-                           WidthRequest="370" HeightRequest="200" HorizontalOptions="Center" TranslationY="-100" FontSize="Medium"/>
+                           WidthRequest="370" HeightRequest="200" HorizontalOptions="Center" FontSize="Medium"/>
                         </StackLayout>
-                        <StackLayout Grid.Row="2">
+                        <StackLayout Grid.Row="1" Margin="30,40,30,0">
                             <Label Text="ProMedica Ventures considers the potential impact on the communities we serve, actively seeking to support technologies likely to make a positive contribution to local economies" 
-                           WidthRequest="370" HeightRequest="200" HorizontalOptions="Center" TranslationY="-160" FontSize="Medium"/>
+                           WidthRequest="370" HeightRequest="200" HorizontalOptions="Center" FontSize="Medium"/>
                         </StackLayout>
-                        <StackLayout Grid.Row="2">
+                        <StackLayout Grid.Row="2" Margin="30,-80,30,0">
                             <Label Text="ProMedica Ventures Manages the ProMedica Venture Fund and the Northwest Ohio Tech Fund II." 
-                           WidthRequest="370" HeightRequest="200" HorizontalOptions="Center" TranslationY="-55" FontSize="Medium"/>
+                           WidthRequest="370" HeightRequest="200" HorizontalOptions="Center" FontSize="Medium"/>
                         </StackLayout>
-                        <FlexLayout Grid.Row="2">
+                        <FlexLayout Grid.Row="2" Margin="30,10,30,0">
                             <Button TextColor="{StaticResource Primary}" BackgroundColor="White" BorderColor="{StaticResource Primary}" 
-                             CornerRadius="0" BorderWidth="1" WidthRequest="150" HeightRequest="50" TranslationY="40" TranslationX="20" Text="ProMedica Venture Fund"/>
+                             CornerRadius="0" BorderWidth="1" WidthRequest="150" HeightRequest="55" Text="ProMedica Venture Fund"/>
                             <Button TextColor="{StaticResource Primary}" BackgroundColor="White" BorderColor="{StaticResource Primary}" 
-                             CornerRadius="0" BorderWidth="1" WidthRequest="150" HeightRequest="50" TranslationY="40" TranslationX="90" Text="Northwest Ohio Tech Fund II"/>
+                             CornerRadius="0" BorderWidth="1" WidthRequest="150" HeightRequest="55" TranslationX="45" Text="Northwest Ohio Tech Fund II"/>
                         </FlexLayout>
                     </Grid>
                 </ScrollView>
