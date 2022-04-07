@@ -21,49 +21,49 @@
                             <Label TextColor="White" Text="How Inspiration Becomes Action" TranslationY="-160" TranslationX="30" FontSize="25"/>
                             <Rectangle BackgroundColor="White" HeightRequest="80" Scale="2" Rotation="-10" TranslationY="-50"/>
                         </StackLayout>
-                        <StackLayout Grid.Row="0" Grid.ColumnSpan="2" VerticalOptions="End" Margin="30,0,0,0">
+                        <StackLayout Grid.Row="0" Grid.ColumnSpan="2" VerticalOptions="End" Margin="30,0,0,-10">
                             <Label Text="Great things happen when good ideas come to life." TextColor="Black" FontAttributes="Bold" FontSize="30"/>
                             <Label Text="Radial Check Device" TextColor="Black"  FontSize="25"/>
                         </StackLayout>
                         <StackLayout Grid.Row="1" Grid.Column="0">
                             <Image Source="radial_tech.jpg" 
-                            Margin="30,-20,0,50" HeightRequest="150" WidthRequest="150"/>
+                            Margin="30,0,0,50" HeightRequest="150" WidthRequest="150"/>
                         </StackLayout>
-                        <StackLayout Grid.Row="1" Grid.Column="0" VerticalOptions="End" Margin="30,0,0,45">
+                        <StackLayout Grid.Row="1" Grid.Column="0" VerticalOptions="End" Margin="30,0,0,35">
                             <Button TextColor="{StaticResource Primary}" BackgroundColor="White" BorderColor="{StaticResource Primary}" 
                              CornerRadius="0" BorderWidth="1" Text="Download PDF" Command="{Binding OpenPdf}"/>
                         </StackLayout>
                         <StackLayout Grid.Row="1" Grid.Column="1">
                             <Label Text="Conceived by Kasi Ramanathan, M.D., the Radial Check Device helps doctors assess patients' eligibility for radial catheterization procedures quickly, efficiently, and effectively."
-                           Margin="10,-5,30,0" FontSize="14"/>
+                           Margin="10,15,30,0" FontSize="14"/>
                         </StackLayout>
-                        <StackLayout Grid.Row="1" Grid.Column="1" VerticalOptions="End" Margin="10,0,30,50">
+                        <StackLayout Grid.Row="1" Grid.Column="1" VerticalOptions="End" Margin="10,0,30,40">
                             <Label Text="Currently, the device is in the industry outreach phase and a patent application has been filed." FontSize="10"/>
                         </StackLayout>
-                        <StackLayout Grid.Row="1" Grid.ColumnSpan="2" VerticalOptions="End" Margin="30,0,0,0">
+                        <StackLayout Grid.Row="1" Grid.ColumnSpan="2" VerticalOptions="End" Margin="30,0,0,-10">
                             <Label Text="Flex Scoring Catheter" TextColor="Black"  FontSize="25"/>
                         </StackLayout>
                         <StackLayout Grid.Row="2" Grid.Column="0">
                             <Image Source="flex_tech.jpg" 
-                            Margin="30,-20,0,50" HeightRequest="150" WidthRequest="150"/>
+                            Margin="30,0,0,50" HeightRequest="150" WidthRequest="150"/>
                         </StackLayout>
-                        <StackLayout Grid.Row="2" Grid.Column="0" VerticalOptions="End" Margin="30,0,0,45">
+                        <StackLayout Grid.Row="2" Grid.Column="0" VerticalOptions="End" Margin="30,0,0,35">
                             <Button TextColor="{StaticResource Primary}" BackgroundColor="White" BorderColor="{StaticResource Primary}" 
                              CornerRadius="0" BorderWidth="1" Text="Find Out More" Command="{Binding OpenFlexScore}"/>
                         </StackLayout>
                         <StackLayout Grid.Row="2" Grid.Column="1">
                             <Label Text="A successful angioplasty procedure can depend upon proper vessel preparation. The Flex Scoring Catheter is an easy-to-use and cost-effective 'vessel preparation' device."
-                           Margin="10,-5,30,0" FontSize="14"/>
+                           Margin="10,15,30,0" FontSize="14"/>
                         </StackLayout>
-                        <StackLayout Grid.Row="2" Grid.Column="1" VerticalOptions="End" Margin="10,0,30,50">
+                        <StackLayout Grid.Row="2" Grid.Column="1" VerticalOptions="End" Margin="10,0,30,40">
                             <Label Text="This medical device is available for sale in the U.S. and E.U. through the VentureMed Group." FontSize="10"/>
                         </StackLayout>
-                        <StackLayout Grid.Row="2" Grid.ColumnSpan="2" VerticalOptions="End" Margin="30,0,0,-20">
+                        <StackLayout Grid.Row="2" Grid.ColumnSpan="2" VerticalOptions="End" Margin="30,0,0,-35">
                             <Label Text="LACS (Laboratory Assured Compliance Solutions)" TextColor="Black"  FontSize="25"/>
                         </StackLayout>
                         <StackLayout Grid.Row="3" Grid.Column="0">
                             <Image Source="lacs_tech.jpg" 
-                            Margin="30,0,0,50" HeightRequest="150" WidthRequest="150"/>
+                            Margin="30,18,0,50" HeightRequest="150" WidthRequest="150"/>
                         </StackLayout>
                         <StackLayout Grid.Row="3" Grid.Column="0" VerticalOptions="End" Margin="30,0,0,30">
                             <Button TextColor="{StaticResource Primary}" BackgroundColor="White" BorderColor="{StaticResource Primary}" 
@@ -71,7 +71,7 @@
                         </StackLayout>
                         <StackLayout Grid.Row="3" Grid.Column="1">
                             <Label Text="Laboratories are required by accrediting agencies to obtain, document, report and track instrument maintenance. LACS is a tablet-based application that replaces these paper logs."
-                           Margin="10,15,30,0" FontSize="14"/>
+                           Margin="10,30,30,0" FontSize="14"/>
                         </StackLayout>
                         <StackLayout Grid.Row="3" Grid.Column="1" VerticalOptions="End" Margin="10,0,30,30">
                             <Label Text="The product is commercially licensed through Kapios and delpoyed in laboratories nationwide" FontSize="10"/>
