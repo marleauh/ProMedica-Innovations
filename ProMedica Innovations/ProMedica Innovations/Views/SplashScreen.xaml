@@ -33,7 +33,7 @@
                         </StackLayout.GestureRecognizers>
                     </StackLayout>
                     <StackLayout Grid.Row="0" Grid.Column="1" BackgroundColor="White">
-                        <Button CornerRadius="0" HeightRequest="175" BackgroundColor="White" />
+                        <Button Command="{Binding TechnologyCommand}" CornerRadius="0" HeightRequest="175" BackgroundColor="White" />
                         <Ellipse Fill="#f2f5fa" HeightRequest="20" WidthRequest="20" HorizontalOptions="Center" TranslationY="-150" TranslationX="-50" Scale="3"/>
                         <Rectangle BackgroundColor="#f2f5fa" HeightRequest="60" WidthRequest="20" TranslationY="-100" Margin="10,0,10,0"/>
                         <Image Source="gear_color.png" HeightRequest="75" WidthRequest="75" TranslationY="-260" TranslationX="-35" Scale=".75"/>
@@ -44,7 +44,7 @@
                         </StackLayout.GestureRecognizers>
                     </StackLayout>
                     <StackLayout Grid.Row="1" Grid.Column="0" BackgroundColor="White">
-                        <Button CornerRadius="0" HeightRequest="175" BackgroundColor="White" />
+                        <Button Command="{Binding VentureCommand}" CornerRadius="0" HeightRequest="175" BackgroundColor="White" />
                         <Ellipse Fill="#f2f5fa" HeightRequest="20" WidthRequest="20" HorizontalOptions="Center" TranslationY="-150" TranslationX="-50" Scale="3"/>
                         <Rectangle BackgroundColor="#f2f5fa" HeightRequest="60" WidthRequest="20" TranslationY="-100" Margin="10,0,10,0"/>
                         <Image Source="laptop_color.png" HeightRequest="75" WidthRequest="75" TranslationY="-260" TranslationX="-35" Scale=".75"/>
@@ -55,7 +55,7 @@
                         </StackLayout.GestureRecognizers>
                     </StackLayout>
                     <StackLayout Grid.Row="1" Grid.Column="1" BackgroundColor="White">
-                        <Button CornerRadius="0" HeightRequest="175" BackgroundColor="White" />
+                        <Button Command="{Binding DevelopmentCommand}" CornerRadius="0" HeightRequest="175" BackgroundColor="White" />
                         <Ellipse Fill="#f2f5fa" HeightRequest="20" WidthRequest="20" HorizontalOptions="Center" TranslationY="-150" TranslationX="-50" Scale="3"/>
                         <Rectangle BackgroundColor="#f2f5fa" HeightRequest="60" WidthRequest="20" TranslationY="-100" Margin="10,0,10,0"/>
                         <Image Source="building_color.png" HeightRequest="75" WidthRequest="75" TranslationY="-260" TranslationX="-35" Scale=".75"/>
@@ -66,7 +66,7 @@
                         </StackLayout.GestureRecognizers>
                     </StackLayout>
                     <StackLayout Grid.Row="2" Grid.Column="0" BackgroundColor="White">
-                        <Button CornerRadius="0" HeightRequest="175" BackgroundColor="White" />
+                        <Button Command="{Binding PITeamCommand}" CornerRadius="0" HeightRequest="175" BackgroundColor="White" />
                         <Ellipse Fill="#f2f5fa" HeightRequest="20" WidthRequest="20" HorizontalOptions="Center" TranslationY="-150" TranslationX="-50" Scale="3"/>
                         <Rectangle BackgroundColor="#f2f5fa" HeightRequest="60" WidthRequest="20" TranslationY="-100" Margin="10,0,10,0"/>
                         <Image Source="about_color.png" HeightRequest="75" WidthRequest="75" TranslationY="-260" TranslationX="-35" Scale=".75"/>
@@ -77,7 +77,7 @@
                         </StackLayout.GestureRecognizers>
                     </StackLayout>
                     <StackLayout Grid.Row="2" Grid.Column="1" BackgroundColor="White">
-                        <Button CornerRadius="0" HeightRequest="175" BackgroundColor="White" />
+                        <Button Command="{Binding SubmitCommand}" CornerRadius="0" HeightRequest="175" BackgroundColor="White" />
                         <Ellipse Fill="#f2f5fa" HeightRequest="20" WidthRequest="20" HorizontalOptions="Center" TranslationY="-150" TranslationX="-50" Scale="3"/>
                         <Rectangle BackgroundColor="#f2f5fa" HeightRequest="60" WidthRequest="20" TranslationY="-100" Margin="10,0,10,0"/>
                         <Image Source="lightbulb_color_orange.png" HeightRequest="75" WidthRequest="75" TranslationY="-260" TranslationX="-35" Scale=".75"/>
