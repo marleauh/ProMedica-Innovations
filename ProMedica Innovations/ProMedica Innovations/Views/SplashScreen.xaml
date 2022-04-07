@@ -21,7 +21,7 @@
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*"  />
                     </Grid.ColumnDefinitions>
-                    <StackLayout Grid.Row="0" Grid.Column="0" BackgroundColor="Red">
+                    <StackLayout Grid.Row="0" Grid.Column="0" BackgroundColor="White">
                         <Button CornerRadius="0" HeightRequest="175" BackgroundColor="White" />
                         <Ellipse Fill="#f2f5fa" HeightRequest="20" WidthRequest="20" HorizontalOptions="Center" TranslationY="-150" TranslationX="-50" Scale="3"/>
                         <Rectangle BackgroundColor="#f2f5fa" HeightRequest="60" WidthRequest="20" TranslationY="-100" Margin="10,0,10,0"/>
@@ -32,7 +32,7 @@
                             <TapGestureRecognizer Command="{Binding InventorCommand}"/>
                         </StackLayout.GestureRecognizers>
                     </StackLayout>
-                    <StackLayout Grid.Row="0" Grid.Column="1" BackgroundColor="Yellow">
+                    <StackLayout Grid.Row="0" Grid.Column="1" BackgroundColor="White">
                         <Button CornerRadius="0" HeightRequest="175" BackgroundColor="White" />
                         <Ellipse Fill="#f2f5fa" HeightRequest="20" WidthRequest="20" HorizontalOptions="Center" TranslationY="-150" TranslationX="-50" Scale="3"/>
                         <Rectangle BackgroundColor="#f2f5fa" HeightRequest="60" WidthRequest="20" TranslationY="-100" Margin="10,0,10,0"/>
@@ -43,7 +43,7 @@
                             <TapGestureRecognizer Command="{Binding TechnologyCommand}"/>
                         </StackLayout.GestureRecognizers>
                     </StackLayout>
-                    <StackLayout Grid.Row="1" Grid.Column="0" BackgroundColor="Black">
+                    <StackLayout Grid.Row="1" Grid.Column="0" BackgroundColor="White">
                         <Button CornerRadius="0" HeightRequest="175" BackgroundColor="White" />
                         <Ellipse Fill="#f2f5fa" HeightRequest="20" WidthRequest="20" HorizontalOptions="Center" TranslationY="-150" TranslationX="-50" Scale="3"/>
                         <Rectangle BackgroundColor="#f2f5fa" HeightRequest="60" WidthRequest="20" TranslationY="-100" Margin="10,0,10,0"/>
@@ -54,7 +54,7 @@
                             <TapGestureRecognizer Command="{Binding VentureCommand}"/>
                         </StackLayout.GestureRecognizers>
                     </StackLayout>
-                    <StackLayout Grid.Row="1" Grid.Column="1" BackgroundColor="Aqua">
+                    <StackLayout Grid.Row="1" Grid.Column="1" BackgroundColor="White">
                         <Button CornerRadius="0" HeightRequest="175" BackgroundColor="White" />
                         <Ellipse Fill="#f2f5fa" HeightRequest="20" WidthRequest="20" HorizontalOptions="Center" TranslationY="-150" TranslationX="-50" Scale="3"/>
                         <Rectangle BackgroundColor="#f2f5fa" HeightRequest="60" WidthRequest="20" TranslationY="-100" Margin="10,0,10,0"/>
@@ -65,7 +65,7 @@
                             <TapGestureRecognizer Command="{Binding DevelopmentCommand}"/>
                         </StackLayout.GestureRecognizers>
                     </StackLayout>
-                    <StackLayout Grid.Row="2" Grid.Column="0" BackgroundColor="Green">
+                    <StackLayout Grid.Row="2" Grid.Column="0" BackgroundColor="White">
                         <Button CornerRadius="0" HeightRequest="175" BackgroundColor="White" />
                         <Ellipse Fill="#f2f5fa" HeightRequest="20" WidthRequest="20" HorizontalOptions="Center" TranslationY="-150" TranslationX="-50" Scale="3"/>
                         <Rectangle BackgroundColor="#f2f5fa" HeightRequest="60" WidthRequest="20" TranslationY="-100" Margin="10,0,10,0"/>
@@ -76,7 +76,7 @@
                             <TapGestureRecognizer Command="{Binding PITeamCommand}"/>
                         </StackLayout.GestureRecognizers>
                     </StackLayout>
-                    <StackLayout Grid.Row="2" Grid.Column="1" BackgroundColor="Bisque">
+                    <StackLayout Grid.Row="2" Grid.Column="1" BackgroundColor="White">
                         <Button CornerRadius="0" HeightRequest="175" BackgroundColor="White" />
                         <Ellipse Fill="#f2f5fa" HeightRequest="20" WidthRequest="20" HorizontalOptions="Center" TranslationY="-150" TranslationX="-50" Scale="3"/>
                         <Rectangle BackgroundColor="#f2f5fa" HeightRequest="60" WidthRequest="20" TranslationY="-100" Margin="10,0,10,0"/>
