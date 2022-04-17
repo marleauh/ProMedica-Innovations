@@ -10,7 +10,7 @@ namespace ProMedica_Innovations.Models
         public string LastName { get; set; }
         public string Gender { get; set; }
         public string Ethnicity { get; set; }
-        public string Email { get; set; }
+        public string invEmail { get; set; }
 
         public string Phone { get; set; }
 

@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows.Input;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 
 namespace ProMedica_Innovations.ViewModels
@@ -59,7 +60,7 @@ namespace ProMedica_Innovations.ViewModels
             get => ethnicity;
             set => SetProperty(ref ethnicity, value);
         }
-        public string Email
+        public string InnovatorEmail
         {
             get => email;
             set => SetProperty(ref email, value);
@@ -109,7 +110,7 @@ namespace ProMedica_Innovations.ViewModels
                 LastName = LastName,
                 Gender = Gender,
                 Ethnicity = Ethnicity,
-                Email = Email,
+                invEmail = InnovatorEmail,
                 Phone = Phone,
                 Description = Description,
                 Availability = Availability,
@@ -118,6 +119,8 @@ namespace ProMedica_Innovations.ViewModels
             };
 
             await DataStore.AddIdeaAsync(newIdea);
+
+            
 
             // This will pop the current page off the navigation stack
             await Shell.Current.GoToAsync("..");

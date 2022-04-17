@@ -82,7 +82,7 @@ namespace ProMedica_Innovations.ViewModels
                 var idea = await DataStore.GetIdeaAsync(ideaId);
                 FirstName = idea.FirstName;
                 LastName = idea.LastName;
-                Email = idea.Email;
+                Email = idea.invEmail;
                 Phone = idea.Phone;
                 Description = idea.Description;
                 Availability = idea.Availability;
