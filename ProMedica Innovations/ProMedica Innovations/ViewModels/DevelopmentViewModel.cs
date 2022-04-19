@@ -20,9 +20,9 @@ namespace ProMedica_Innovations.ViewModels
             OpenVenture = new Command(async () => await Browser.OpenAsync("https://www.venturemedgroup.com/"));
             OpenKapios = new Command(async () => await Browser.OpenAsync("https://www.kapioshealth.com/"));
             OpenWellopp = new Command(async () => await Browser.OpenAsync("https://wellopp.com/"));
-            OpenInfinity = new Command(async () => await Browser.OpenAsync("https://www.google.com"));
-            OpenIchor = new Command(async () => await Browser.OpenAsync("https://www.google.com"));
-            OpenMedview = new Command(async () => await Browser.OpenAsync("https://www.google.com"));
+            OpenInfinity = new Command(async () => await Browser.OpenAsync("https://infinityfunds.com/"));
+            OpenIchor = new Command(async () => await Browser.OpenAsync("https://www.ichorsystems.com/"));
+            OpenMedview = new Command(async () => await Browser.OpenAsync("https://www.medviewsystems.com/"));
         }
     }
 }
