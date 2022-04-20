@@ -119,8 +119,27 @@ namespace ProMedica_Innovations.ViewModels
             };
 
             await DataStore.AddIdeaAsync(newIdea);
-
             
+        /*
+            var message = new EmailMessage
+            {
+                
+                Subject = "An inventor has submitted a new idea",
+                Body = $"A new idea has been submitted. A brief summary of the details are listed below \n\n" +
+                       $"------------------------------------------------------------------------------ \n\n" +
+                       $"First Name : {newIdea.FirstName}\n" +
+                       $"Last  Name : {newIdea.LastName}\n" +
+                       $"Email      : {newIdea.invEmail}\n\n" +
+                       $"Descript.  : {newIdea.Description}\n\n" +
+                       $"------------------------------------------------------------------------------ \n\n" +
+                       $"",
+                To = senderEmail,
+                //Cc = ccRecipients,
+                //Bcc = bccRecipients
+            };
+            await Email.ComposeAsync(message);
+        */
+
 
             // This will pop the current page off the navigation stack
             await Shell.Current.GoToAsync("..");
