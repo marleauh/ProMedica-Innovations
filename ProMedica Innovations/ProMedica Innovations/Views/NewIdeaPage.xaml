@@ -49,8 +49,8 @@
                     </x:Array>
                   </Picker.ItemsSource>
                 </Picker>
-                    <Label Text="Email: *" FontSize="Medium" />
-                <Entry Text="{Binding Email, Mode=TwoWay}" FontSize="Medium" />
+                <Label Text="Email: *" FontSize="Medium" />
+                <Entry Text="{Binding InvEmail, Mode=TwoWay}" FontSize="Medium" />
                 <Label Text="Phone: *" FontSize="Medium" />
                 <Entry Text="{Binding Phone, Mode=TwoWay}" FontSize="Medium" />
                 <Label Text="Description: *" FontSize="Medium" />
