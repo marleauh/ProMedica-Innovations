@@ -42,7 +42,7 @@
                             <Rectangle BackgroundColor="Orange" WidthRequest="200" HeightRequest="35"/>
                         </StackLayout>
                         <StackLayout Grid.Row="2" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="End" Margin="15,0,0,10">
-                            <Label Text="John P. Pigott, MD, FACS" TextColor="White" FontSize="Medium"/>
+                            <Label Text="John P. Pigott" TextColor="White" FontSize="Medium"/>
                         </StackLayout>
 
                         <StackLayout Grid.Row="3" Grid.Column="0" Margin="10,0,0,20">
