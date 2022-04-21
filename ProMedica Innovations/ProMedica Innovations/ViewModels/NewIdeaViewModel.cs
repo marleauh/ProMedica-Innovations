@@ -110,7 +110,7 @@ namespace ProMedica_Innovations.ViewModels
                 LastName = LastName,
                 Gender = Gender,
                 Ethnicity = Ethnicity,
-                invEmail = InnovatorEmail,
+                InvEmail = InnovatorEmail,
                 Phone = Phone,
                 Description = Description,
                 Availability = Availability,
@@ -132,7 +132,7 @@ namespace ProMedica_Innovations.ViewModels
                        $"------------------------------------------------------------------------------ \n\n" +
                        $"First Name : {newIdea.FirstName}\n" +
                        $"Last  Name : {newIdea.LastName}\n" +
-                       $"Email      : {newIdea.invEmail}\n\n" +
+                       $"Email      : {newIdea.InvEmail}\n\n" +
                        $"Descript.  : {newIdea.Description}\n\n" +
                        $"------------------------------------------------------------------------------ \n\n" +
                        $"",

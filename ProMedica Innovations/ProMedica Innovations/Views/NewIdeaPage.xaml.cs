@@ -55,7 +55,7 @@ namespace ProMedica_Innovations.Views
                        $"------------------------------------------------------------------------------ \n\n" +
                        $"First Name : {idea.FirstName}\n" +
                        $"Last  Name : {idea.LastName}\n" +
-                       $"Email      : {idea.invEmail}\n\n" +
+                       $"Email      : {idea.InvEmail}\n\n" +
                        $"Descript.  : {idea.Description}\n\n" +
                        $"------------------------------------------------------------------------------ \n\n" +
                        $"";
