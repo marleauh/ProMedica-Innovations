@@ -57,8 +57,7 @@ namespace ProMedica_Innovations.Views
                        $"Last  Name : {idea.LastName}\n" +
                        $"Email      : {idea.InvEmail}\n\n" +
                        $"Descript.  : {idea.Description}\n\n" +
-                       $"------------------------------------------------------------------------------ \n\n" +
-                       $"";
+                       $"------------------------------------------------------------------------------ \n\n";
 
                 SmtpServer.Port = 587;
                 SmtpServer.Host = "smtp.gmail.com";
