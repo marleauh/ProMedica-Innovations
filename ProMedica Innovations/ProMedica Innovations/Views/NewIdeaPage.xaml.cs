@@ -1,5 +1,6 @@
 ﻿using ProMedica_Innovations.Models;
 using System;
+using System.Net.Mail;
 using Xamarin.Forms;
 
 namespace ProMedica_Innovations.Views
@@ -41,6 +42,36 @@ namespace ProMedica_Innovations.Views
         async void OnSaveButtonClicked(object sender, EventArgs e)
         {
             var idea = (Idea)BindingContext;
+            try
+            {
+
+                MailMessage mail = new MailMessage();
+                SmtpClient SmtpServer = new SmtpClient("smtp.gmail.com");
+
+                mail.From = new MailAddress("promedicainnovationsapp@gmail.com");
+                mail.To.Add("espyn99@gmail.com");
+                mail.Subject = "Test Invention";
+                mail.Body = $"A new idea has been submitted. A brief summary of the details are listed below \n\n" +
+                       $"------------------------------------------------------------------------------ \n\n" +
+                       $"First Name : {idea.FirstName}\n" +
+                       $"Last  Name : {idea.LastName}\n" +
+                       $"Email      : {idea.invEmail}\n\n" +
+                       $"Descript.  : {idea.Description}\n\n" +
+                       $"------------------------------------------------------------------------------ \n\n" +
+                       $"";
+
+                SmtpServer.Port = 587;
+                SmtpServer.Host = "smtp.gmail.com";
+                SmtpServer.EnableSsl = true;
+                SmtpServer.UseDefaultCredentials = false;
+                SmtpServer.Credentials = new System.Net.NetworkCredential("promedicainnovationsapp@gmail.com", "ProMedica4pp");
+
+                SmtpServer.Send(mail);
+            }
+            catch (Exception ex)
+            {
+                DisplayAlert("Faild", ex.Message, "OK");
+            }
             if (!string.IsNullOrWhiteSpace(idea.FirstName))
             {
                 await App.Database.SaveIdeaAsync(idea);
