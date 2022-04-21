@@ -120,7 +120,7 @@ namespace ProMedica_Innovations.ViewModels
 
             await DataStore.AddIdeaAsync(newIdea);
             
-        /*
+        
             var message = new EmailMessage
             {
                 
@@ -133,12 +133,12 @@ namespace ProMedica_Innovations.ViewModels
                        $"Descript.  : {newIdea.Description}\n\n" +
                        $"------------------------------------------------------------------------------ \n\n" +
                        $"",
-                To = senderEmail,
+                To = { "espyn99@gmail.com" },
                 //Cc = ccRecipients,
                 //Bcc = bccRecipients
             };
             await Email.ComposeAsync(message);
-        */
+        
 
 
             // This will pop the current page off the navigation stack
