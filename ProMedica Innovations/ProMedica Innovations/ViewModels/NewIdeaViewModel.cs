@@ -121,6 +121,9 @@ namespace ProMedica_Innovations.ViewModels
             await DataStore.AddIdeaAsync(newIdea);
             
         
+
+            //Email Message that will be sent to the project leaders
+            //Documentation is using Xamarin Essentials Email
             var message = new EmailMessage
             {
                 
@@ -133,7 +136,7 @@ namespace ProMedica_Innovations.ViewModels
                        $"Descript.  : {newIdea.Description}\n\n" +
                        $"------------------------------------------------------------------------------ \n\n" +
                        $"",
-                To = { "espyn99@gmail.com" },
+                To = { "recipient@email.com", "recipient2@email.com"},
                 //Cc = ccRecipients,
                 //Bcc = bccRecipients
             };
