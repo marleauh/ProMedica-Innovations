@@ -14,7 +14,7 @@ namespace ProMedica_Innovations.ViewModels
         private string lastname;
         private string gender;
         private string ethnicity;
-        private string email;
+        private string invemail;
         private string phone;
         private string description;
         private string availability;
@@ -34,7 +34,7 @@ namespace ProMedica_Innovations.ViewModels
                 && !String.IsNullOrWhiteSpace(lastname)
                 && !String.IsNullOrWhiteSpace(gender)
                 && !String.IsNullOrWhiteSpace(ethnicity)
-                && !String.IsNullOrWhiteSpace(email)
+                && !String.IsNullOrWhiteSpace(invemail)
                 && !String.IsNullOrWhiteSpace(phone)
                 && !String.IsNullOrWhiteSpace(description)
                 && !String.IsNullOrWhiteSpace(availability);
@@ -60,10 +60,10 @@ namespace ProMedica_Innovations.ViewModels
             get => ethnicity;
             set => SetProperty(ref ethnicity, value);
         }
-        public string InnovatorEmail
+        public string InvEmail
         {
-            get => email;
-            set => SetProperty(ref email, value);
+            get => invemail;
+            set => SetProperty(ref invemail, value);
         }
         public string Phone
         {
@@ -110,7 +110,7 @@ namespace ProMedica_Innovations.ViewModels
                 LastName = LastName,
                 Gender = Gender,
                 Ethnicity = Ethnicity,
-                InvEmail = InnovatorEmail,
+                InvEmail = InvEmail,
                 Phone = Phone,
                 Description = Description,
                 Availability = Availability,
