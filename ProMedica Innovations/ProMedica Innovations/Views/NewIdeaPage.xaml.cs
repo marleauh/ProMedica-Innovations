@@ -49,7 +49,7 @@ namespace ProMedica_Innovations.Views
                 SmtpClient SmtpServer = new SmtpClient("smtp.gmail.com");
 
                 mail.From = new MailAddress("promedicainnovationsapp@gmail.com");
-                mail.To.Add("espyn99@gmail.com");
+                mail.To.Add("promedicainnovationsapp@gmail.com");
                 mail.Subject = "Test Invention";
                 mail.Body = $"A new idea has been submitted. A brief summary of the details are listed below \n\n" +
                        $"------------------------------------------------------------------------------ \n\n" +
