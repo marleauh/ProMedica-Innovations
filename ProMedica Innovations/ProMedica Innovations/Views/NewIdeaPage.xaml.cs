@@ -70,7 +70,7 @@ namespace ProMedica_Innovations.Views
             }
             catch (Exception ex)
             {
-                DisplayAlert("Faild", ex.Message, "OK");
+                await DisplayAlert("Faild", ex.Message, "OK");
             }
             if (!string.IsNullOrWhiteSpace(idea.FirstName))
             {
