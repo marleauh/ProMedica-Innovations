@@ -16730,7 +16730,11 @@ namespace ProMedica_Innovations.Droid
 			public const int mtrl_tabs_default_indicator = 2131165348;
 			
 			// aapt resource value: 0x7F0700A5
+<<<<<<< Updated upstream
 			public const int navigation_empty_icon = 2131165349;
+=======
+			public const int newspaper_solid = 2131165349;
+>>>>>>> Stashed changes
 			
 			// aapt resource value: 0x7F0700A6
 			public const int notification_action_background = 2131165350;

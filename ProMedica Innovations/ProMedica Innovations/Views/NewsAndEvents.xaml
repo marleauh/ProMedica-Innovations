@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--News And Events Format
+    
+    Use this file to make any design changes
+    
+-->
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ProMedica_Innovations.ViewModels" 
+             x:DataType="local:NewsAndEventsViewModel"
+             x:Class="ProMedica_Innovations.Views.NewsAndEvents"
+             Title="News and Events">
+    <ContentPage.Content>
+        <OnPlatform x:TypeArguments="View">
+            <On Platform="Android">
+                <StackLayout>
+                    <Label Text="Check out what's new" TextColor="Orange" TranslationY="-290" TranslationX="55" FontSize="25"/>
+                    <Button Command="{Binding OpenNextBigIdea}" Text="Read More" BackgroundColor="LightGray" TextColor="Orange" Scale="0.75"/>
+                </StackLayout>
+            </On>
+            <On Platform="iOS">
+                <StackLayout>
+                    <Label Text="Check out what's new" TextColor="Orange" TranslationY="-290" TranslationX="55" FontSize="25"/>
+                    <Button Command="{Binding OpenNextBigIdea}" Text="Read More" BackgroundColor="LightGray" TextColor="Orange" Scale="0.75"/>
+                </StackLayout>
+            </On>
+        </OnPlatform>
+    </ContentPage.Content>
+</ContentPage>

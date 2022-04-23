@@ -87,7 +87,10 @@
         <Tab Title="About" Icon="folder_open_solid.png">
             <ShellContent Route="AboutPage" ContentTemplate="{DataTemplate local:AboutPage}" />
         </Tab>
-        <Tab Title="Submit Ideas" Icon="lightbulb.png">
+        <Tab Title="News" Icon="newspaper_solid.png">
+            <ShellContent Route="NewsAndEvents" ContentTemplate="{DataTemplate local:NewsAndEvents}" />
+        </Tab>
+        <Tab Title="Submit" Icon="lightbulb.png">
             <ShellContent Route="TermsOfServicePage" ContentTemplate="{DataTemplate local:TermsOfServicePage}" />
         </Tab>
         <Tab Title="Login" Icon="gear.png">
