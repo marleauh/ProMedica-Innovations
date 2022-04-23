@@ -1,8 +1,6 @@
 ﻿using ProMedica_Innovations.Views;
 using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Text;
 using Xamarin.Forms;
 
 namespace ProMedica_Innovations.ViewModels
@@ -43,7 +41,7 @@ namespace ProMedica_Innovations.ViewModels
             // admin logins
             if (email != "admin" || password != "promedica")
             {
-            /* ########## In order to add admin logins you must copy/paste ##########*/
+                /* ########## In order to add admin logins you must copy/paste ##########*/
                 if (email != "admin2" || password != "password")
                 {
                     DisplayInvalidLoginPrompt();
@@ -52,7 +50,7 @@ namespace ProMedica_Innovations.ViewModels
                 {
                     await Shell.Current.GoToAsync($"{nameof(IdeasPage)}");
                 }
-            /* ##########                  ALL OF THIS                     ###########*/
+                /* ##########                  ALL OF THIS                     ###########*/
             }
             else
             {
