@@ -8,7 +8,7 @@ namespace ProMedica_Innovations.ViewModels
     public class LoginViewModel : BaseViewModel
     {
         public Action DisplayInvalidLoginPrompt;
-        public event PropertyChangedEventHandler PropertyChanged = delegate { };
+        public event PropertyChangedEventHandler PropertiesChanged = delegate { };
         private string email;
         public string Email // username used for admin authentication. 
         {
@@ -16,7 +16,7 @@ namespace ProMedica_Innovations.ViewModels
             set
             {
                 email = value;
-                PropertyChanged(this, new PropertyChangedEventArgs("Email"));
+                PropertiesChanged(this, new PropertyChangedEventArgs("Email"));
             }
         }
         private string password; // password used for admin authentication.
@@ -26,7 +26,7 @@ namespace ProMedica_Innovations.ViewModels
             set
             {
                 password = value;
-                PropertyChanged(this, new PropertyChangedEventArgs("Password"));
+                PropertiesChanged(this, new PropertyChangedEventArgs("Password"));
             }
         }
         public Command LoginCommand { get; }
