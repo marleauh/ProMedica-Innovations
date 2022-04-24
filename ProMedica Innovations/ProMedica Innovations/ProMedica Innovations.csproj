@@ -6,9 +6,17 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="NewFolder\**" />
-    <EmbeddedResource Remove="NewFolder\**" />
-    <None Remove="NewFolder\**" />
+    <None Remove="Resources\Fonts\FontsFree-Net-Avenir-Light.ttf" />
+    <None Remove="Resources\Fonts\FontsFree-Net-AvenirLTStd-Black.ttf" />
+    <None Remove="Resources\Fonts\FontsFree-Net-AvenirLTStd-Book.ttf" />
+    <None Remove="Resources\Fonts\FontsFree-Net-AvenirLTStd-Heavy.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Fonts\FontsFree-Net-Avenir-Light.ttf" />
+    <EmbeddedResource Include="Resources\Fonts\FontsFree-Net-AvenirLTStd-Black.ttf" />
+    <EmbeddedResource Include="Resources\Fonts\FontsFree-Net-AvenirLTStd-Book.ttf" />
+    <EmbeddedResource Include="Resources\Fonts\FontsFree-Net-AvenirLTStd-Heavy.ttf" />
   </ItemGroup>
 
   <ItemGroup>
