@@ -34,39 +34,38 @@
                             </StackLayout>
                         </FlexLayout>
                         <StackLayout Grid.Row="1">
-                            <Label Text="What we're looking for" TextColor="Black" FontAttributes="Bold" FontSize="30" Margin="30,20,0,30"/>
+                            <Label Text="What we're looking for" TextColor="Black" FontAttributes="Bold" FontSize="30" Margin="30,25,0,30"/>
                             <Label Text="We're looking for viable inventions that can become commercially-viable products within the life sciences, &#10;medical, or health information technology fields."
-                           Margin="30,-20,0,0"/>
+                           Margin="30,-30,0,0"/>
                         </StackLayout>
-                        <FlexLayout Grid.Row="2" Margin="30,-140,30,0">
+                        <FlexLayout Grid.Row="2" Margin="30,-120,30,0">
                             <StackLayout>
-                                    <Label Text="1. BE ORIGINAL" TextColor="Black" FontSize="20"/>
+                                    <Label Text="1. BE ORIGINAL" TextColor="Black" FontSize="17"/>
                                     <Label Text="Not infringing on an existing patent" FontSize="10"/>
                                 </StackLayout>
-                                <StackLayout Margin="15,0,0,0">
-                                    <Label Text="3. BE PATENTABLE" TextColor="Black" FontSize="20"/>
+                                <StackLayout Margin="50,0,0,0">
+                                    <Label Text="3. BE PATENTABLE" TextColor="Black" FontSize="17"/>
                                     <Label Text="Defined and protected by patent law" FontSize="10"/>
                                 </StackLayout>
                             </FlexLayout>
-                            <FlexLayout Grid.Row="2" Margin="30,-70,30,0">
+                            <FlexLayout Grid.Row="2" Margin="30,-50,30,0">
                                 <StackLayout>
-                                    <Label Text="2. BE PRACTICAL" TextColor="Black" FontSize="20"/>
-                                    <Label Text="Functions in 'the real world' and" FontSize="10"/>
-                                    <Label Text="meet a clinical need." FontSize="10"/>
-                                </StackLayout>
-                                <StackLayout Margin="15,0,0,0">
-                                    <Label Text="4. BE VIABLE" TextColor="Black" FontSize="20"/>
-                                    <Label Text="Potential to be commercially successful" FontSize="10"/>
+                                    <Label Text="2. BE PRACTICAL" TextColor="Black" FontSize="17"/>
+                                    <Label Text="Functions in 'the real world' &#10;and  meet a clinical need." FontSize="10" />
+                            </StackLayout>
+                            <StackLayout Margin="25,0,0,0" TranslationX="35">
+                                    <Label Text="4. BE VIABLE" TextColor="Black" FontSize="17"/>
+                                <Label Text="Potential to be commercially &#10;successful" FontSize="10"/>
                                 </StackLayout>
                             </FlexLayout>
-                        <StackLayout Grid.Row="2" Margin="0,20,0,0">
-                            <Rectangle BackgroundColor="{StaticResource Primary}" HorizontalOptions="Center" WidthRequest="230" HeightRequest="3"/>
+                        <StackLayout Grid.Row="2" Margin="0,40,0,0">
+                            <Rectangle BackgroundColor="{StaticResource Primary}" HorizontalOptions="Center" WidthRequest="230" HeightRequest="3" Margin="0,0,0,20"/>
                         </StackLayout>
-                        <StackLayout Grid.Row="2" Margin="0,50,0,0" HorizontalOptions="Center">
+                        <StackLayout Grid.Row="2" Margin="0,75,0,-15" HorizontalOptions="Center">
                             <Image Source="dollar.png" WidthRequest="100" HeightRequest="100" />
-                            <Label Text="What's In It For You..." TextColor="Black" HorizontalTextAlignment="Center" FontAttributes="Bold" FontSize="30"/>
-                            <FlexLayout Margin="25,10,0,-10">
-                                <Label Text="Inventors will receive " FontSize="18"/>
+                            <Label Text="What's In It For You..." TextColor="Black" HorizontalTextAlignment="Center" FontAttributes="Bold" FontSize="30" Margin="0,15,0,15"/>
+                            <FlexLayout Margin="25,10,0,-20">
+                                <Label Text="Inventors will receive " FontSize="18" Margin="-10,0,0,0"/>
                                 <Label Text="40%" FontSize="30" FontAttributes="Bold" TranslationY="-12.5"/>
                                 <Label Text=" of the proceeds" FontSize="18"/>
                             </FlexLayout>
