@@ -38,23 +38,23 @@
                             <Label Text="We're looking for viable inventions that can become commercially-viable products within the life sciences, &#10;medical, or health information technology fields."
                            Margin="30,-30,0,0"/>
                         </StackLayout>
-                        <FlexLayout Grid.Row="2" Margin="30,-120,30,0">
+                        <FlexLayout Grid.Row="2" Margin="30,-150,30,0">
                             <StackLayout>
-                                    <Label Text="1. BE ORIGINAL" TextColor="Black" FontSize="17"/>
+                                    <Label Text="1. BE ORIGINAL" TextColor="Black" FontSize="16" FontAttributes="Bold"/>
                                     <Label Text="Not infringing on an existing patent" FontSize="10"/>
                                 </StackLayout>
                                 <StackLayout Margin="50,0,0,0">
-                                    <Label Text="3. BE PATENTABLE" TextColor="Black" FontSize="17"/>
+                                <Label Text="3. BE PATENTABLE" TextColor="Black" FontSize="16" FontAttributes="Bold"/>
                                     <Label Text="Defined and protected by patent law" FontSize="10"/>
                                 </StackLayout>
                             </FlexLayout>
-                            <FlexLayout Grid.Row="2" Margin="30,-50,30,0">
+                            <FlexLayout Grid.Row="2" Margin="30,-60,30,0">
                                 <StackLayout>
-                                    <Label Text="2. BE PRACTICAL" TextColor="Black" FontSize="17"/>
+                                <Label Text="2. BE PRACTICAL" TextColor="Black" FontSize="16" FontAttributes="Bold"/>
                                     <Label Text="Functions in 'the real world' &#10;and  meet a clinical need." FontSize="10" />
                             </StackLayout>
                             <StackLayout Margin="25,0,0,0" TranslationX="35">
-                                    <Label Text="4. BE VIABLE" TextColor="Black" FontSize="17"/>
+                                <Label Text="4. BE VIABLE" TextColor="Black" FontSize="16" FontAttributes="Bold"/>
                                 <Label Text="Potential to be commercially &#10;successful" FontSize="10"/>
                                 </StackLayout>
                             </FlexLayout>
