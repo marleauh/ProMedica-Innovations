@@ -43,8 +43,8 @@
                 <Label Padding="30,0,30,0" TranslationY="-240" FontSize="23" Text="ProMedica Innovations helps transform your ideas into powerful products that build knowledge, expand medical capabilities, improve patient care -- and transform lives"/>
             </StackLayout>
             <FlexLayout Grid.Row="1">
-                <Image Source="https://www.promedica.org/innovations/_assets/images/team2.jpg" Scale=".7" TranslationX="-15" TranslationY="-220"/>
-                <Label Text="We've got the &#10;expert team that &#10;turns them into new &#10;technologies, new &#10;products, and new businesses" FontSize="16.3" TranslationY="-40" TranslationX="-40"/>
+                <Image Source="team2.png" Scale=".7" TranslationX="-15" TranslationY="-220"/>
+                <Label Text="We've got the &#10;expert team that &#10;turns them into new &#10;technologies, new &#10;products, and new businesses" FontSize="16.3" TranslationY="-50" TranslationX="-40"/>
             </FlexLayout>
             </Grid>
             </ScrollView>
@@ -71,7 +71,7 @@
                     </StackLayout>
                     <FlexLayout Grid.Row="1">
                         <Image Source="https://www.promedica.org/innovations/_assets/images/team2.jpg" Scale=".7" TranslationX="-15" TranslationY="-220"/>
-                        <Label Text="We've got the &#10;expert team that &#10;turns them into new &#10;technologies, new &#10;products, and new businesses" FontSize="16.3" TranslationY="-40" TranslationX="-40"/>
+                        <Label Text="We've got the &#10;expert team that &#10;turns them into new &#10;technologies, new &#10;products, and new businesses" FontSize="16.3" TranslationY="-50" TranslationX="-40"/>
                     </FlexLayout>
                 </Grid>
             </ScrollView>
