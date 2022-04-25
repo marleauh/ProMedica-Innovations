@@ -14,9 +14,12 @@
         <OnPlatform x:TypeArguments="View">
             <On Platform="Android">
                 <ScrollView>
-                    <Grid VerticalOptions="FillAndExpand" BackgroundColor="LightGray" Padding="20,25,20,25" ColumnSpacing="0" RowSpacing="15">
+                    <Grid VerticalOptions="FillAndExpand" BackgroundColor="LightGray" Padding="20,25,20,10" ColumnSpacing="0" RowSpacing="15">
                         <Grid.RowDefinitions>
                             <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="150" />
                         </Grid.RowDefinitions>
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="*"  />
@@ -40,8 +43,7 @@
                         <StackLayout Grid.Row="1" Grid.ColumnSpan="2" BackgroundColor="white">
                             <Image Source="innovations_logo.png" HeightRequest="15" WidthRequest="10" TranslationY="25"  TranslationX="-60"/>
                             <Label TextColor="Orange" Text="March 30 at 6:30 AM" FontSize="11.75" FontAttributes="Bold" Margin="45,20,25,0"/>
-                            <Label TextColor="Black" Text="TELA Bio Announces Investment Agreement with ProMedica Innovations Venture Fund
-Affiliate of leading integrated delivery network to invest $1 million in TELA Bio to form a strategic partnership in research and education." FontSize="15" Margin="25,0,25,10"/>
+                            <Label TextColor="Black" Text="TELA Bio Announces Investment Agreement with ProMedica Innovations Venture Affiliate of leading integrated delivery network to invest $1 million in TELA Bio to form a strategic partnership in research and education." FontSize="15" Margin="25,0,25,10"/>
                             <Image Source="news1.png" HeightRequest="150" WidthRequest="100"  Margin="25,10,25,55"/>
                             <Rectangle Fill="LightGray" HeightRequest="20" WidthRequest="55" HorizontalOptions="Center" Scale="6" Margin="25,10,25,-50"/>
                             <Label TextColor="Black" Text="ProMedica Innovations Venture Fund Commits $1 Million in TELA Bio Investment" FontSize="20" FontAttributes="Bold" Margin="30,5,25,-15"/>
@@ -67,7 +69,26 @@ Affiliate of leading integrated delivery network to invest $1 million in TELA Bi
                                 <TapGestureRecognizer Command="{Binding OpenArticle3}"/>
                             </StackLayout.GestureRecognizers>
                         </StackLayout>
-
+                        <!--" Social Medica Links-->
+                        <FlexLayout Grid.Row="3" Grid.ColumnSpan="2" BackgroundColor="Gray" Padding="0,0,0,0" TranslationY="-15">
+                            <Image Source="stayconnected.png" HeightRequest="80" WidthRequest="220" TranslationY="9"  TranslationX="65" Margin="5,10,5,5"/>
+                        </FlexLayout>
+                        
+                        <FlexLayout Grid.Row="3" Grid.ColumnSpan="2" BackgroundColor="Transparent" Padding="0,0,0,0">
+                            <Rectangle Fill="white" HeightRequest="2" WidthRequest="50" TranslationY="4"  TranslationX="130" Scale="6" Margin="25,10,25,10"/>
+                        </FlexLayout>
+                        
+                        <FlexLayout Grid.Row="3" Grid.ColumnSpan="2" BackgroundColor="Transparent" Padding="0,0,0,0">
+                            <Image Source="facebook.png" HeightRequest="20" WidthRequest="70" TranslationY="80"  TranslationX="0" Margin="5,10,5,5"/>
+                            <Image Source="instagram.png" HeightRequest="20" WidthRequest="70" TranslationY="80"  TranslationX="0" Margin="5,10,5,5"/>
+                            <Image Source="linkedin.png" HeightRequest="20" WidthRequest="70" TranslationY="80"  TranslationX="0" Margin="5,10,5,5"/>
+                            <Image Source="twitter.png" HeightRequest="20" WidthRequest="70" TranslationY="80"  TranslationX="0" Margin="5,10,5,5"/>
+                            <Image Source="youtube.png" HeightRequest="20" WidthRequest="70" TranslationY="80"  TranslationX="0" Margin="5,10,5,5"/>
+                            <FlexLayout.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding OpenMaps}"/>
+                            </FlexLayout.GestureRecognizers>
+                        </FlexLayout>
+                        
                     </Grid>
                 </ScrollView>
             </On>
