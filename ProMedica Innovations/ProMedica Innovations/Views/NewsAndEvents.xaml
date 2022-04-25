@@ -75,7 +75,7 @@
                         </FlexLayout>
                         
                         <FlexLayout Grid.Row="3" Grid.ColumnSpan="2" BackgroundColor="Transparent" Padding="0,0,0,0">
-                            <Rectangle Fill="ffffff" HeightRequest="2" WidthRequest="50" TranslationY="4"  TranslationX="130" Scale="6" Margin="25,10,25,10"/>
+                            <Rectangle Fill="#ffffff" HeightRequest="2" WidthRequest="50" TranslationY="4"  TranslationX="130" Scale="6" Margin="25,10,25,10"/>
                         </FlexLayout>
                         
                         <FlexLayout Grid.Row="3" Grid.ColumnSpan="2" BackgroundColor="Transparent" Padding="0,0,0,0">
@@ -155,7 +155,7 @@
                         </FlexLayout>
 
                         <FlexLayout Grid.Row="3" Grid.ColumnSpan="2" BackgroundColor="Transparent" Padding="0,0,0,0">
-                            <Rectangle Fill="ffffff" HeightRequest="2" WidthRequest="50" TranslationY="4"  TranslationX="130" Scale="6" Margin="25,10,25,10"/>
+                            <Rectangle Fill="#ffffff" HeightRequest="2" WidthRequest="50" TranslationY="4"  TranslationX="130" Scale="6" Margin="25,10,25,10"/>
                         </FlexLayout>
 
                         <FlexLayout Grid.Row="3" Grid.ColumnSpan="2" BackgroundColor="Transparent" Padding="0,0,0,0">

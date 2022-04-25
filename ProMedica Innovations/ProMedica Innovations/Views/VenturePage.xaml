@@ -1,6 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:viewmodels="clr-namespace:ProMedica_Innovations.ViewModels"
+             x:DataType="viewmodels:VentureViewModel"
              x:Class="ProMedica_Innovations.Views.VenturePage"
              Title="Ventures">
     <ContentPage.Content>
@@ -28,13 +30,10 @@
                            HorizontalOptions="Center" FontSize="16" TextColor="#151515" FontFamily="Avenir Light" Margin="10"/>                            
                         </StackLayout>
                         <FlexLayout Grid.Row="2" Margin="30,0,30,0" BackgroundColor="#ffffff">
-                            <Button TextColor="#43b02a" BackgroundColor="#ffffff" BorderColor="#43b02a" 
+                            <Button Command="{Binding OpenFund}" TextColor="#43b02a" BackgroundColor="#ffffff" BorderColor="#43b02a" 
                              CornerRadius="3" BorderWidth="1" WidthRequest="150" HeightRequest="55" TranslationY="-55" Text="ProMedica Venture Fund" FontFamily="Avenir Light"/>
-                            <Button TextColor="#43b02a" BackgroundColor="#ffffff" BorderColor="#43b02a" 
+                            <Button Command="{Binding OpenNWFund}" TextColor="#43b02a" BackgroundColor="#ffffff" BorderColor="#43b02a" 
                              CornerRadius="3" BorderWidth="1" WidthRequest="150" HeightRequest="55" TranslationY="-55" TranslationX="30" Text="Northwest Ohio Tech Fund II" FontFamily="Avenir Light"/>
-                            <FlexLayout.GestureRecognizers>
-                                <TapGestureRecognizer Command="{Binding OpenFund}"/>
-                            </FlexLayout.GestureRecognizers>
                         </FlexLayout>
                     </Grid>
                 </ScrollView>

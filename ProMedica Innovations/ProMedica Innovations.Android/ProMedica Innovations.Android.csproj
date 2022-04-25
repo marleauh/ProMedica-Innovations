@@ -71,7 +71,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="project.assets.json" />
-    <None Include="project.nuget.cache" />
     <None Include="ProMedica Innovations.Android.csproj.nuget.dgspec.json" />
     <None Include="ProMedica Innovations.Android.csproj.nuget.g.props" />
     <None Include="ProMedica Innovations.Android.csproj.nuget.g.targets" />
