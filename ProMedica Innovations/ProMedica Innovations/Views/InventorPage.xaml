@@ -16,10 +16,10 @@
                         </Grid.ColumnDefinitions>
                         <StackLayout Grid.Row="0">
                             <Image Source="inventors_head.png" />
-                            <Label TextColor="White" Text="Innovation Everywhere" TranslationY="-160" HorizontalTextAlignment="Center" FontSize="25"/>
-                            <Label TextColor="White" Text="70,000 people, 70,000 minds. A world of possiblities." TranslationY="-160" FontSize="25" HorizontalTextAlignment="Center"/>
-                            <Rectangle BackgroundColor="White" HeightRequest="80" Scale="2" Rotation="-6" TranslationY="-100"/>
-                            <Label Text="Where do great ideas come from?" TextColor="Black" FontAttributes="Bold" FontSize="30" TranslationY="-180" Margin="30,0,30,0"/>
+                            <Label TextColor="White" Text="Innovation Everywhere" TranslationY="-160" HorizontalTextAlignment="Center" FontSize="20" FontFamily="Avenir Book" />
+                            <Label TextColor="White" Text="70,000 people, 70,000 minds. A world of possiblities." TranslationY="-160" FontSize="20" FontFamily="Avenir Book" HorizontalTextAlignment="Center"/>
+                            <Rectangle BackgroundColor="White" HeightRequest="80" Scale="2" Rotation="-6" TranslationY="-90"/>
+                            <Label Text="Where do great ideas come from?" TextColor="#151515" FontFamily="Avenir Heavy"  FontSize="25" TranslationY="-180" Margin="30,0,30,0"/>
                         </StackLayout>
                         <FlexLayout Grid.Row="1" TranslationY="-160">
                             <StackLayout>
@@ -27,35 +27,35 @@
                                Margin="30,0,30,0" />
                             </StackLayout>
                             <StackLayout>
-                                <Label Text="More than 70,000 people &#10;have contributed to &#10;ProMedica's success."
-                               FontSize="14.5" Margin="0,0,20,0"/>
-                                <Label Text="That's 70,000 people &#10;who've got what it takes to innovate. To invent."
-                               FontSize="14.5" Margin="0,0,20,0"/>
+                                <Label Text="More than 70,000 people have contributed to ProMedica's success."
+                               FontSize="15" Margin="0,0,20,10" FontFamily="Avenir Light" TextColor="#151515"/>
+                                <Label Text="That's 70,000 people who've got what it takes to innovate. To invent."
+                               FontSize="15" Margin="0,10,20,0" FontFamily="Avenir Light" TextColor="#151515"/>
                             </StackLayout>
                         </FlexLayout>
                         <StackLayout Grid.Row="1">
-                            <Label Text="What we're looking for" TextColor="Black" FontAttributes="Bold" FontSize="30" Margin="30,25,0,30"/>
+                            <Label Text="What we're looking for" TextColor="#151515" FontFamily="Avenir Heavy" FontSize="25" Margin="30,25,0,30"/>
                             <Label Text="We're looking for viable inventions that can become commercially-viable products within the life sciences, &#10;medical, or health information technology fields."
-                           Margin="30,-30,0,0"/>
+                           Margin="30,-30,0,0" TextColor="#151515" FontFamily="Avenir Light"/>
                         </StackLayout>
                         <FlexLayout Grid.Row="2" Margin="30,-150,30,0">
                             <StackLayout>
-                                    <Label Text="1. BE ORIGINAL" TextColor="Black" FontSize="16" FontAttributes="Bold"/>
-                                    <Label Text="Not infringing on an existing patent" FontSize="10"/>
+                                <Label Text="1. BE ORIGINAL" TextColor="#151515" FontSize="16" FontFamily="Avenir Heavy"/>
+                                <Label Text="Not infringing on an existing patent" TextColor="#151515" FontSize="12" FontFamily="Avenir Light"/>
                                 </StackLayout>
                                 <StackLayout Margin="50,0,0,0">
-                                <Label Text="3. BE PATENTABLE" TextColor="Black" FontSize="16" FontAttributes="Bold"/>
-                                    <Label Text="Defined and protected by patent law" FontSize="10"/>
+                                <Label Text="3. BE PATENTABLE" TextColor="#151515" FontSize="16" FontFamily="Avenir Heavy"/>
+                                <Label Text="Defined and protected by patent law" FontSize="12" TextColor="#151515"  FontFamily="Avenir Light"/>
                                 </StackLayout>
                             </FlexLayout>
                             <FlexLayout Grid.Row="2" Margin="30,-60,30,0">
                                 <StackLayout>
-                                <Label Text="2. BE PRACTICAL" TextColor="Black" FontSize="16" FontAttributes="Bold"/>
-                                    <Label Text="Functions in 'the real world' &#10;and  meet a clinical need." FontSize="10" />
+                                <Label Text="2. BE PRACTICAL" TextColor="#151515" FontSize="16" FontFamily="Avenir Heavy"/>
+                                <Label Text="Functions in 'the real world' &#10;and  meet a clinical need." TextColor="#151515" FontSize="12" FontFamily="Avenir Light" />
                             </StackLayout>
-                            <StackLayout Margin="25,0,0,0" TranslationX="35">
-                                <Label Text="4. BE VIABLE" TextColor="Black" FontSize="16" FontAttributes="Bold"/>
-                                <Label Text="Potential to be commercially &#10;successful" FontSize="10"/>
+                            <StackLayout Margin="25,0,0,0" TranslationX="15">
+                                <Label Text="4. BE VIABLE" TextColor="#151515" FontSize="16" FontFamily="Avenir Heavy"/>
+                                <Label Text="Potential to be commercially &#10;successful" TextColor="#151515" FontSize="12" FontFamily="Avenir Light"/>
                                 </StackLayout>
                             </FlexLayout>
                         <StackLayout Grid.Row="2" Margin="0,40,0,0">
@@ -63,19 +63,19 @@
                         </StackLayout>
                         <StackLayout Grid.Row="2" Margin="0,75,0,-15" HorizontalOptions="Center">
                             <Image Source="dollar.png" WidthRequest="100" HeightRequest="100" />
-                            <Label Text="What's In It For You..." TextColor="Black" HorizontalTextAlignment="Center" FontAttributes="Bold" FontSize="30" Margin="0,15,0,15"/>
+                            <Label Text="What's In It For You..." TextColor="#151515" HorizontalTextAlignment="Center" FontFamily="Avenir Heavy" FontSize="30" Margin="0,15,0,15"/>
                             <FlexLayout Margin="25,10,0,-20">
-                                <Label Text="Inventors will receive " FontSize="18" Margin="-10,0,0,0"/>
-                                <Label Text="40%" FontSize="30" FontAttributes="Bold" TranslationY="-12.5"/>
-                                <Label Text=" of the proceeds" FontSize="18"/>
+                                <Label Text="Inventors will receive " FontSize="18" Margin="-10,0,0,20" TextColor="#151515"  FontFamily="Avenir Light"/>
+                                <Label Text="40%" FontSize="23" FontFamily="Avenir Heavy" TextColor="#151515" TranslationY="-5"/>
+                                <Label Text=" of the proceeds" FontSize="18" TextColor="#151515"  FontFamily="Avenir Light"/>
                             </FlexLayout>
                             <StackLayout>
-                                <Label HorizontalOptions="Center" Text="resulting from the licensure of their invention." FontSize="18"/>
+                                <Label HorizontalOptions="Center" Text="resulting from the licensure of their invention." FontSize="18" TextColor="#151515"  FontFamily="Avenir Light"/>
                             </StackLayout>
                         </StackLayout>
-                        <StackLayout Grid.Row="3" Margin="30,30,30,0">
+                        <StackLayout Grid.Row="3" Margin="15,30,30,0">
                             <Label Text="Inventors also are able to make bigger differences in more lives. By partnering with ProMedica, your invention has the potential to reach patients throughout the region, across the country, and around the world."
-                               FontSize="19" HorizontalOptions="Center"/>
+                               FontSize="18" HorizontalOptions="Center" TextColor="#151515"  FontFamily="Avenir Light"/>
                         </StackLayout>
                     </Grid>
                 </ScrollView>
