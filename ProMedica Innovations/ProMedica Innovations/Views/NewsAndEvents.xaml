@@ -13,16 +13,83 @@
     <ContentPage.Content>
         <OnPlatform x:TypeArguments="View">
             <On Platform="Android">
-                <StackLayout>
-                    <Label Text="Check out what's new" TextColor="Orange" TranslationY="-290" TranslationX="55" FontSize="25"/>
-                    <Button Command="{Binding OpenNextBigIdea}" Text="Read More" BackgroundColor="LightGray" TextColor="Orange" Scale="0.75"/>
-                </StackLayout>
+                <ScrollView>
+                    <Grid VerticalOptions="FillAndExpand" BackgroundColor="LightGray" Padding="20,25,20,25" ColumnSpacing="0" RowSpacing="15">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"  />
+                        </Grid.ColumnDefinitions>
+                        <!--1st News Article-->
+                        <StackLayout Grid.Row="0" Grid.ColumnSpan="2" BackgroundColor="white">
+                            <Image Source="innovations_logo.png" HeightRequest="15" WidthRequest="10" TranslationY="25"  TranslationX="-60"/>
+                            <Label TextColor="Orange" Text="March 23 at 3:00 PM" FontSize="11.75" FontAttributes="Bold" Margin="45,20,25,0"/>
+                            <Label TextColor="Black" Text="ProMedica Innovations is awarding $10,000 in commercialization support to the winner of the first-ever PPG Big Idea Contest. We're looking for the most promising new medical device or tech-enabled solution between now and November 15, 2020." FontSize="15" Margin="25,0,25,10"/>
+                            <Image Source="ppgbigideas.png" HeightRequest="150" WidthRequest="100"  Margin="25,10,25,55"/>
+                            <Rectangle Fill="LightGray" HeightRequest="20" WidthRequest="55" HorizontalOptions="Center" Scale="6" Margin="25,10,25,-50"/>
+                            <Label TextColor="Black" Text="We're looking for the innovators among us, so gather your ideas and grab your phone!" FontSize="20" FontAttributes="Bold" Margin="30,5,25,30"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="0" Grid.ColumnSpan="2" BackgroundColor="Transparent" Padding="0,0,0,0">
+                            <Label Text="Read More" TextColor="Orange" FontSize="11.75" FontAttributes="Bold" Margin="30,380,25,5"/>
+                            <StackLayout.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding OpenNextBigIdea}"/>
+                            </StackLayout.GestureRecognizers>
+                        </StackLayout>
+                        <!--2nd News Article-->
+                        <StackLayout Grid.Row="1" Grid.ColumnSpan="2" BackgroundColor="white">
+                            <Image Source="innovations_logo.png" HeightRequest="15" WidthRequest="10" TranslationY="25"  TranslationX="-60"/>
+                            <Label TextColor="Orange" Text="March 30 at 6:30 AM" FontSize="11.75" FontAttributes="Bold" Margin="45,20,25,0"/>
+                            <Label TextColor="Black" Text="TELA Bio Announces Investment Agreement with ProMedica Innovations Venture Fund
+Affiliate of leading integrated delivery network to invest $1 million in TELA Bio to form a strategic partnership in research and education." FontSize="15" Margin="25,0,25,10"/>
+                            <Image Source="news1.png" HeightRequest="150" WidthRequest="100"  Margin="25,10,25,55"/>
+                            <Rectangle Fill="LightGray" HeightRequest="20" WidthRequest="55" HorizontalOptions="Center" Scale="6" Margin="25,10,25,-50"/>
+                            <Label TextColor="Black" Text="ProMedica Innovations Venture Fund Commits $1 Million in TELA Bio Investment" FontSize="20" FontAttributes="Bold" Margin="30,5,25,-15"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="1" Grid.ColumnSpan="2" BackgroundColor="Transparent" Padding="0,0,0,0">
+                            <Label Text="Read More" TextColor="Orange" FontSize="11.75" FontAttributes="Bold" Margin="30,380,25,5"/>
+                            <StackLayout.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding OpenArticle2}"/>
+                            </StackLayout.GestureRecognizers>
+                        </StackLayout>
+                        <!--3rd News Article-->
+                        <StackLayout Grid.Row="2" Grid.ColumnSpan="2" BackgroundColor="white">
+                            <Image Source="innovations_logo.png" HeightRequest="15" WidthRequest="10" TranslationY="25"  TranslationX="-60"/>
+                            <Label TextColor="Orange" Text="June 3 at 2:30 PM" FontSize="11.75" FontAttributes="Bold" Margin="45,20,25,0"/>
+                            <Label TextColor="Black" Text="Dr. Pigott overseas the Innovations Center where his team identifies opportunities that would satisfy ProMedica's criteria and assembles the resources needed to acquire these technologies for rapid deployment within the health care system." FontSize="15" Margin="25,0,25,10"/>
+                            <Image Source="news2.png" HeightRequest="150" WidthRequest="100"  Margin="25,10,25,55"/>
+                            <Rectangle Fill="LightGray" HeightRequest="20" WidthRequest="55" HorizontalOptions="Center" Scale="6" Margin="25,10,25,-50"/>
+                            <Label TextColor="Black" Text="PI Chief Innovation Officer John Pigott MD Named to Healthcare Innovators Professional Society" FontSize="20" FontAttributes="Bold" Margin="30,5,25,-15"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="2" Grid.ColumnSpan="2" BackgroundColor="Transparent" Padding="0,0,0,0">
+                            <Label Text="Read More" TextColor="Orange" FontSize="11.75" FontAttributes="Bold" Margin="30,380,25,5"/>
+                            <StackLayout.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding OpenArticle3}"/>
+                            </StackLayout.GestureRecognizers>
+                        </StackLayout>
+
+                    </Grid>
+                </ScrollView>
             </On>
             <On Platform="iOS">
-                <StackLayout>
-                    <Label Text="Check out what's new" TextColor="Orange" TranslationY="-290" TranslationX="55" FontSize="25"/>
-                    <Button Command="{Binding OpenNextBigIdea}" Text="Read More" BackgroundColor="LightGray" TextColor="Orange" Scale="0.75"/>
-                </StackLayout>
+                <ScrollView>
+                    <Grid VerticalOptions="FillAndExpand" BackgroundColor="LightGray" Padding="20,25,20,15" ColumnSpacing="15" RowSpacing="15">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"  />
+                        </Grid.ColumnDefinitions>
+                        <StackLayout Grid.Row="0" Grid.Column="0" BackgroundColor="white">
+                            <Label TextColor="Orange" Text="March 23 at 3:00 PM" FontSize="11.75" FontAttributes="Bold"/>
+                            <Label TextColor="Black" Text="ProMedica Innovations is awarding $10,000 in commercialization support to the winner of the first-ever PPG Big Idea Contest. We're looking for the most promising new medical device or tech-enabled solution between now and November 15, 2020." FontSize="15"/>
+                            <Image Source="news1.png" HeightRequest="75" WidthRequest="75" TranslationY="260" TranslationX="-35" Scale=".75"/>
+                            <Button Command="{Binding OpenNextBigIdea}" BackgroundColor="White" Text="Read More" TextColor="Orange" TranslationY="10" TranslationX="2" Scale="0.85"/>
+                            <Rectangle Fill="LightGray" HeightRequest="20" WidthRequest="55" HorizontalOptions="Center" TranslationY="200" Scale="6"/>
+                            <Label TextColor="Black" Text="We're looking for the innovators among us, so gather your ideas and grab your phone" FontSize="29" FontAttributes="Bold" TranslationY="140" TranslationX="10"/>
+                        </StackLayout>
+                    </Grid>
+                </ScrollView>
             </On>
         </OnPlatform>
     </ContentPage.Content>

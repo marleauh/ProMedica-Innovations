@@ -283,5 +283,16 @@
     <BundleResource Include="Resources\radial_tech.jpg" />
     <BundleResource Include="Resources\technology_head.jpg" />
     <BundleResource Include="Resources\ventures_head.jpg" />
+    <BundleResource Include="Resources\newspaper_solid.png" />
+    <BundleResource Include="Resources\facebook.png" />
+    <BundleResource Include="Resources\instagram.png" />
+    <BundleResource Include="Resources\linkedin.png" />
+    <BundleResource Include="Resources\news1.jpg" />
+    <BundleResource Include="Resources\news2.jpg" />
+    <BundleResource Include="Resources\ppgbigideas.jpg" />
+    <BundleResource Include="Resources\stayconnected.png" />
+    <BundleResource Include="Resources\twitter.png" />
+    <BundleResource Include="Resources\youtube.png" />
+    <BundleResource Include="Resources\innovations_logo.png" />
   </ItemGroup>
 </Project>
