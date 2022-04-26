@@ -294,5 +294,6 @@
     <BundleResource Include="Resources\twitter.png" />
     <BundleResource Include="Resources\youtube.png" />
     <BundleResource Include="Resources\innovations_logo.png" />
+    <BundleResource Include="Resources\econ_back2.jpg" />
   </ItemGroup>
 </Project>
