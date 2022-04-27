@@ -9,28 +9,30 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"  
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"  
              x:Class="ProMedica_Innovations.Views.LoginPage"  
-             Title="Administrator Login"
+             Title="Administrator Login" 
              BackgroundImage="logo.jpg">
     <ContentPage.Content>
         <StackLayout Orientation="Vertical" Padding="40" Spacing="40">
             <Image HorizontalOptions="Center" WidthRequest="300" Source="maco.jpg"/>
             <Frame BackgroundColor="White" HasShadow="True" CornerRadius="10">
                 <StackLayout Orientation="Vertical" Spacing="10">
-                    <Label Text="Username"/>
+                    <Label Text="Username" FontFamily="Avenir LT Std Heavy"/>
                     <Entry x:Name="Email" Text="{Binding Email}" Placeholder="Enter here"   
                            PlaceholderColor="Gray" HeightRequest="40"   
                            Keyboard="Email"  
-                           TextColor="Black"/>
-                    <Label Text="Password"/>
+                           TextColor="Black"
+                           FontFamily="Avenir LT Std Heavy"/>
+                    <Label Text="Password" FontFamily="Avenir LT Std Heavy"/>
                     <Entry x:Name="Password" Text="{Binding Password}" Placeholder="Enter here"   
                            PlaceholderColor="Gray" HeightRequest="40"  
                            IsPassword="True"  
-                           TextColor="Black"/>
+                           TextColor="Black"
+                           FontFamily="Avenir LT Std Heavy"/>
                 </StackLayout>
             </Frame>
             <Button Command="{Binding LoginCommand}" Text="Login" TextColor="White"  
                     FontAttributes="Bold" FontSize="Large" HorizontalOptions="FillAndExpand" 
-                    BackgroundColor="{StaticResource Primary}" />
+                    FontFamily="Avenir LT Std Heavy" BackgroundColor="{StaticResource Primary}" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage> 
