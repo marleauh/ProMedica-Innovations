@@ -26,27 +26,31 @@
             <ScrollView>
                 <Grid>
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="Auto" />
-                        <RowDefinition Height="100" />
+                        <RowDefinition Height="200" />
+                        <RowDefinition Height="50" />
+                        <RowDefinition Height="250" />
+                        <RowDefinition Height="190" />
                     </Grid.RowDefinitions>
                     <StackLayout Grid.Row="0" Grid.ColumnSpan="2">
-                        <WebView Source="https://www.promedica.org//innovations/_assets/videos/inno1.mp4" HeightRequest="233" WidthRequest="200" />
+                        <Image  Source="econdevelopment_head.jpg"/>
                         <Rectangle BackgroundColor="White" HeightRequest="80" Scale="2" Rotation="-10" TranslationY="-4"/>
-                        <FlexLayout>
-                            <Label Text="Where Great Ideas " TextColor="White" TranslationY="-290" TranslationX="55" FontSize="25" FontFamily="Avenir Light"/>
-                            <Image Source="aboutusoback.png" WidthRequest="100" HeightRequest="100" TranslationY="-320" TranslationX="39" Scale=".8"/>
-                            <Label Text="Grow" TextColor="White" TranslationY="-290" TranslationX="-40" FontSize="25" FontAttributes="Bold" FontFamily="Avenir Black"/>
+                        <FlexLayout Margin="0,20,0,-20">
+                            <Label Text="Where Great Ideas " TextColor="White" TranslationY="-260" TranslationX="55" FontSize="25" FontFamily="Avenir Light"/>
+                            <Image Source="aboutusoback.png" WidthRequest="100" HeightRequest="100" TranslationY="-292" TranslationX="45" Scale=".8"/>
+                            <Label Text="Grow" TextColor="White" TranslationY="-260" TranslationX="-40" FontSize="25" FontAttributes="Bold" FontFamily="Avenir Black"/>
                         </FlexLayout>
-                        <Label Text="Supporting Inventors. Driving Life" TextColor="White" TranslationY="-330" TranslationX="45" FontSize="20" FontFamily="Avenir Book" />
-                        <Label Text="Sciences Innovation." TextColor="White" FontFamily="Avenir Book" TranslationY="-330" TranslationX="105" FontSize="20"/>
+                        <Label Text="Driving Life Sciences Innovation." TextColor="White" FontFamily="Avenir Book" TranslationY="-300" TranslationX="0" FontSize="15" HorizontalOptions="Center"/>
                     </StackLayout>
                     <StackLayout Grid.Row="1" Grid.ColumnSpan="2">
-                        <Label Padding="30,0,30,0" TranslationY="-240" FontSize="20" FontFamily="Avenir Light" TextColor="#151515" Text="ProMedica Innovations helps transform your ideas into powerful products that build knowledge, expand medical capabilities, improve patient care -- and transform lives."/>
+                        <Label Text="Supporting Inventors." TextColor="#151515" TranslationY="15" TranslationX="0" FontSize="30" FontFamily="Avenir Heavy" HorizontalOptions="Center"/>
                     </StackLayout>
-                    <StackLayout Grid.Row="1" Grid.Column="0">
+                    <StackLayout Grid.Row="2" Grid.ColumnSpan="2">
+                        <Label Padding="15,0,20,0" TranslationY="30" TranslationX="20" FontSize="25" FontFamily="Avenir Light" TextColor="#151515" Text="ProMedica Innovations helps transform your ideas into powerful products that build knowledge, expand medical capabilities, improve patient care -- and transform lives."/>
+                    </StackLayout>
+                    <StackLayout Grid.Row="3" Grid.Column="0" Padding="0,90,0,70">
                         <Image Source="team.png" Scale="1.25" TranslationY="-65" TranslationX="0" Margin="35,0,0,0" />
                     </StackLayout>
-                    <StackLayout Grid.Row="1" Grid.Column="1">
+                    <StackLayout Grid.Row="3" Grid.Column="1" Padding="0,90,0,70">
                         <Label FontFamily="Avenir Light" Margin="25,0,10,0" TextColor="#151515" Text="We've got the expert team that turns them into new technologies, new products, and new businesses." FontSize="18.75" TranslationY="-80" TranslationX="0"/>
                     </StackLayout>
                 </Grid>

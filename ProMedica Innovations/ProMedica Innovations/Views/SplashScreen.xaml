@@ -19,12 +19,11 @@
                         <RowDefinition Height="170" />
                         <RowDefinition Height="170" />
                         <RowDefinition Height="170" />
-                        <RowDefinition Height="170" />
                     </Grid.RowDefinitions>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*"  />
                     </Grid.ColumnDefinitions>
-                    <StackLayout Grid.Row="0" Grid.Column="0" BackgroundColor="White" TranslationY="-5">
+                    <StackLayout Grid.Row="0" Grid.Column="0" BackgroundColor="White" TranslationY="5">
                         <Button CornerRadius="0" HeightRequest="175" BackgroundColor="White" />
                         <Ellipse Fill="#f2f5f8" HeightRequest="20" WidthRequest="20" HorizontalOptions="Center" TranslationY="-150" TranslationX="-50" Scale="3"/>
                         <Rectangle BackgroundColor="#f2f5f8" HeightRequest="60" WidthRequest="20" TranslationY="-100" Margin="10,0,10,0"/>
@@ -35,7 +34,7 @@
                             <TapGestureRecognizer Command="{Binding InventorCommand}"/>
                         </StackLayout.GestureRecognizers>
                     </StackLayout>
-                    <StackLayout Grid.Row="0" Grid.Column="1" BackgroundColor="White" TranslationY="-5">
+                    <StackLayout Grid.Row="0" Grid.Column="1" BackgroundColor="White" TranslationY="5">
                         <Button Command="{Binding TechnologyCommand}" CornerRadius="0" HeightRequest="175" BackgroundColor="White" />
                         <Ellipse Fill="#f2f5f8" HeightRequest="20" WidthRequest="20" HorizontalOptions="Center" TranslationY="-150" TranslationX="-50" Scale="3"/>
                         <Rectangle BackgroundColor="#f2f5f8" HeightRequest="60" WidthRequest="20" TranslationY="-100" Margin="10,0,10,0"/>
@@ -46,7 +45,7 @@
                             <TapGestureRecognizer Command="{Binding TechnologyCommand}"/>
                         </StackLayout.GestureRecognizers>
                     </StackLayout>
-                    <StackLayout Grid.Row="1" Grid.Column="0" BackgroundColor="White" TranslationY="-5">
+                    <StackLayout Grid.Row="1" Grid.Column="0" BackgroundColor="White" TranslationY="5">
                         <Button Command="{Binding VentureCommand}" CornerRadius="0" HeightRequest="175" BackgroundColor="White" />
                         <Ellipse Fill="#f2f5f8" HeightRequest="20" WidthRequest="20" HorizontalOptions="Center" TranslationY="-150" TranslationX="-50" Scale="3"/>
                         <Rectangle BackgroundColor="#f2f5f8" HeightRequest="60" WidthRequest="20" TranslationY="-100" Margin="10,0,10,0"/>
@@ -57,7 +56,7 @@
                             <TapGestureRecognizer Command="{Binding VentureCommand}"/>
                         </StackLayout.GestureRecognizers>
                     </StackLayout>
-                    <StackLayout Grid.Row="1" Grid.Column="1" BackgroundColor="White" TranslationY="-5">
+                    <StackLayout Grid.Row="1" Grid.Column="1" BackgroundColor="White" TranslationY="5">
                         <Button Command="{Binding DevelopmentCommand}" CornerRadius="0" HeightRequest="175" BackgroundColor="White" />
                         <Ellipse Fill="#f2f5f8" HeightRequest="20" WidthRequest="20" HorizontalOptions="Center" TranslationY="-150" TranslationX="-50" Scale="3"/>
                         <Rectangle BackgroundColor="#f2f5f8" HeightRequest="60" WidthRequest="20" TranslationY="-100" Margin="10,0,10,0"/>
@@ -68,7 +67,7 @@
                             <TapGestureRecognizer Command="{Binding DevelopmentCommand}"/>
                         </StackLayout.GestureRecognizers>
                     </StackLayout>
-                    <StackLayout Grid.Row="2" Grid.Column="0" BackgroundColor="White" TranslationY="-5">
+                    <StackLayout Grid.Row="2" Grid.Column="0" BackgroundColor="White" TranslationY="5">
                         <Button Command="{Binding PITeamCommand}" CornerRadius="0" HeightRequest="175" BackgroundColor="White" />
                         <Ellipse Fill="#f2f5f8" HeightRequest="20" WidthRequest="20" HorizontalOptions="Center" TranslationY="-150" TranslationX="-50" Scale="3"/>
                         <Rectangle BackgroundColor="#f2f5f8" HeightRequest="60" WidthRequest="20" TranslationY="-100" Margin="10,0,10,0"/>
@@ -79,7 +78,7 @@
                             <TapGestureRecognizer Command="{Binding PITeamCommand}"/>
                         </StackLayout.GestureRecognizers>
                     </StackLayout>
-                    <StackLayout Grid.Row="2" Grid.Column="1" BackgroundColor="White" TranslationY="-5">
+                    <StackLayout Grid.Row="2" Grid.Column="1" BackgroundColor="White" TranslationY="5">
                         <Button Command="{Binding SubmitCommand}" CornerRadius="0" HeightRequest="175" BackgroundColor="White" />
                         <Ellipse Fill="#f2f5f8" HeightRequest="20" WidthRequest="20" HorizontalOptions="Center" TranslationY="-150" TranslationX="-50" Scale="3"/>
                         <Rectangle BackgroundColor="#f2f5f8" HeightRequest="60" WidthRequest="20" TranslationY="-100" Margin="10,0,10,0"/>
@@ -89,9 +88,6 @@
                         <StackLayout.GestureRecognizers>
                             <TapGestureRecognizer Command="{Binding SubmitCommand}"/>
                         </StackLayout.GestureRecognizers>
-                    </StackLayout>
-                    <StackLayout Grid.Row="3" Grid.ColumnSpan="2" BackgroundColor="Transparent" Padding="-10,0,-10,0">
-                        <Rectangle BackgroundColor="#43b02a" HeightRequest="20" WidthRequest="2" Margin="0,0,0,0" VerticalOptions="End"/>
                     </StackLayout>
                 </Grid>
             </On>
