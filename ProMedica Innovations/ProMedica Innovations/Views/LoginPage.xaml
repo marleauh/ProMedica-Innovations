@@ -9,8 +9,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"  
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"  
              x:Class="ProMedica_Innovations.Views.LoginPage"  
-             Title="Administrator Login" 
-             BackgroundImage="logo.jpg">
+             Title="Administrator Login">
     <ContentPage.Content>
         <StackLayout Orientation="Vertical" Padding="40" Spacing="40">
             <Image HorizontalOptions="Center" WidthRequest="300" Source="maco.jpg"/>
