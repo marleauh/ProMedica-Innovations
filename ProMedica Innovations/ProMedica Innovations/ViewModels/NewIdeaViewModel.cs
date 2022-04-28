@@ -14,11 +14,16 @@ namespace ProMedica_Innovations.ViewModels
         private string lastname;
         private string gender;
         private string ethnicity;
+        private string citizenship_status;
+        private string target_market;
         private string invemail;
         private string phone;
+        private string idea_title;
         private string description;
+        private bool is_new_idea;
         private string availability;
         private string referral;
+        private string branch;
         private bool employee;
         public NewIdeaViewModel()
         {
@@ -34,6 +39,8 @@ namespace ProMedica_Innovations.ViewModels
                 && !String.IsNullOrWhiteSpace(lastname)
                 && !String.IsNullOrWhiteSpace(gender)
                 && !String.IsNullOrWhiteSpace(ethnicity)
+                && !String.IsNullOrWhiteSpace(citizenship_status)
+                && !String.IsNullOrWhiteSpace(target_market)
                 && !String.IsNullOrWhiteSpace(invemail)
                 && !String.IsNullOrWhiteSpace(phone)
                 && !String.IsNullOrWhiteSpace(description)
@@ -60,6 +67,16 @@ namespace ProMedica_Innovations.ViewModels
             get => ethnicity;
             set => SetProperty(ref ethnicity, value);
         }
+        public string CitizenshipStatus
+        {
+            get => citizenship_status;
+            set => SetProperty(ref citizenship_status, value);
+        }
+        public string TargetMarket
+        {
+            get => target_market;
+            set => SetProperty(ref target_market, value);
+        }
         public string InvEmail
         {
             get => invemail;
@@ -70,11 +87,20 @@ namespace ProMedica_Innovations.ViewModels
             get => phone;
             set => SetProperty(ref phone, value);
         }
-
+        public string IdeaTitle
+        {
+            get => idea_title;
+            set => SetProperty(ref idea_title, value);
+        }
         public string Description
         {
             get => description;
             set => SetProperty(ref description, value);
+        }
+        public bool IsNewIdea
+        {
+            get => is_new_idea;
+            set => SetProperty(ref is_new_idea, value);
         }
         public string Availability
         {
@@ -85,6 +111,11 @@ namespace ProMedica_Innovations.ViewModels
         {
             get => referral;
             set => SetProperty(ref referral, value);
+        }
+        public string Branch
+        {
+            get => branch;
+            set => SetProperty(ref branch, value);
         }
         public bool Employee
         {
@@ -110,39 +141,20 @@ namespace ProMedica_Innovations.ViewModels
                 LastName = LastName,
                 Gender = Gender,
                 Ethnicity = Ethnicity,
+                CitizenshipStatus = CitizenshipStatus,
+                TargetMarket = TargetMarket,
                 InvEmail = InvEmail,
                 Phone = Phone,
+                IdeaTitle = IdeaTitle,
                 Description = Description,
+                IsNewIdea = IsNewIdea,
                 Availability = Availability,
                 Referral = Referral,
+                Branch = Branch,
                 Employee = Employee,
             };
 
             await DataStore.AddIdeaAsync(newIdea);
-            
-        
-
-            //Email Message that will be sent to the project leaders
-            //Documentation is using Xamarin Essentials Email
-            var message = new EmailMessage
-            {
-                
-                Subject = "An inventor has submitted a new idea",
-                Body = $"A new idea has been submitted. A brief summary of the details are listed below \n\n" +
-                       $"------------------------------------------------------------------------------ \n\n" +
-                       $"First Name : {newIdea.FirstName}\n" +
-                       $"Last  Name : {newIdea.LastName}\n" +
-                       $"Email      : {newIdea.InvEmail}\n\n" +
-                       $"Descript.  : {newIdea.Description}\n\n" +
-                       $"------------------------------------------------------------------------------ \n\n" +
-                       $"",
-                To = { "recipient@email.com", "recipient2@email.com"},
-                //Cc = ccRecipients,
-                //Bcc = bccRecipients
-            };
-            await Email.ComposeAsync(message);
-        
-
 
             // This will pop the current page off the navigation stack
             await Shell.Current.GoToAsync("..");

@@ -21,20 +21,18 @@
                             <Rectangle BackgroundColor="#ffffff" HeightRequest="80" Scale="2" Rotation="-10" TranslationY="-50"/>
                         </StackLayout>
                         <StackLayout Grid.Row="1" Margin="30,-120,30,0">
-                            <Label Text="Funding for a Greater Good" TextColor="#151515" FontFamily="Avenir Heavy" FontSize="25"/>                            
+                            <Label Text="Funding for a Greater Good" TextColor="#151515" FontFamily="Avenir Heavy" FontSize="25"/>
                             <Label Text="Working alongside ProMedica Innovations, ProMedica Ventures works to foster cooperation with innovators from inside and outside ProMedica, expanding the company's access to the most promising emerging technologies and the people who develop them." 
                             HorizontalOptions="Center" FontSize="16" TextColor="#151515" FontFamily="Avenir Light" Margin="10" />
                             <Label Text="ProMedica Ventures considers the potential impact on the communities we serve, actively seeking to support technologies likely to make a positive contribution to local economies" 
                            HorizontalOptions="Center" FontSize="16" TextColor="#151515" FontFamily="Avenir Light" Margin="10"/>
                             <Label Text="ProMedica Ventures Manages the ProMedica Venture Fund and the Northwest Ohio Tech Fund II." 
-                           HorizontalOptions="Center" FontSize="16" TextColor="#151515" FontFamily="Avenir Light" Margin="10"/>                            
-                        </StackLayout>
-                        <FlexLayout Grid.Row="2" Margin="30,0,30,0" BackgroundColor="#ffffff">
+                           HorizontalOptions="Center" FontSize="16" TextColor="#151515" FontFamily="Avenir Light" Margin="10"/>
                             <Button Command="{Binding OpenFund}" TextColor="#43b02a" BackgroundColor="#ffffff" BorderColor="#43b02a" 
-                             CornerRadius="3" BorderWidth="1" WidthRequest="150" HeightRequest="55" TranslationY="-55" Text="ProMedica Venture Fund" FontFamily="Avenir Light"/>
+                             CornerRadius="3" BorderWidth="1" WidthRequest="150" HeightRequest="55"  Text="ProMedica Venture Fund" FontFamily="Avenir Light"/>
                             <Button Command="{Binding OpenNWFund}" TextColor="#43b02a" BackgroundColor="#ffffff" BorderColor="#43b02a" 
-                             CornerRadius="3" BorderWidth="1" WidthRequest="150" HeightRequest="55" TranslationY="-55" TranslationX="30" Text="Northwest Ohio Tech Fund II" FontFamily="Avenir Light"/>
-                        </FlexLayout>
+                             CornerRadius="3" BorderWidth="1" WidthRequest="150" HeightRequest="55" Text="Northwest Ohio Tech Fund II" FontFamily="Avenir Light"/>
+                        </StackLayout>
                     </Grid>
                 </ScrollView>
             </On>

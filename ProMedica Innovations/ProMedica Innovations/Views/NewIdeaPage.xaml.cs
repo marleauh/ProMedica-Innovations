@@ -50,12 +50,13 @@ namespace ProMedica_Innovations.Views
 
                 mail.From = new MailAddress("promedicainnovationsapp@gmail.com");
                 mail.To.Add("promedicainnovationsapp@gmail.com");
-                mail.Subject = "Test Invention";
+                mail.Subject = $"New Idea Was Submitted";
                 mail.Body = $"A new idea has been submitted. A brief summary of the details are listed below \n\n" +
+                       $"Idea Title : {idea.IdeaTitle}\n"+
                        $"------------------------------------------------------------------------------ \n\n" +
                        $"First Name : {idea.FirstName}\n" +
                        $"Last  Name : {idea.LastName}\n" +
-                       $"Email      : {idea.InvEmail}\n\n" +
+                       $"Email : {idea.InvEmail}\n\n" +
                        $"Descript.  : {idea.Description}\n\n" +
                        $"------------------------------------------------------------------------------ \n\n";
 

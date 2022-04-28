@@ -10,65 +10,143 @@
              x:Class="ProMedica_Innovations.Views.NewIdeaPage"
              Shell.PresentationMode="ModalAnimated"
              Title="New Idea"
-             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
              ios:Page.UseSafeArea="true">
     <ContentPage.Content>
         <ScrollView>
-            <StackLayout Spacing="5" Padding="20">
-                <Label Text="First Name: *" FontSize="Medium" />
-                <Entry Text="{Binding FirstName, Mode=TwoWay}" FontSize="Medium" />
-                <Label Text="Last Name: *" FontSize="Medium" />
-                <Entry Text="{Binding LastName, Mode=TwoWay}" FontSize="Medium" />
-                <Label Text="Gender: *" FontSize="Medium" />
-                <Picker x:Name="Gender" Title="Select your gender" SelectedItem="{Binding Gender, Mode=TwoWay}">
+            <StackLayout Spacing="10" Padding="20">
+
+
+                <!--<Label Text="First Name: *" FontSize="Medium" />-->
+                <Entry Placeholder="First Name *" Text="{Binding FirstName, Mode=TwoWay}" FontSize="Medium" />
+
+
+
+                <!--<Label Text="Last Name: *" FontSize="Medium" />-->
+                <Entry Placeholder="Last Name *" Text="{Binding LastName, Mode=TwoWay}" FontSize="Medium" />
+
+
+
+                <!--<Label Text="Gender: *" FontSize="Medium" />-->
+                <Picker x:Name="Gender" Title="Gender *" SelectedItem="{Binding Gender, Mode=TwoWay}">
                     <Picker.ItemsSource>
                         <x:Array Type="{x:Type x:String}">
                             <!-- Use the code below to add or remove gender options -->
                             <x:String>Non-Binary</x:String>
-                            <x:String>Man</x:String>
-                            <x:String>Woman</x:String>
+                            <x:String>Male</x:String>
+                            <x:String>Female</x:String>
                             <x:String>Transgender</x:String>
                             <x:String>Other</x:String>
                             <x:String>I would prefer not to respond</x:String>
                         </x:Array>
                     </Picker.ItemsSource>
                 </Picker>
-                <Label Text="Ethnicity: *" FontSize="Medium" />
-                <Picker x:Name="Ethnicity" Title="Select your ethnicity" SelectedItem="{Binding Ethnicity, Mode=TwoWay}">
+
+
+                <!--<Label Text="Ethnicity: *" FontSize="Medium" />-->
+                <Picker x:Name="Ethnicity" Title="Ethnicity *" SelectedItem="{Binding Ethnicity, Mode=TwoWay}">
                     <Picker.ItemsSource>
-                    <x:Array Type="{x:Type x:String}"> <!-- Use the code below to add or remove ethinicity options -->
-                        <x:String>American Indian or Alaska Native</x:String>
-                        <x:String>Asian</x:String>
-                        <x:String>Black or African American</x:String>
-                        <x:String>Hispanic</x:String>
-                        <x:String>Multiracial</x:String>
-                        <x:String>Native Hawaiian or Other Pacific Islander</x:String>
-                        <x:String>White</x:String>
-                        <x:String>Other</x:String>
-                        <x:String>I would prefer not to respond</x:String>
-                    </x:Array>
-                  </Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <!-- Use the code below to add or remove ethinicity options -->
+                            <x:String>American Indian or Alaska Native</x:String>
+                            <x:String>Asian</x:String>
+                            <x:String>Black or African American</x:String>
+                            <x:String>Hispanic</x:String>
+                            <x:String>Multiracial</x:String>
+                            <x:String>Native Hawaiian or Other Pacific Islander</x:String>
+                            <x:String>White</x:String>
+                            <x:String>Other</x:String>
+                            <x:String>I would prefer not to respond</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
                 </Picker>
-                <Label Text="Email: *" FontSize="Medium" />
-                <Entry Text="{Binding InvEmail, Mode=TwoWay}" FontSize="Medium" />
-                <Label Text="Phone: *" FontSize="Medium" />
-                <Entry Text="{Binding Phone, Mode=TwoWay}" FontSize="Medium" />
-                <Label Text="Description: *" FontSize="Medium" />
-                <Editor Text="{Binding Description, Mode=TwoWay}" AutoSize="TextChanges" FontSize="Medium" Margin="0" />
-                <Label Text="Availability: *" FontSize="Medium" />
-                <Entry Text="{Binding Availability, Mode=TwoWay}" FontSize="Medium" />
-                <Label Text="Referral:" FontSize="Medium" />
-                <Entry Text="{Binding Referral, Mode=TwoWay}" FontSize="Medium" />
+
+
+
+                <!--<Label Text="Current Citizenship Status: *" FontSize="Medium"/>-->
+                <Picker x:Name="CitizenshipStatus" Title="Citizenship Status *" SelectedItem="{Binding CitizenshipStatus, Mode=TwoWay}">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <!-- Use the code below to add or remove citizenship options -->
+                            <x:String>Yes, I am a U.S. Citizen</x:String>
+                            <x:String>No, but I am an eligible noncitizen</x:String>
+                            <x:String>No, I am not a citizen or eligible noncitizen</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+
+
+
+                <!--<Label Text="Email: *" FontSize="Medium" />-->
+                <Entry Placeholder="Email Address *" Text="{Binding InvEmail, Mode=TwoWay}" FontSize="Medium" />
+
+
+
+                <!--<Label Text="Phone: *" FontSize="Medium" />-->
+                <Entry Placeholder="Phone Number *" Text="{Binding Phone, Mode=TwoWay}" FontSize="Medium" />
+
+
+                <!--<Label Text="Describe Your Target Market: *" FontSize="Medium"/>-->
+                <Entry Placeholder="Describe Your Target Market *" Text="{Binding TargetMarket, Mode=TwoWay}" FontSize="Medium"/>
+
+
+                <!--<Label Text="Idea Title: *" FontSize="Medium"/>-->
+                <Entry Placeholder="Idea Title *" Text="{Binding IdeaTitle, Mode=TwoWay}" FontSize="Medium"/>
+
+
+
+                <!--<Label Text="Description: *" FontSize="Medium" />-->
+                <Editor Placeholder="Idea Description *" Text="{Binding Description, Mode=TwoWay}" AutoSize="TextChanges" FontSize="Medium" Margin="0" />
+
+
+
+
                 <StackLayout Orientation="Horizontal">
-                    <Label Text="Employee:" FontSize="Medium" />
-                    <CheckBox IsChecked="{Binding Employee, Mode=TwoWay}" Color="{StaticResource Primary}" Margin="0,-8,0,0" />
+                    <Label Text="Are There Products Similar To Your Idea? " FontSize="Medium"/>
+                    <CheckBox IsChecked="{Binding IsNewIdea,Mode=TwoWay}" Color="{StaticResource Primary}" />
                 </StackLayout>
+
+
+                <!--<Label Text="Availability: *" FontSize="Medium" />-->
+                <Entry Placeholder="Contact Availability *" Text="{Binding Availability, Mode=TwoWay}" FontSize="Medium" />
+
+
+
+                <!--<Label Text="Referral:" FontSize="Medium" />-->
+                <Entry Placeholder="Referral" Text="{Binding Referral, Mode=TwoWay}" FontSize="Medium" />
+
+
+
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Employee" FontSize="Medium" />
+                    <CheckBox x:Name="empChBx" IsChecked="{Binding Employee, Mode=TwoWay}" Color="{StaticResource Primary}" />
+                    <Picker x:Name="Branch" Title="Select Branch" SelectedItem="{Binding Branch, Mode=TwoWay}">
+                        <Picker.IsVisible>
+                            <Binding Source="{x:Reference empChBx}" Path="IsChecked"/>
+                        </Picker.IsVisible>
+                        <Picker.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <!-- Use the code below to add or remove citizenship options -->
+                                <x:String>Branch 1</x:String>
+                                <x:String>Branch 2</x:String>
+                                <x:String>Branch 3</x:String>
+                            </x:Array>
+                        </Picker.ItemsSource>
+                    </Picker>
+                </StackLayout>
+
+
+
                 <StackLayout Orientation="Horizontal">
                     <Button Text="Cancel" Clicked="OnDeleteButtonClicked" HorizontalOptions="FillAndExpand"></Button>
                     <Button Text="Save" Clicked="OnSaveButtonClicked" HorizontalOptions="FillAndExpand"></Button>
                 </StackLayout>
+
+
+
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>
-    
+
 </ContentPage>
