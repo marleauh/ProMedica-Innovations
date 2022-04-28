@@ -78,7 +78,7 @@ namespace ProMedica_Innovations.Views
             }
 
             // Navigate backwards
-            await Shell.Current.GoToAsync("//SplashScreen");
+            await Shell.Current.GoToAsync("ConfirmationPage");
         }
 
         async void OnDeleteButtonClicked(object sender, EventArgs e)

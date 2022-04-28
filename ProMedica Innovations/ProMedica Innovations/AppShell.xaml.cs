@@ -20,6 +20,7 @@ namespace ProMedica_Innovations
             Routing.RegisterRoute(nameof(VenturePage), typeof(VenturePage));
             Routing.RegisterRoute(nameof(DevelopmentPage), typeof(DevelopmentPage));
             Routing.RegisterRoute(nameof(PITeamPage), typeof(PITeamPage));
+            Routing.RegisterRoute(nameof(ConfirmationPage), typeof(ConfirmationPage));
         }
 
         private async void OnMenuIdeaClicked(object sender, EventArgs e)
