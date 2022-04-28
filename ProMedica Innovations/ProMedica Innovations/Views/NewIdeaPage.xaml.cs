@@ -77,7 +77,7 @@ namespace ProMedica_Innovations.Views
                 await App.Database.SaveIdeaAsync(idea);
             }
 
-            // Navigate backwards
+            // Navigate to confrimation page
             await Shell.Current.GoToAsync("ConfirmationPage");
         }
 
