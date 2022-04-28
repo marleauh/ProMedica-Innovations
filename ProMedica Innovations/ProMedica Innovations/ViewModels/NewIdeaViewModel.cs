@@ -40,6 +40,7 @@ namespace ProMedica_Innovations.ViewModels
                 && !String.IsNullOrWhiteSpace(gender)
                 && !String.IsNullOrWhiteSpace(ethnicity)
                 && !String.IsNullOrWhiteSpace(citizenship_status)
+                && !String.IsNullOrWhiteSpace(idea_title)
                 && !String.IsNullOrWhiteSpace(target_market)
                 && !String.IsNullOrWhiteSpace(invemail)
                 && !String.IsNullOrWhiteSpace(phone)
