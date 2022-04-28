@@ -14,7 +14,7 @@
                             <RowDefinition Height="300" />
                             <RowDefinition Height="600" />
                             <RowDefinition Height="400" />
-                            <RowDefinition Height="550" />
+                            <RowDefinition Height="600" />
                         </Grid.RowDefinitions>
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="*"/>
@@ -60,14 +60,14 @@
                                     HorizontalTextAlignment="Center"/>
                         </StackLayout>
                         <StackLayout Grid.Row="2" Grid.Column="0"
-                                    Margin="-25,55,-10,-50">
+                                    Margin="-15,55,-10,-50">
                             <Image Source="esp.jpg" Scale=".8" WidthRequest="200"/>
                             <Button Command="{Binding OpenNextTech}" Text="Learn More About NextTech" BackgroundColor="White" TextColor="{StaticResource Primary}" BorderColor="{StaticResource Primary}" CornerRadius="0" BorderWidth="1" Scale="0.7"/>
                         </StackLayout>
                         <StackLayout Grid.Row="2" Grid.Column="1"
-                                    Margin="0,50,0,0">
-                            <Label Margin="-15,10,10,0" FontSize ="13" TextColor="#151515" FontFamily="Avenir Light" Text="Designed to foster entrepreneurship and the growth of entrepreneurially- based businesses, NextTech is one of six parallel programs operating throughout Ohio."/>
-                            <Label Margin="-15,10,10,0" FontSize ="13" FontFamily="Avenir Light" Text="NextTech, its most visible initiative, is designed to establish high-technology startup firms primarily in Northwest Ohio as a means of fostering economic growth."/>
+                                    Margin="0,55,0,0">
+                            <Label Margin="-10,10,10,0" FontSize ="13" TextColor="#151515" FontFamily="Avenir Light" Text="Designed to foster entrepreneurship and the growth of entrepreneurially- based businesses, NextTech is one of six parallel programs operating throughout Ohio."/>
+                            <Label Margin="-10,10,10,0" FontSize ="13" TextColor="#151515" FontFamily="Avenir Light" Text="NextTech, its most visible initiative, is designed to establish high-technology startup firms primarily in Northwest Ohio as a means of fostering economic growth."/>
                         </StackLayout>
                         <StackLayout Grid.Row="2" Grid.ColumnSpan="2" VerticalOptions="End" Margin="0,0,0,60">
                             <Label  Text="Innovation Center"
@@ -77,30 +77,30 @@
                                     TranslationY="10"
                                     HorizontalTextAlignment="Center"/>
                         </StackLayout>
-                        <StackLayout Grid.Row="3" Grid.Column="0" Margin="-20,-55,-10,0">
+                        <StackLayout Grid.Row="3" Grid.Column="0" Margin="-5,-55,-10,0">
                             <Image Source="pispace.jpg" Scale=".8" WidthRequest="200"/>
                         </StackLayout>
                         <StackLayout Grid.Row="3" Grid.Column="1" Margin="0,-40,0,0">
                             <Label 
-                                Text="Our innovation center is a business incubator focused on providing support for pioneering early-stage life sciences–oriented businesses seeking to establish themselves in Northwest Ohio."
-                                Margin="-15,0,10,0" FontSize ="14" TextColor="#151515" FontFamily="Avenir Light"/>
+                                Text="Our innovation center is a business incubator focused on providing support for pioneering early-stage life sciences–oriented businesses seeking to establish them -selves in Northwest Ohio."
+                                Margin="-5,0,10,0" FontSize ="14" TextColor="#151515" FontFamily="Avenir Light"/>
                         </StackLayout>
                         <StackLayout Grid.Row="3" Grid.ColumnSpan="2" Margin="18,120,10,0">
-                            <Label Text="By providing office space, equipment, material support, access to support staff, and access to the resources of a leading medical center and research facility, ProMedica Innovations helps these companies to accelerate development of their products and services while incurring lower operating costs."
+                            <Label Text="By providing office space, equipment, material support, access to support staff, and access to the resources of a leading medical center and research facility, ProMedica Innovations helps these companies to accelerate develop -ment of their products and services while incurring lower operating costs."
                                    VerticalOptions="End"
                                    FontSize ="14"
                                    TextColor="#151515" FontFamily="Avenir Light"/>
                         </StackLayout>
-                        <StackLayout Grid.Row="3" Grid.ColumnSpan="2" VerticalOptions="Center" Margin="0,50,0,-20">
+                        <StackLayout Grid.Row="3" Grid.ColumnSpan="2" VerticalOptions="Center" Margin="0,20,0,-20">
                             <Rectangle BackgroundColor="{StaticResource Primary}" Margin="50,10,50,2" ScaleY="3" ScaleX="1"/>
                             <Label Text="Companies Our Innovations Center Supports" FontSize="23" TextColor="#151515" FontFamily="Avenir Book" Margin="50,10,50,0"/>
                         </StackLayout>
-                        <StackLayout Grid.Row="3" Grid.Column="0" Margin="15,0,0,10" VerticalOptions="End">
+                        <StackLayout Grid.Row="3" Grid.Column="0" Margin="15,0,0,10" VerticalOptions="End" TranslationY="-30">
                             <Button Command="{Binding OpenVenture}" BorderWidth="1" Text="VentureMed Group" BackgroundColor="White" TextColor="{StaticResource Primary}" CornerRadius="0" BorderColor="{StaticResource Primary}"/>
                             <Button Command="{Binding OpenWellopp}" BorderWidth="1" Text="Wellopp" BackgroundColor="White" TextColor="{StaticResource Primary}" CornerRadius="0" BorderColor="{StaticResource Primary}"/>
                             <Button Command="{Binding OpenIchor}" BorderWidth="1" Text="ICHOR" BackgroundColor="White" TextColor="{StaticResource Primary}" CornerRadius="0" BorderColor="{StaticResource Primary}"/>
                         </StackLayout>
-                        <StackLayout Grid.Row="3" Grid.Column="1" Margin="10,0,15,10" VerticalOptions="End">
+                        <StackLayout Grid.Row="3" Grid.Column="1" Margin="10,0,15,10" VerticalOptions="End" TranslationY="-30">
                             <Button Command="{Binding OpenKapios}" BorderWidth="1" Text="Kapios" BackgroundColor="White" TextColor="{StaticResource Primary}" CornerRadius="0" BorderColor="{StaticResource Primary}"/>
                             <Button Command="{Binding OpenInfinity}" BorderWidth="1" Text="Infinity" BackgroundColor="White" TextColor="{StaticResource Primary}" CornerRadius="0" BorderColor="{StaticResource Primary}"/>
                             <Button Command="{Binding OpenMedview}" BorderWidth="1" Text="MedView AR" BackgroundColor="White" TextColor="{StaticResource Primary}" CornerRadius="0" BorderColor="{StaticResource Primary}"/>

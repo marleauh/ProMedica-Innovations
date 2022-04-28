@@ -32,41 +32,51 @@
                 <DataTemplate>
                     <StackLayout Padding="5" x:DataType="model:Idea" BackgroundColor="LightGray">
                         <Rectangle WidthRequest="100" HeightRequest="3" BackgroundColor="Black" />
+                        <Label FontAttributes="Bold" FontSize="20">First Name:</Label>
                         <Label Text="{Binding FirstName}" 
                             LineBreakMode="NoWrap" 
                             Style="{DynamicResource ListItemTextStyle}" 
                             FontSize="16" />
+                        <Label FontAttributes="Bold" FontSize="20">Last Name:</Label>
                         <Label Text="{Binding LastName}" 
                             LineBreakMode="NoWrap" 
                             Style="{DynamicResource ListItemTextStyle}" 
                             FontSize="16" />
+                        <Label FontAttributes="Bold" FontSize="20">Gender:</Label>
                         <Label Text="{Binding Gender}" 
                             LineBreakMode="NoWrap" 
                             Style="{DynamicResource ListItemTextStyle}" 
                             FontSize="16" />
+                        <Label FontAttributes="Bold" FontSize="20">Ethnicity:</Label>
                         <Label Text="{Binding Ethnicity}" 
                             LineBreakMode="NoWrap" 
                             Style="{DynamicResource ListItemTextStyle}" 
                             FontSize="16" />
+                        <Label FontAttributes="Bold" FontSize="20">Email:</Label>
                         <Label Text="{Binding InvEmail}" 
                             LineBreakMode="NoWrap" 
                             Style="{DynamicResource ListItemTextStyle}" 
                             FontSize="16" />
+                        <Label FontAttributes="Bold" FontSize="20">Phone Number:</Label>
                         <Label Text="{Binding Phone}" 
                             LineBreakMode="NoWrap" 
                             Style="{DynamicResource ListItemTextStyle}" 
                             FontSize="16" />
+                        <Label FontAttributes="Bold" FontSize="20">Description:</Label>
                         <Label Text="{Binding Description}" 
                             Style="{DynamicResource ListItemDetailTextStyle}"
                             FontSize="16" />
+                        <Label FontAttributes="Bold" FontSize="20">Availability:</Label>
                         <Label Text="{Binding Availability}" 
                             LineBreakMode="NoWrap" 
                             Style="{DynamicResource ListItemTextStyle}" 
                             FontSize="16" />
+                        <Label FontAttributes="Bold" FontSize="20">Referral:</Label>
                         <Label Text="{Binding Referral}" 
                             LineBreakMode="NoWrap" 
                             Style="{DynamicResource ListItemTextStyle}" 
                             FontSize="16" />
+                        <Label FontAttributes="Bold" FontSize="20">Employee:</Label>
                         <Label Text="{Binding Employee}" 
                             LineBreakMode="NoWrap" 
                             Style="{DynamicResource ListItemTextStyle}" 

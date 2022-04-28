@@ -265,6 +265,7 @@
   <ItemGroup>
     <BundleResource Include="Resources\about_head.jpg" />
     <BundleResource Include="Resources\building_color.png" />
+    <BundleResource Include="Resources\about_lightbulb.jpg" />
     <Content Include="Resources\dc_hs.jpg" />
     <BundleResource Include="Resources\eak_hs.jpg" />
     <BundleResource Include="Resources\eb_hs.jpg" />
@@ -295,5 +296,6 @@
     <BundleResource Include="Resources\youtube.png" />
     <BundleResource Include="Resources\innovations_logo.png" />
     <BundleResource Include="Resources\econ_back2.jpg" />
+    <BundleResource Include="Resources\Lightbulb.jpg" />
   </ItemGroup>
 </Project>

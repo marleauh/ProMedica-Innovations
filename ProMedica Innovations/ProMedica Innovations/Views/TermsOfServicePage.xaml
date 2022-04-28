@@ -13,7 +13,7 @@
         <StackLayout>
             <StackLayout Orientation="Horizontal" Padding="15,5,10,0">
                 <StackLayout Orientation="Horizontal">
-                    <Label Text="I agree to the terms of service:" FontSize="Medium"/>
+                    <Label Text="I agree to the terms of service:" FontSize="Medium" FontFamily="Avenir LT Std Heavy" TextColor="#151515"/>
                     <CheckBox x:Name="ChkBox1" Margin="0,-8,8,0" IsChecked="{Binding Employee, Mode=TwoWay}" Color="{StaticResource Primary}"/>
                 </StackLayout>
                 <Button Text="Next" Clicked="OnButtonClicked" HorizontalOptions="EndAndExpand" WidthRequest="80">

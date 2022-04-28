@@ -16,73 +16,75 @@
             <On Platform="Android">
                 <Grid VerticalOptions="FillAndExpand" BackgroundColor="#f2f5fa" Padding="10,25,10,25" ColumnSpacing="15" RowSpacing="15">
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="*" />
+                        <RowDefinition Height="170" />
+                        <RowDefinition Height="170" />
+                        <RowDefinition Height="170" />
                     </Grid.RowDefinitions>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*"  />
                     </Grid.ColumnDefinitions>
-                    <StackLayout Grid.Row="0" Grid.Column="0" BackgroundColor="White">
+                    <StackLayout Grid.Row="0" Grid.Column="0" BackgroundColor="White" TranslationY="5">
                         <Button CornerRadius="0" HeightRequest="175" BackgroundColor="White" />
-                        <Ellipse Fill="#f2f5fa" HeightRequest="20" WidthRequest="20" HorizontalOptions="Center" TranslationY="-150" TranslationX="-50" Scale="3"/>
-                        <Rectangle BackgroundColor="#f2f5fa" HeightRequest="60" WidthRequest="20" TranslationY="-100" Margin="10,0,10,0"/>
+                        <Ellipse Fill="#f2f5f8" HeightRequest="20" WidthRequest="20" HorizontalOptions="Center" TranslationY="-150" TranslationX="-50" Scale="3"/>
+                        <Rectangle BackgroundColor="#f2f5f8" HeightRequest="60" WidthRequest="20" TranslationY="-100" Margin="10,0,10,0"/>
                         <Image Source="stethoscope_color.png" HeightRequest="75" WidthRequest="75" TranslationY="-260" TranslationX="-35" Scale=".75"/>
-                        <Label TextColor="Black" Text="Inventors" FontSize="23" FontAttributes="Bold" TranslationY="-240" TranslationX="15"/>
-                        <Label TextColor="Gray" Text="Great Ideas Start With You" FontSize="11.75" FontAttributes="Bold" TranslationY="-245" TranslationX="15"/>
+                        <Label TextColor="#151515" Text="Inventors" FontSize="23" FontFamily="Avenir LT Std Heavy" FontAttributes="Bold" TranslationY="-240" TranslationX="15"/>
+                        <Label TextColor="#cdcdcd" Text="Great Ideas Start With You" FontFamily="Avenir LT Std Heavy" FontSize="11.75" FontAttributes="Bold" TranslationY="-245" TranslationX="15"/>
                         <StackLayout.GestureRecognizers>
                             <TapGestureRecognizer Command="{Binding InventorCommand}"/>
                         </StackLayout.GestureRecognizers>
                     </StackLayout>
-                    <StackLayout Grid.Row="0" Grid.Column="1" BackgroundColor="White">
+                    <StackLayout Grid.Row="0" Grid.Column="1" BackgroundColor="White" TranslationY="5">
                         <Button Command="{Binding TechnologyCommand}" CornerRadius="0" HeightRequest="175" BackgroundColor="White" />
-                        <Ellipse Fill="#f2f5fa" HeightRequest="20" WidthRequest="20" HorizontalOptions="Center" TranslationY="-150" TranslationX="-50" Scale="3"/>
-                        <Rectangle BackgroundColor="#f2f5fa" HeightRequest="60" WidthRequest="20" TranslationY="-100" Margin="10,0,10,0"/>
+                        <Ellipse Fill="#f2f5f8" HeightRequest="20" WidthRequest="20" HorizontalOptions="Center" TranslationY="-150" TranslationX="-50" Scale="3"/>
+                        <Rectangle BackgroundColor="#f2f5f8" HeightRequest="60" WidthRequest="20" TranslationY="-100" Margin="10,0,10,0"/>
                         <Image Source="gear_color.png" HeightRequest="75" WidthRequest="75" TranslationY="-260" TranslationX="-35" Scale=".75"/>
-                        <Label TextColor="Black" Text="Technology" FontSize="23" FontAttributes="Bold" TranslationY="-240" TranslationX="15"/>
-                        <Label TextColor="Gray" Text="What's New and Next" FontSize="11.75" FontAttributes="Bold" TranslationY="-245" TranslationX="15"/>
+                        <Label TextColor="#151515" Text="Technology" FontSize="23" FontFamily="Avenir LT Std Heavy" FontAttributes="Bold" TranslationY="-240" TranslationX="15"/>
+                        <Label TextColor="#cdcdcd" Text="What's New and Next" FontSize="11.75" FontFamily="Avenir LT Std Heavy" FontAttributes="Bold" TranslationY="-245" TranslationX="15"/>
                         <StackLayout.GestureRecognizers>
                             <TapGestureRecognizer Command="{Binding TechnologyCommand}"/>
                         </StackLayout.GestureRecognizers>
                     </StackLayout>
-                    <StackLayout Grid.Row="1" Grid.Column="0" BackgroundColor="White">
+                    <StackLayout Grid.Row="1" Grid.Column="0" BackgroundColor="White" TranslationY="5">
                         <Button Command="{Binding VentureCommand}" CornerRadius="0" HeightRequest="175" BackgroundColor="White" />
-                        <Ellipse Fill="#f2f5fa" HeightRequest="20" WidthRequest="20" HorizontalOptions="Center" TranslationY="-150" TranslationX="-50" Scale="3"/>
-                        <Rectangle BackgroundColor="#f2f5fa" HeightRequest="60" WidthRequest="20" TranslationY="-100" Margin="10,0,10,0"/>
+                        <Ellipse Fill="#f2f5f8" HeightRequest="20" WidthRequest="20" HorizontalOptions="Center" TranslationY="-150" TranslationX="-50" Scale="3"/>
+                        <Rectangle BackgroundColor="#f2f5f8" HeightRequest="60" WidthRequest="20" TranslationY="-100" Margin="10,0,10,0"/>
                         <Image Source="laptop_color.png" HeightRequest="75" WidthRequest="75" TranslationY="-260" TranslationX="-35" Scale=".75"/>
-                        <Label TextColor="Black" Text="Ventures" FontSize="23" FontAttributes="Bold" TranslationY="-240" TranslationX="15"/>
-                        <Label TextColor="Gray" Text="Investing In Innovation" FontSize="11.75" FontAttributes="Bold" TranslationY="-245" TranslationX="15"/>
+                        <Label TextColor="#151515" Text="Ventures" FontSize="23" FontFamily="Avenir LT Std Heavy" FontAttributes="Bold" TranslationY="-240" TranslationX="15"/>
+                        <Label TextColor="#cdcdcd" Text="Investing In Innovation" FontFamily="Avenir LT Std Heavy" FontSize="11.75" FontAttributes="Bold" TranslationY="-245" TranslationX="15"/>
                         <StackLayout.GestureRecognizers>
                             <TapGestureRecognizer Command="{Binding VentureCommand}"/>
                         </StackLayout.GestureRecognizers>
                     </StackLayout>
-                    <StackLayout Grid.Row="1" Grid.Column="1" BackgroundColor="White">
+                    <StackLayout Grid.Row="1" Grid.Column="1" BackgroundColor="White" TranslationY="5">
                         <Button Command="{Binding DevelopmentCommand}" CornerRadius="0" HeightRequest="175" BackgroundColor="White" />
-                        <Ellipse Fill="#f2f5fa" HeightRequest="20" WidthRequest="20" HorizontalOptions="Center" TranslationY="-150" TranslationX="-50" Scale="3"/>
-                        <Rectangle BackgroundColor="#f2f5fa" HeightRequest="60" WidthRequest="20" TranslationY="-100" Margin="10,0,10,0"/>
+                        <Ellipse Fill="#f2f5f8" HeightRequest="20" WidthRequest="20" HorizontalOptions="Center" TranslationY="-150" TranslationX="-50" Scale="3"/>
+                        <Rectangle BackgroundColor="#f2f5f8" HeightRequest="60" WidthRequest="20" TranslationY="-100" Margin="10,0,10,0"/>
                         <Image Source="building_color.png" HeightRequest="75" WidthRequest="75" TranslationY="-260" TranslationX="-35" Scale=".75"/>
-                        <Label TextColor="Black" Text="Development" FontSize="23" FontAttributes="Bold" TranslationY="-240" TranslationX="15"/>
-                        <Label TextColor="Gray" Text="Health Beyond The Hospital" FontSize="11.75" FontAttributes="Bold" TranslationY="-245" TranslationX="15"/>
+                        <Label TextColor="#151515" Text="Development" FontSize="23" FontFamily="Avenir LT Std Heavy" FontAttributes="Bold" TranslationY="-240" TranslationX="15"/>
+                        <Label TextColor="#cdcdcd" Text="Health Beyond The Hospital" FontFamily="Avenir LT Std Heavy" FontSize="11.75" FontAttributes="Bold" TranslationY="-245" TranslationX="15"/>
                         <StackLayout.GestureRecognizers>
                             <TapGestureRecognizer Command="{Binding DevelopmentCommand}"/>
                         </StackLayout.GestureRecognizers>
                     </StackLayout>
-                    <StackLayout Grid.Row="2" Grid.Column="0" BackgroundColor="White">
+                    <StackLayout Grid.Row="2" Grid.Column="0" BackgroundColor="White" TranslationY="5">
                         <Button Command="{Binding PITeamCommand}" CornerRadius="0" HeightRequest="175" BackgroundColor="White" />
-                        <Ellipse Fill="#f2f5fa" HeightRequest="20" WidthRequest="20" HorizontalOptions="Center" TranslationY="-150" TranslationX="-50" Scale="3"/>
-                        <Rectangle BackgroundColor="#f2f5fa" HeightRequest="60" WidthRequest="20" TranslationY="-100" Margin="10,0,10,0"/>
+                        <Ellipse Fill="#f2f5f8" HeightRequest="20" WidthRequest="20" HorizontalOptions="Center" TranslationY="-150" TranslationX="-50" Scale="3"/>
+                        <Rectangle BackgroundColor="#f2f5f8" HeightRequest="60" WidthRequest="20" TranslationY="-100" Margin="10,0,10,0"/>
                         <Image Source="about_color.png" HeightRequest="75" WidthRequest="75" TranslationY="-260" TranslationX="-35" Scale=".75"/>
-                        <Label TextColor="Black" Text="PI Team" FontSize="23" FontAttributes="Bold" TranslationY="-240" TranslationX="15"/>
-                        <Label TextColor="Gray" Text="Meet the Innovators" FontSize="11.75" FontAttributes="Bold" TranslationY="-245" TranslationX="15"/>
+                        <Label TextColor="#151515" Text="PI Team" FontSize="23" FontFamily="Avenir LT Std Heavy" FontAttributes="Bold" TranslationY="-240" TranslationX="15"/>
+                        <Label TextColor="#cdcdcd" Text="Meet the Innovators" FontFamily="Avenir LT Std Heavy" FontSize="11.75" FontAttributes="Bold" TranslationY="-245" TranslationX="15"/>
                         <StackLayout.GestureRecognizers>
                             <TapGestureRecognizer Command="{Binding PITeamCommand}"/>
                         </StackLayout.GestureRecognizers>
                     </StackLayout>
-                    <StackLayout Grid.Row="2" Grid.Column="1" BackgroundColor="White">
+                    <StackLayout Grid.Row="2" Grid.Column="1" BackgroundColor="White" TranslationY="5">
                         <Button Command="{Binding SubmitCommand}" CornerRadius="0" HeightRequest="175" BackgroundColor="White" />
-                        <Ellipse Fill="#f2f5fa" HeightRequest="20" WidthRequest="20" HorizontalOptions="Center" TranslationY="-150" TranslationX="-50" Scale="3"/>
-                        <Rectangle BackgroundColor="#f2f5fa" HeightRequest="60" WidthRequest="20" TranslationY="-100" Margin="10,0,10,0"/>
+                        <Ellipse Fill="#f2f5f8" HeightRequest="20" WidthRequest="20" HorizontalOptions="Center" TranslationY="-150" TranslationX="-50" Scale="3"/>
+                        <Rectangle BackgroundColor="#f2f5f8" HeightRequest="60" WidthRequest="20" TranslationY="-100" Margin="10,0,10,0"/>
                         <Image Source="lightbulb_color_orange.png" HeightRequest="75" WidthRequest="75" TranslationY="-260" TranslationX="-35" Scale=".75"/>
-                        <Label TextColor="Black" Text="Submit Ideas" FontSize="23" FontAttributes="Bold" TranslationY="-240" TranslationX="15"/>
-                        <Label TextColor="Gray" Text="Inspiration to Action" FontSize="11.75" FontAttributes="Bold" TranslationY="-245" TranslationX="15"/>
+                        <Label TextColor="#151515" Text="Submit Ideas" FontSize="23" FontFamily="Avenir LT Std Heavy" FontAttributes="Bold" TranslationY="-240" TranslationX="15"/>
+                        <Label TextColor="#cdcdcd" Text="Inspiration to Action" FontFamily="Avenir LT Std Heavy" FontSize="11.75" FontAttributes="Bold" TranslationY="-245" TranslationX="15"/>
                         <StackLayout.GestureRecognizers>
                             <TapGestureRecognizer Command="{Binding SubmitCommand}"/>
                         </StackLayout.GestureRecognizers>
