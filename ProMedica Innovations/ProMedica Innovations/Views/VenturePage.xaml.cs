@@ -1,4 +1,4 @@
-﻿
+﻿using ProMedica_Innovations.ViewModels;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -10,6 +10,7 @@ namespace ProMedica_Innovations.Views
         public VenturePage()
         {
             InitializeComponent();
+            BindingContext = new VentureViewModel();
         }
     }
 }
