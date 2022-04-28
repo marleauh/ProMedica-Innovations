@@ -19,7 +19,7 @@ namespace ProMedica_Innovations.Views
 
         private async void ContinueBtn_Clicked(object sender, EventArgs e)
         {
-            await Shell.Current.GoToAsync("//SplashScreen");
+            await Shell.Current.GoToAsync("..");
         }
     }
 }
