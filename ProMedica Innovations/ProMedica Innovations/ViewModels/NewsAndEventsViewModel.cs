@@ -24,17 +24,18 @@ namespace ProMedica_Innovations.ViewModels
             OpenFacebook = new Command(async () => await Browser.OpenAsync("https://www.facebook.com/ProMedicaHealth"));
             // command used by button to redirect to ProMedica's Facebook Page
 
-            OpenInstagram = new Command(async () => await Browser.OpenAsync("https://twitter.com/ProMedicaHealth"));
-            // command used by button to redirect to ProMedica's Twitter Page
-
-            OpenLinkedIn = new Command(async () => await Browser.OpenAsync("https://www.instagram.com/promedicahealth/"));
+            OpenInstagram = new Command(async () => await Browser.OpenAsync("https://www.instagram.com/promedicahealth/"));
             // command used by button to redirect to ProMedica's Instagram Page
 
-            OpenTwitter = new Command(async () => await Browser.OpenAsync("https://www.linkedin.com/company/promedica/"));
+            OpenLinkedIn = new Command(async () => await Browser.OpenAsync("https://www.linkedin.com/company/promedica/"));
             // command used by button to redirect to ProMedica's LinkedIn Page
+
+            OpenTwitter = new Command(async () => await Browser.OpenAsync("https://twitter.com/ProMedicaHealth"));
+            // command used by button to redirect to ProMedica's Twitter Page
 
             OpenYoutube = new Command(async () => await Browser.OpenAsync("https://www.youtube.com/user/ProMedicaTV"));
             // command used by button to redirect to ProMedica's Youtube Page
+
 
         }
 
