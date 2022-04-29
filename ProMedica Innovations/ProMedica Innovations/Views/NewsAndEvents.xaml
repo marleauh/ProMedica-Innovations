@@ -151,7 +151,7 @@
                         </StackLayout>
                         <!--" Social Medica Links-->
                         <FlexLayout Grid.Row="3" Grid.ColumnSpan="2" BackgroundColor="#555859" Padding="0,0,0,0" TranslationY="-15">
-                            <Image Source="stayconnected.png" HeightRequest="80" WidthRequest="220" TranslationY="9"  TranslationX="65" Margin="5,10,5,5"/>
+                            <ImageButton Source="stayconnected.png" Command="{Binding OpenMaps}" HeightRequest="80" WidthRequest="220" TranslationY="9"  TranslationX="65" Margin="5,10,5,5"/>
                         </FlexLayout>
 
                         <FlexLayout Grid.Row="3" Grid.ColumnSpan="2" BackgroundColor="Transparent" Padding="0,0,0,0">
@@ -159,14 +159,11 @@
                         </FlexLayout>
 
                         <FlexLayout Grid.Row="3" Grid.ColumnSpan="2" BackgroundColor="Transparent" Padding="0,0,0,0">
-                            <Image Source="facebook.png" HeightRequest="20" WidthRequest="70" TranslationY="80"  TranslationX="0" Margin="5,10,5,5"/>
-                            <Image Source="instagram.png" HeightRequest="20" WidthRequest="70" TranslationY="80"  TranslationX="0" Margin="5,10,5,5"/>
-                            <Image Source="linkedin.png" HeightRequest="20" WidthRequest="70" TranslationY="80"  TranslationX="0" Margin="5,10,5,5"/>
-                            <Image Source="twitter.png" HeightRequest="20" WidthRequest="70" TranslationY="80"  TranslationX="0" Margin="5,10,5,5"/>
-                            <Image Source="youtube.png" HeightRequest="20" WidthRequest="70" TranslationY="80"  TranslationX="0" Margin="5,10,5,5"/>
-                            <FlexLayout.GestureRecognizers>
-                                <TapGestureRecognizer Command="{Binding OpenMaps}"/>
-                            </FlexLayout.GestureRecognizers>
+                            <ImageButton Source="facebook.png" Command="{Binding OpenFacebook}" HeightRequest="20" WidthRequest="70" TranslationY="80"  TranslationX="0" Margin="5,10,5,5"/>
+                            <ImageButton Source="instagram.png" Command="{Binding OpenInstagram}" HeightRequest="20" WidthRequest="70" TranslationY="80"  TranslationX="0" Margin="5,10,5,5"/>
+                            <ImageButton Source="linkedin.png" Command="{Binding OpenLinkedIn}" HeightRequest="20" WidthRequest="70" TranslationY="80"  TranslationX="0" Margin="5,10,5,5"/>
+                            <ImageButton Source="twitter.png" Command="{Binding OpenTwitter}" HeightRequest="20" WidthRequest="70" TranslationY="80"  TranslationX="0" Margin="5,10,5,5"/>
+                            <ImageButton Source="youtube.png" Command="{Binding OpenYoutube}" HeightRequest="20" WidthRequest="70" TranslationY="80"  TranslationX="0" Margin="5,10,5,5"/>
                         </FlexLayout>
 
                     </Grid>
