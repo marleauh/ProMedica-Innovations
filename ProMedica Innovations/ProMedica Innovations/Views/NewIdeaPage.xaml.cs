@@ -77,8 +77,8 @@ namespace ProMedica_Innovations.Views
                 await App.Database.SaveIdeaAsync(idea);
             }
 
-            // Navigate to confrimation page
-            await Shell.Current.GoToAsync("ConfirmationPage");
+            // Navigate to the main menu
+            await Shell.Current.GoToAsync("//SplashScreen");
         }
 
         async void OnDeleteButtonClicked(object sender, EventArgs e)

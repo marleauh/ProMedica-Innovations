@@ -52,6 +52,11 @@
                             LineBreakMode="NoWrap" 
                             Style="{DynamicResource ListItemTextStyle}" 
                             FontSize="16" />
+                        <Label FontAttributes="Bold" FontSize="20">Citizenship Status:</Label>
+                        <Label Text="{Binding CitizenshipStatus}" 
+                            LineBreakMode="NoWrap" 
+                            Style="{DynamicResource ListItemTextStyle}" 
+                            FontSize="16" />
                         <Label FontAttributes="Bold" FontSize="20">Email:</Label>
                         <Label Text="{Binding InvEmail}" 
                             LineBreakMode="NoWrap" 
@@ -62,9 +67,24 @@
                             LineBreakMode="NoWrap" 
                             Style="{DynamicResource ListItemTextStyle}" 
                             FontSize="16" />
+                        <Label FontAttributes="Bold" FontSize="20">Target Market:</Label>
+                        <Label Text="{Binding TargetMarket}" 
+                            LineBreakMode="NoWrap" 
+                            Style="{DynamicResource ListItemTextStyle}" 
+                            FontSize="16" />
+                        <Label FontAttributes="Bold" FontSize="20">Idea Title:</Label>
+                        <Label Text="{Binding IdeaTitle}" 
+                            LineBreakMode="NoWrap" 
+                            Style="{DynamicResource ListItemTextStyle}" 
+                            FontSize="16" />
                         <Label FontAttributes="Bold" FontSize="20">Description:</Label>
                         <Label Text="{Binding Description}" 
                             Style="{DynamicResource ListItemDetailTextStyle}"
+                            FontSize="16" />
+                        <Label FontAttributes="Bold" FontSize="20">Any Similar Products:</Label>
+                        <Label Text="{Binding IsNewIdea}" 
+                            LineBreakMode="NoWrap" 
+                            Style="{DynamicResource ListItemTextStyle}" 
                             FontSize="16" />
                         <Label FontAttributes="Bold" FontSize="20">Availability:</Label>
                         <Label Text="{Binding Availability}" 
@@ -78,6 +98,11 @@
                             FontSize="16" />
                         <Label FontAttributes="Bold" FontSize="20">Employee:</Label>
                         <Label Text="{Binding Employee}" 
+                            LineBreakMode="NoWrap" 
+                            Style="{DynamicResource ListItemTextStyle}" 
+                            FontSize="16" />
+                        <Label FontAttributes="Bold" FontSize="20">Employee Branch:</Label>
+                        <Label Text="{Binding Branch}" 
                             LineBreakMode="NoWrap" 
                             Style="{DynamicResource ListItemTextStyle}" 
                             FontSize="16" />

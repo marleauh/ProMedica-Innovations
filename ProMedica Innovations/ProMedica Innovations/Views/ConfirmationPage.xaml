@@ -3,6 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ProMedica_Innovations.Views.ConfirmationPage">
     <ContentPage.Content>
+        <!--This is the page to design the conbfirmation page. It is not working at the moment and when the continue button is clicked; it displays a flyout menu on the main menu
+        \   This page is not to be included until it is working-->
         <StackLayout>
             <Label Text="Welcome to Xamarin.Forms!"
                 VerticalOptions="CenterAndExpand" 
